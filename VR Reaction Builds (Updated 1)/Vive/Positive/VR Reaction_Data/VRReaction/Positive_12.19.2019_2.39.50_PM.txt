@@ -1,0 +1,13 @@
+Sign Post: 1 | Time:  3.006008
+Sign Post: 2 | Time:  12.13118
+Sign Post: 3 | Time:  10.21959
+Sign Post: 4 | Time:  3.19454
+Sign Post: 5 | Time:  2.745845
+Sign Post: 6 | Time:  5.953969
+Sign Post: 7 | Time:  5.272278
+Sign Post: 8 | Time:  4.489323
+Sign Post: 9 | Time:  4.914394
+Sign Post: 10 | Time:  6.35552
+Total Looking Time: 58.28264
+Average Time: 5.828264
+Time took to complete level: 211.7701
