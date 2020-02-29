@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 2544
     height: 1331
-  m_MinSize: {x: 679, y: 442}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 37
+  controlID: 16
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 516
     height: 1331
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -121,15 +121,15 @@ MonoBehaviour:
     y: 805
     width: 2028
     height: 526
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 18}
   - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,10 +218,10 @@ MonoBehaviour:
     y: 0
     width: 2028
     height: 1331
-  m_MinSize: {x: 403, y: 442}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 38
+  controlID: 21
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 39
+  controlID: 22
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -249744
+  m_LastSelectedObjectID: -63584
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,20 +368,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Add-Ons/TK - Abandoned Circus/Prefabs
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Add-Ons/TK - Abandoned Circus/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\EducationalGD\EducationalGDGit
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: c0770000
-    m_LastClickedID: 30656
-    m_ExpandedIDs: 00000000fe72000000730000027300000473000006730000087300000a730000ae76000000ca9a3b
+    scrollPos: {x: 0, y: 299}
+    m_SelectedIDs: 70e00000
+    m_LastClickedID: 57456
+    m_ExpandedIDs: 0000000060d6000062d6000064d6000066d6000068d600006ad600006cd60000b0db000072e0000096f2000098f200009af2000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -409,7 +409,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe72000000730000027300000473000006730000087300000a730000
+    m_ExpandedIDs: 0000000060d6000062d6000064d6000066d6000068d600006ad600006cd60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -532,20 +532,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7030fcff
-      m_LastClickedID: -249744
-      m_ExpandedIDs: fc13fcff3847fcff3a47fcffe44efcffac62fcffc870fcff4ec9ffff38caffff3ccaffff40caffff44caffff48caffff4ecaffff52caffff56caffff5acaffff80caffffaccaffffc4cafffff4d3fffff6d3fffff8d3fffffad3fffffcd3fffffed3ffff00d4ffff02d4ffff08d4ffffe6d5ffffc0d8ffffc6d8ffffc8d8ffffcad8ffffccd8ffff12d9ffffc0d9ffffc2d9ffffc4d9ffffc6d9ffffc8d9ffffcad9ffffccd9ffffced9ffffd0d9ffffd2d9ffffd4d9ffff22daffffb2daffffecdbffffecddfffffeddffff00deffff02defffff6deffff44dffffffadffffffcdfffff94e2ffffcae2ffff80e5ffff82e5ffff84e5ffff86e5ffff8ee6ffffb4e8ffffe0e8ffffe4e8ffffe6e8ffffe8e8ffff48e9ffff4eeaffff12ebffff9aebffffccebffffceebffff1eecffff22ecffff26ecffffcaecffffccecffffceecffffeaecffff38edffff3cedffffb0edffffb6edffffc0edffffc4edffffceedffffd4edffffdcedffff0aeeffff2ceeffff42eeffff76eeffff90eeffff9ceeffffe6eefffff2eeffff04efffff14efffff18efffff2aefffff30efffff36efffff52efffff56efffff5cefffff8cefffffceefffffd6efffffdceffffff4efffffbef0ffff1646000084460000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e684feffaee8feffb2e8feffdcf1feffe0f1feff00f5feff02f5feff8a01ffff8e01ffff9e07ffffa007ffff4010ffff4210ffff669dffff689dfffffca2fffffea2ffffc0a6fffff6d0ffff06d1ffffdcd4ffffecd4ffff6efbffff9ea8000064a9000094a90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: UIPointer
-        m_OriginalName: UIPointer
+        m_Name: bileciarnia
+        m_OriginalName: bileciarnia
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -4310
+        m_UserData: -24586
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -594,9 +594,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 14.203472, y: 6.949409, z: 3.4358}
+    m_Target: {x: 45.9014, y: 8.845626, z: 25.926697}
     speed: 2
-    m_Value: {x: 14.203472, y: 6.949409, z: 3.4358}
+    m_Value: {x: 45.9014, y: 8.845626, z: 25.926697}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -607,12 +607,12 @@ MonoBehaviour:
   m_ExposureSliderValue: 0
   m_ExposureSliderMax: 10
   m_SceneViewState:
-    showFog: 1
-    showMaterialUpdate: 1
-    showSkybox: 1
-    showFlares: 1
-    showImageEffects: 1
-    showParticleSystems: 1
+    showFog: 0
+    showMaterialUpdate: 0
+    showSkybox: 0
+    showFlares: 0
+    showImageEffects: 0
+    showParticleSystems: 0
   m_Grid:
     xGrid:
       m_Fade:
@@ -642,20 +642,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.008854249, y: 0.86417085, z: -0.014296605, w: -0.5032131}
+    m_Target: {x: -0.00012272589, y: 0.15360789, z: -0.0012389218, w: -0.9884758}
     speed: 2
-    m_Value: {x: -0.004856101, y: 0.87811327, z: -0.007954488, w: -0.47836187}
+    m_Value: {x: -0.0030870016, y: 0.15355116, z: -0.0016997732, w: -0.98813444}
   m_Size:
-    m_Target: 11.594197
+    m_Target: 32.29703
     speed: 2
-    m_Value: 12.140521
+    m_Value: 30.906252
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.52000046
+    m_Speed: 1.2
+    m_SpeedNormalized: 0.6100004
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -731,7 +731,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
