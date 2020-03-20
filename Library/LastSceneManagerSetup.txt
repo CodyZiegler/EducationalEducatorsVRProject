@@ -1,25 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- path: Assets/Scenes/Negative.unity
-=======
-- path: Assets/Scenes/Mini-game.unity
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-- path: Assets/Scenes/Negative.unity
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-- path: Assets/Scenes/HappyAmusmentPrk.unity
->>>>>>> parent of 3209bc89... Kick off for neutral
-=======
-- path: Assets/Scenes/Mini-game.unity
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-- path: Assets/Scenes/Negative.unity
->>>>>>> parent of 4a7f8626... Mini-game upload
+- path: Assets/Scenes/Neutral/Neutral.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

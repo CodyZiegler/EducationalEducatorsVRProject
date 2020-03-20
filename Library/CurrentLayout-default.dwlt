@@ -15,50 +15,13 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 43
-    width: 2560
-    height: 1397
-=======
-    y: 42
-    width: 1500
-    height: 958
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    y: 42
-    width: 1500
-    height: 958
->>>>>>> parent of 24afe964... Neutral stage finished
-  m_ShowMode: 4
-  m_Title: 
-  m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 542}
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
     y: 43.2
     width: 1536
     height: 780.8
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_MinSize: {x: 875, y: 300}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
   m_MinSize: {x: 875, y: 542}
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-  m_MinSize: {x: 875, y: 300}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_MinSize: {x: 875, y: 542}
->>>>>>> parent of 4a7f8626... Mini-game upload
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -70,28 +33,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 1500
-    height: 908
-  m_MinSize: {x: 504, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
-  vertical: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  controlID: 125
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
@@ -99,21 +40,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 455
-    width: 372
-    height: 276
-=======
-    y: 346
-    width: 372
-    height: 385
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    y: 455
-    width: 372
-    height: 276
->>>>>>> parent of 4a7f8626... Mini-game upload
+    y: 460
+    width: 353
+    height: 271
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 15}
@@ -121,16 +50,6 @@ MonoBehaviour:
   - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  controlID: 38
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-  controlID: 38
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,69 +58,23 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_EditorHideFlags: 1
-=======
   m_EditorHideFlags: 0
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_EditorHideFlags: 0
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: 10}
-  - {fileID: 4}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1500
-    height: 908
-  m_MinSize: {x: 504, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
-  vertical: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  controlID: 126
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   - {fileID: 9}
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 809
+    x: 906
     y: 0
-    width: 372
+    width: 353
     height: 731
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  controlID: 87
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  controlID: 39
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-  controlID: 39
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-  controlID: 304
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-  controlID: 87
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  controlID: 304
->>>>>>> parent of 4a7f8626... Mini-game upload
+  controlID: 313
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,30 +84,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1197
-    y: 0
-    width: 303
-    height: 908
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
-  m_Panes:
-  - {fileID: 15}
-  - {fileID: 19}
-<<<<<<< HEAD
-  m_Selected: 0
-  m_LastSelected: 1
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -248,22 +97,8 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_Selected: 1
-  m_LastSelected: 0
->>>>>>> parent of 3209bc89... Kick off for neutral
-=======
-  m_MinSize: {x: 875, y: 300}
-=======
-  m_MinSize: {x: 875, y: 542}
->>>>>>> parent of 4a7f8626... Mini-game upload
-  m_MaxSize: {x: 10000, y: 10000}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,15 +108,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-=======
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
@@ -289,48 +116,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 512
-    height: 749
-=======
-    width: 307
-    height: 613
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    width: 307
-    height: 613
->>>>>>> parent of 24afe964... Neutral stage finished
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
     width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LastLoadedLayoutName: 
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
   m_LastLoadedLayoutName: 2 by 3
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-  m_LastLoadedLayoutName: 
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_LastLoadedLayoutName: 2 by 3
->>>>>>> parent of 4a7f8626... Mini-game upload
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -340,29 +130,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 613
-    width: 1197
-    height: 295
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -376,29 +143,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_MinSize: {x: 710, y: 492}
   m_MaxSize: {x: 18005, y: 14042}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 62
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  controlID: 159
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
-  vertical: 0
-  controlID: 62
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_MinSize: {x: 710, y: 492}
-  m_MaxSize: {x: 18005, y: 14042}
-  vertical: 0
-  controlID: 159
->>>>>>> parent of 4a7f8626... Mini-game upload
+  controlID: 294
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -408,26 +156,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 8}
-  - {fileID: 2}
-  - {fileID: 9}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1500
-    height: 958
-  m_MinSize: {x: 875, y: 542}
-  m_MaxSize: {x: 10000, y: 10000}
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -440,10 +168,6 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -453,66 +177,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 11}
   - {fileID: 12}
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 2560
-=======
-    width: 1500
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    width: 1500
->>>>>>> parent of 24afe964... Neutral stage finished
-    height: 30
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-    width: 809
+    width: 906
     height: 731
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  controlID: 36
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  controlID: 263
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-  controlID: 36
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  controlID: 263
->>>>>>> parent of 4a7f8626... Mini-game upload
+  controlID: 213
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -522,51 +202,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
-=======
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 1377
-    width: 2560
-=======
-    y: 938
-    width: 1500
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    y: 938
-    width: 1500
->>>>>>> parent of 24afe964... Neutral stage finished
-    height: 20
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-=======
     y: 0
-    width: 372
-    height: 455
-=======
-    y: 0
-    width: 372
-<<<<<<< HEAD
-    height: 346
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    height: 455
->>>>>>> parent of 4a7f8626... Mini-game upload
+    width: 353
+    height: 460
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
@@ -574,10 +219,6 @@ MonoBehaviour:
   - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -587,72 +228,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 11}
-  - {fileID: 6}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1197
-    height: 908
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
-  vertical: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  controlID: 127
-=======
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
-=======
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-  m_Name: InspectorWindow
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_Name: 
->>>>>>> parent of 4a7f8626... Mini-game upload
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1181
+    x: 1259
     y: 0
-    width: 355
+    width: 277
     height: 731
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-=======
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
->>>>>>> parent of 4a7f8626... Mini-game upload
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  controlID: 40
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-  controlID: 40
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -662,43 +254,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 5}
-  - {fileID: 12}
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 2000
-    height: 749
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
-  vertical: 0
-  controlID: 128
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-    width: 809
+    width: 906
     height: 375
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -707,26 +271,6 @@ MonoBehaviour:
   - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    width: 1197
-    height: 613
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
-  vertical: 0
-  controlID: 41
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    width: 1197
-    height: 613
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
-  vertical: 0
-  controlID: 41
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -737,61 +281,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Name: SceneView
-=======
   m_Name: 
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_Name: 
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 512
-    y: 0
-    width: 1488
-    height: 749
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-=======
-    x: 307
-    y: 0
-=======
-    x: 307
-    y: 0
->>>>>>> parent of 24afe964... Neutral stage finished
-    width: 890
-    height: 613
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
->>>>>>> parent of 24afe964... Neutral stage finished
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  - {fileID: 13}
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
     x: 0
     y: 375
-    width: 809
+    width: 906
     height: 356
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &13
@@ -803,19 +306,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
-  m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -824,55 +314,21 @@ MonoBehaviour:
   m_TitleContent:
     m_Text: Hierarchy
     m_Image: {fileID: -9000905672528348964, guid: 0000000000000000d000000000000000,
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 468
-    y: 181
-    width: 973
-    height: 501
-  m_ViewDataDictionary: {fileID: 0}
-=======
-    x: 808.8
+    x: 906.4
     y: 73.6
-    width: 370
-    height: 434
-=======
-    x: 808.8
-    y: 73.6
-    width: 370
-<<<<<<< HEAD
-    height: 325
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    height: 434
->>>>>>> parent of 4a7f8626... Mini-game upload
+    width: 351
+    height: 439
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_SelectedIDs: b0fe0000
+      m_SelectedIDs: 64240200
       m_LastClickedID: 0
-      m_ExpandedIDs: 9680ffffc2c8ffff
-=======
-      m_SelectedIDs: 90f40000a8f40000c0f40000d8f4000008f50000f0f4000020f500005af40000
-      m_LastClickedID: 0
-      m_ExpandedIDs: e8c5ffff6efbffff
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-      m_SelectedIDs: b0fe0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 9680ffffc2c8ffff
->>>>>>> parent of 4a7f8626... Mini-game upload
+      m_ExpandedIDs: 5698fbffdeccfbffea5afcff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -895,11 +351,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: f9f76199fabd1a14386c3334316d8743
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+  m_WindowGUID: 1c01c708c851d98408f0e1d1c74ff0f2
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -909,11 +361,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -926,9 +373,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1180.8
+    x: 1259.2001
     y: 73.6
-    width: 354
+    width: 276
     height: 710
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -952,10 +399,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -963,57 +406,15 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
-=======
     m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 822
-    width: 1999
-    height: 577
-=======
-    x: 808.8
-    y: 528
-    width: 370
-<<<<<<< HEAD
-    height: 364
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    y: 685
-    width: 1196
-    height: 274
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    y: 685
-    width: 1196
-    height: 274
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    height: 255
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-    x: 808.8
-    y: 528
-    width: 370
-<<<<<<< HEAD
-    height: 364
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    height: 255
->>>>>>> parent of 4a7f8626... Mini-game upload
+    x: 906.4
+    y: 533.60004
+    width: 351
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1028,117 +429,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    - Assets/Prefabs
+    - Assets/Scenes/Neutral
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
-=======
-    - Assets/Add-Ons/Pavement textures pack/pavement 03
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Add-Ons/Pavement textures pack/pavement 03
->>>>>>> parent of 24afe964... Neutral stage finished
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\abysm\Documents\GitHub\EducationalEducatorsVRProject
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 403}
-    m_SelectedIDs: e8cd0000
-    m_LastClickedID: 52712
-    m_ExpandedIDs: 00000000e2cd0000e4cd0000e6cd0000e8cd0000f0cd0000d6d00000eed0000008d10000d4d2000000ca9a3b
-=======
-    - Assets/Prefabs/Blocks
-=======
-    - Assets/Scenes
->>>>>>> parent of 4a7f8626... Mini-game upload
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scenes
-=======
-    - Assets/Prefabs/Blocks
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Prefabs/Blocks
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    - Assets/Scenes
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scenes
->>>>>>> parent of 4a7f8626... Mini-game upload
+  - Assets/Scenes/Neutral
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity\EducationalEducatorsVRProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedIDs: a6f20000
-    m_LastClickedID: 62118
-    m_ExpandedIDs: 0000000008db00000adb00000cdb00000edb000010db000012db000014db000016db000018db00001adb0000b4e00000b8e00000bce00000
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-=======
-    - Assets/Add-Ons/Pavement textures pack/pavement 03
-=======
-    - Assets/Add-Ons/MTree/examples
->>>>>>> parent of 3209bc89... Kick off for neutral
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Add-Ons/MTree/examples
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\abysm\Documents\GitHub\EducationalEducatorsVRProject
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-<<<<<<< HEAD
->>>>>>> parent of 24afe964... Neutral stage finished
-    scrollPos: {x: 0, y: 399}
-    m_SelectedIDs: ec120100
-    m_LastClickedID: 70380
-    m_ExpandedIDs: 0000000034100100361001003a1001003c1001004210010044100100461001004c100100ae100100e61201001e150100fc510100
-<<<<<<< HEAD
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    m_SelectedIDs: 2afb0000
-    m_LastClickedID: 64298
-    m_ExpandedIDs: 0000000042f6000046f600004af600004cf600004ef6000052f6000054f6000056f6000058f600005af60000
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-    scrollPos: {x: 0, y: 194}
-    m_SelectedIDs: bc100100
-    m_LastClickedID: 69820
-    m_ExpandedIDs: 00000000280f01002a0f01002c0f01002e0f0100300f0100320f0100340f0100360f0100380f01003a0f01003c10010002150100
->>>>>>> parent of 3209bc89... Kick off for neutral
-=======
-    m_SelectedIDs: a6f20000
-    m_LastClickedID: 62118
-    m_ExpandedIDs: 0000000008db00000adb00000cdb00000edb000010db000012db000014db000016db000018db00001adb0000b4e00000b8e00000bce00000
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_SelectedIDs: 2afb0000
-    m_LastClickedID: 64298
-    m_ExpandedIDs: 0000000042f6000046f600004af600004cf600004ef6000052f6000054f6000056f6000058f600005af60000
->>>>>>> parent of 4a7f8626... Mini-game upload
+    m_SelectedIDs: dc120200
+    m_LastClickedID: 135900
+    m_ExpandedIDs: 00000000ca120200cc120200ce120200d0120200d2120200d4120200d6120200da120200dc120200de120200e0120200e2120200e4120200e6120200e8120200ea120200ec120200ee120200f4120200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1166,35 +470,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000e2cd0000e4cd0000e6cd0000e8cd0000
-=======
-    m_ExpandedIDs: 0000000008db00000adb00000cdb00000edb000010db000012db000014db000016db000018db00001adb0000
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_ExpandedIDs: 000000003410010036100100381001003a1001003c1001003e10010040100100421001004410010046100100
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    m_ExpandedIDs: 000000003410010036100100381001003a1001003c1001003e10010040100100421001004410010046100100
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    m_ExpandedIDs: 0000000042f6000044f6000046f6000048f600004af600004cf600004ef6000050f6000052f6000054f6000056f6000058f600005af60000
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-    m_ExpandedIDs: 00000000280f01002a0f01002c0f01002e0f0100300f0100320f0100340f0100360f0100380f01003a0f0100
->>>>>>> parent of 3209bc89... Kick off for neutral
-=======
-    m_ExpandedIDs: 0000000008db00000adb00000cdb00000edb000010db000012db000014db000016db000018db00001adb0000
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_ExpandedIDs: 0000000042f6000044f6000046f6000048f600004af600004cf600004ef6000050f6000052f6000054f6000056f6000058f600005af60000
->>>>>>> parent of 4a7f8626... Mini-game upload
+    m_ExpandedIDs: 00000000ca120200cc120200ce120200d0120200d2120200d4120200d6120200d8120200da120200dc120200de120200e0120200e2120200e4120200e6120200e8120200ea120200ec120200ee120200f0120200f2120200f4120200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1222,23 +498,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedInstanceIDs: c623000034a30100
-=======
     m_ExpandedInstanceIDs: 
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_ExpandedInstanceIDs: c6230000
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    m_ExpandedInstanceIDs: c6230000
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    m_ExpandedInstanceIDs: 
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1254,35 +514,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 4}
-=======
-      m_ClientGUIView: {fileID: 2}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-      m_ClientGUIView: {fileID: 12}
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-      m_ClientGUIView: {fileID: 12}
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
       m_ClientGUIView: {fileID: 0}
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-      m_ClientGUIView: {fileID: 6}
->>>>>>> parent of 3209bc89... Kick off for neutral
-=======
-      m_ClientGUIView: {fileID: 2}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-      m_ClientGUIView: {fileID: 0}
->>>>>>> parent of 4a7f8626... Mini-game upload
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1293,53 +525,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_DirectoriesAreaWidth: 115
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1197
-    y: 72
-    width: 302
-    height: 887
-  m_ViewDataDictionary: {fileID: 0}
-  m_OpenAddComponentMenu: 0
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewResizer:
-    m_CachedPref: 160
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
-=======
-  m_DirectoriesAreaWidth: 151
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_DirectoriesAreaWidth: 151
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+  m_DirectoriesAreaWidth: 143
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1349,101 +535,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-=======
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
-=======
     m_Text: Game
     m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_Text: Game
-    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 73
-    width: 511
-    height: 728
-=======
-    y: 72
-    width: 306
-    height: 592
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    y: 72
-    width: 306
-    height: 592
->>>>>>> parent of 24afe964... Neutral stage finished
-  m_ViewDataDictionary: {fileID: 0}
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: def00000
-      m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_ExpandedIDs: 4e64fdffa095fdff3e97fdff0099fdffc0f20000b4f40000
-=======
-      m_ExpandedIDs: be12fcff469dfcff849ffcff7429fdff162afdffbafdfdff6e00feff588afeff848ffeff4090feff021bffff384fffff484fffff6cfbffff26750000f83f0100964901001c4b0100
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-      m_ExpandedIDs: be12fcff469dfcff849ffcff7429fdff162afdffbafdfdff6e00feff588afeff848ffeff4090feff021bffff384fffff484fffff6cfbffff26750000f83f0100964901001c4b0100
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-      m_ExpandedIDs: 8463ffff3273ffffb47afffffa7cffff4a7effffe480ffff7a81ffff2282ffff5082ffffd082ffff0c83ffff7483ffff3ae7ffff6efbffffbc740000
->>>>>>> parent of 3209bc89... Kick off for neutral
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: SignPost (8)
-        m_OriginalName: SignPost (8)
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: -36028
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 0
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 5}
-      m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 0
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: fba138b266721ab4e9a3650359a6dc1a
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
     y: 448
-    width: 808
+    width: 905
     height: 335
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewsNames: []
@@ -1452,7 +558,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1010, y: 392.5}
+  m_TargetSize: {x: 1131.25, y: 392.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1466,8 +572,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -404
-    m_HBaseRangeMax: 404
+    m_HBaseRangeMin: -452.5
+    m_HBaseRangeMax: 452.5
     m_VBaseRangeMin: -157
     m_VBaseRangeMax: 157
     m_HAllowExceedBaseRangeMin: 1
@@ -1487,32 +593,28 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 808
+      width: 905
       height: 314
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 404, y: 157}
+    m_Translation: {x: 452.5, y: 157}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -404
+      x: -452.5
       y: -157
-      width: 808
+      width: 905
       height: 314
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1010, y: 418.75}
+  m_LastWindowPixelSize: {x: 1131.25, y: 418.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1529,55 +631,18 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
-=======
     m_Image: {fileID: -131512000283675692, guid: 0000000000000000d000000000000000,
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_Image: {fileID: -131512000283675692, guid: 0000000000000000d000000000000000,
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 512
-    y: 73
-    width: 1486
-    height: 728
-=======
-=======
->>>>>>> parent of 24afe964... Neutral stage finished
-    x: 307
-    y: 72
-    width: 888
-    height: 592
-<<<<<<< HEAD
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
->>>>>>> parent of 24afe964... Neutral stage finished
-  m_ViewDataDictionary: {fileID: 0}
-  m_ShowContextualTools: 0
-  m_WindowGUID: 87809e06a5bc3e24f8de1dc3fe2e948f
-=======
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
     x: 0
     y: 73.6
-    width: 808
+    width: 905
     height: 354
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 24c1db953e0c781439a5932b8509b0a7
-<<<<<<< HEAD
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+  m_WindowGUID: bb31bff51cfdf4e4ca77aa217bb7f79c
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -1586,51 +651,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 40.842808, y: 3.7552185, z: 19.803465}
+    m_Target: {x: 36.624744, y: 3.3491752, z: 51.191547}
     speed: 2
-    m_Value: {x: 40.842808, y: 3.7552185, z: 19.803465}
-=======
-    m_Target: {x: 1.7697765, y: -1.8205785, z: 45.19957}
-    speed: 2
-    m_Value: {x: 1.7697765, y: -1.8205785, z: 45.19957}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_Target: {x: 51.057228, y: 8.188461, z: 40.071056}
-    speed: 2
-    m_Value: {x: 51.057228, y: 8.188461, z: 40.071056}
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    m_Target: {x: 51.057228, y: 8.188461, z: 40.071056}
-    speed: 2
-    m_Value: {x: 51.057228, y: 8.188461, z: 40.071056}
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    m_Target: {x: 26.351072, y: 2.1463273, z: 21.10253}
-    speed: 2
-    m_Value: {x: 26.351072, y: 2.1463273, z: 21.10253}
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-    m_Target: {x: 105.432205, y: -25.214273, z: 33.30095}
-    speed: 2
-    m_Value: {x: 105.432205, y: -25.214273, z: 33.30095}
->>>>>>> parent of 3209bc89... Kick off for neutral
-=======
-    m_Target: {x: 1.7697765, y: -1.8205785, z: 45.19957}
-    speed: 2
-    m_Value: {x: 1.7697765, y: -1.8205785, z: 45.19957}
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_Target: {x: 26.351072, y: 2.1463273, z: 21.10253}
-    speed: 2
-    m_Value: {x: 26.351072, y: 2.1463273, z: 21.10253}
->>>>>>> parent of 4a7f8626... Mini-game upload
+    m_Value: {x: 36.624744, y: 3.3491752, z: 51.191547}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1641,18 +664,8 @@ MonoBehaviour:
   m_ExposureSliderValue: 0
   m_ExposureSliderMax: 10
   m_SceneViewState:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    showFog: 0
-    showMaterialUpdate: 1
-=======
     showFog: 1
     showMaterialUpdate: 0
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    showFog: 1
-    showMaterialUpdate: 0
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
@@ -1686,94 +699,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 0.2353583, y: 0.45523265, z: -0.12614115, w: 0.8493881}
+    m_Target: {x: -0.030205315, y: 0.43688858, z: 0.014681023, w: 0.8988911}
     speed: 2
-    m_Value: {x: 0.23790516, y: 0.45485172, z: -0.12750615, w: 0.8486774}
-  m_Size:
-    m_Target: 67.675415
-    speed: 2
-    m_Value: 64.76116
-=======
-    m_Target: {x: 0.04496924, y: 0.026368206, z: -0.0011871834, w: 0.99864143}
-=======
-    m_Target: {x: -0.032279026, y: -0.30564743, z: 0.010368268, w: -0.9515434}
->>>>>>> parent of 4a7f8626... Mini-game upload
-    speed: 2
-    m_Value: {x: -0.032294467, y: -0.3042191, z: 0.010319815, w: -0.95199865}
+    m_Value: {x: -0.03022723, y: 0.4355387, z: 0.0146356635, w: 0.8995433}
   m_Size:
     m_Target: 10
     speed: 2
-<<<<<<< HEAD
-    m_Value: 52.841106
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_Target: {x: -0.6509915, y: -0.003864585, z: 0.0033184905, w: -0.7590713}
-    speed: 2
-    m_Value: {x: -0.6475618, y: -0.0050224517, z: 0.004272405, w: -0.7619845}
-  m_Size:
-    m_Target: 60.793377
-    speed: 2
-    m_Value: 66.80591
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
-    m_Target: {x: -0.6509915, y: -0.003864585, z: 0.0033184905, w: -0.7590713}
-=======
-    m_Target: {x: -0.21558249, y: -0.46251988, z: 0.117005356, w: -0.8520381}
->>>>>>> parent of 3209bc89... Kick off for neutral
-    speed: 2
-    m_Value: {x: -0.20971385, y: -0.50285435, z: 0.1272108, w: -0.82883966}
-  m_Size:
-    m_Target: 96.156876
-    speed: 2
-<<<<<<< HEAD
-    m_Value: 66.80591
->>>>>>> parent of 24afe964... Neutral stage finished
-=======
     m_Value: 10
->>>>>>> parent of 4a7f8626... Mini-game upload
-=======
-    m_Value: 88.217316
->>>>>>> parent of 3209bc89... Kick off for neutral
-=======
-    m_Target: {x: 0.04496924, y: 0.026368206, z: -0.0011871834, w: 0.99864143}
-=======
-    m_Target: {x: -0.032279026, y: -0.30564743, z: 0.010368268, w: -0.9515434}
->>>>>>> parent of 4a7f8626... Mini-game upload
-    speed: 2
-    m_Value: {x: -0.032294467, y: -0.3042191, z: 0.010319815, w: -0.95199865}
-  m_Size:
-    m_Target: 10
-    speed: 2
-<<<<<<< HEAD
-    m_Value: 52.841106
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_Value: 10
->>>>>>> parent of 4a7f8626... Mini-game upload
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Speed: 2
-    m_SpeedNormalized: 1
-=======
     m_Speed: 1
     m_SpeedNormalized: 0.5
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1791,124 +730,3 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 685
-    width: 1223
-    height: 274
-  m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewsNames: []
-  m_SerializedViewsValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1223, y: 253}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -305.75
-    m_HBaseRangeMax: 305.75
-    m_VBaseRangeMin: -63.25
-    m_VBaseRangeMax: 63.25
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 1223
-      height: 253
-    m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 611.5, y: 126.5}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -305.75
-      y: -63.25
-      width: 611.5
-      height: 126.5
-    m_MinimalGUI: 1
-  m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 2446, y: 548}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1197
-    y: 72
-    width: 302
-    height: 887
-  m_ViewDataDictionary: {fileID: 0}
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
-=======
->>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
