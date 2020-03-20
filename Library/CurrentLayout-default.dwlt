@@ -42,8 +42,12 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
+<<<<<<< HEAD
   m_MinSize: {x: 875, y: 300}
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> parent of 4a7f8626... Mini-game upload
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -81,9 +85,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 346
+    y: 455
     width: 372
-    height: 385
+    height: 276
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 15}
@@ -142,6 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 87
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 =======
@@ -150,6 +155,9 @@ MonoBehaviour:
 =======
   controlID: 39
 >>>>>>> parent of 24afe964... Neutral stage finished
+=======
+  controlID: 304
+>>>>>>> parent of 4a7f8626... Mini-game upload
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +200,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 --- !u!114 &5
@@ -241,8 +249,12 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< HEAD
   m_LastLoadedLayoutName: 
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+  m_LastLoadedLayoutName: 2 by 3
+>>>>>>> parent of 4a7f8626... Mini-game upload
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -285,11 +297,15 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 710, y: 492}
+  m_MaxSize: {x: 18005, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 62
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+  controlID: 159
+>>>>>>> parent of 4a7f8626... Mini-game upload
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -375,8 +391,12 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 36
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+  controlID: 263
+>>>>>>> parent of 4a7f8626... Mini-game upload
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,7 +436,7 @@ MonoBehaviour:
 =======
     y: 0
     width: 372
-    height: 346
+    height: 455
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
@@ -455,7 +475,7 @@ MonoBehaviour:
   controlID: 127
 =======
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -464,8 +484,8 @@ MonoBehaviour:
     y: 0
     width: 355
     height: 731
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -639,14 +659,14 @@ MonoBehaviour:
     x: 808.8
     y: 73.6
     width: 370
-    height: 325
+    height: 434
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 90f40000a8f40000c0f40000d8f4000008f50000f0f4000020f500005af40000
+      m_SelectedIDs: b0fe0000
       m_LastClickedID: 0
-      m_ExpandedIDs: e8c5ffff6efbffff
+      m_ExpandedIDs: 9680ffffc2c8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -746,8 +766,9 @@ MonoBehaviour:
     height: 577
 =======
     x: 808.8
-    y: 419.2
+    y: 528
     width: 370
+<<<<<<< HEAD
     height: 364
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 =======
@@ -760,6 +781,9 @@ MonoBehaviour:
     width: 1196
     height: 274
 >>>>>>> parent of 24afe964... Neutral stage finished
+=======
+    height: 255
+>>>>>>> parent of 4a7f8626... Mini-game upload
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -774,6 +798,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -801,16 +826,20 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000e2cd0000e4cd0000e6cd0000e8cd0000f0cd0000d6d00000eed0000008d10000d4d2000000ca9a3b
 =======
     - Assets/Prefabs/Blocks
+=======
+    - Assets/Scenes
+>>>>>>> parent of 4a7f8626... Mini-game upload
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Blocks
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity\EducationalEducatorsVRProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: a6f20000
     m_LastClickedID: 62118
     m_ExpandedIDs: 0000000008db00000adb00000cdb00000edb000010db000012db000014db000016db000018db00001adb0000b4e00000b8e00000bce00000
@@ -836,6 +865,11 @@ MonoBehaviour:
 >>>>>>> parent of 24afe964... Neutral stage finished
 =======
 >>>>>>> parent of 24afe964... Neutral stage finished
+=======
+    m_SelectedIDs: 2afb0000
+    m_LastClickedID: 64298
+    m_ExpandedIDs: 0000000042f6000046f600004af600004cf600004ef6000052f6000054f6000056f6000058f600005af60000
+>>>>>>> parent of 4a7f8626... Mini-game upload
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -866,6 +900,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000e2cd0000e4cd0000e6cd0000e8cd0000
 =======
     m_ExpandedIDs: 0000000008db00000adb00000cdb00000edb000010db000012db000014db000016db000018db00001adb0000
@@ -876,6 +911,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000003410010036100100381001003a1001003c1001003e10010040100100421001004410010046100100
 >>>>>>> parent of 24afe964... Neutral stage finished
+=======
+    m_ExpandedIDs: 0000000042f6000044f6000046f6000048f600004af600004cf600004ef6000050f6000052f6000054f6000056f6000058f600005af60000
+>>>>>>> parent of 4a7f8626... Mini-game upload
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -934,6 +972,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 4}
 =======
       m_ClientGUIView: {fileID: 2}
@@ -944,6 +983,9 @@ MonoBehaviour:
 =======
       m_ClientGUIView: {fileID: 12}
 >>>>>>> parent of 24afe964... Neutral stage finished
+=======
+      m_ClientGUIView: {fileID: 0}
+>>>>>>> parent of 4a7f8626... Mini-game upload
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1217,6 +1259,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 40.842808, y: 3.7552185, z: 19.803465}
     speed: 2
     m_Value: {x: 40.842808, y: 3.7552185, z: 19.803465}
@@ -1235,6 +1278,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 51.057228, y: 8.188461, z: 40.071056}
 >>>>>>> parent of 24afe964... Neutral stage finished
+=======
+    m_Target: {x: 26.351072, y: 2.1463273, z: 21.10253}
+    speed: 2
+    m_Value: {x: 26.351072, y: 2.1463273, z: 21.10253}
+>>>>>>> parent of 4a7f8626... Mini-game upload
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1288,6 +1336,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.2353583, y: 0.45523265, z: -0.12614115, w: 0.8493881}
     speed: 2
     m_Value: {x: 0.23790516, y: 0.45485172, z: -0.12750615, w: 0.8486774}
@@ -1297,11 +1346,15 @@ MonoBehaviour:
     m_Value: 64.76116
 =======
     m_Target: {x: 0.04496924, y: 0.026368206, z: -0.0011871834, w: 0.99864143}
+=======
+    m_Target: {x: -0.032279026, y: -0.30564743, z: 0.010368268, w: -0.9515434}
+>>>>>>> parent of 4a7f8626... Mini-game upload
     speed: 2
-    m_Value: {x: 0.044969156, y: 0.02636816, z: -0.0011871813, w: 0.99863964}
+    m_Value: {x: -0.032294467, y: -0.3042191, z: 0.010319815, w: -0.95199865}
   m_Size:
-    m_Target: 52.841106
+    m_Target: 10
     speed: 2
+<<<<<<< HEAD
     m_Value: 52.841106
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 =======
@@ -1322,6 +1375,9 @@ MonoBehaviour:
     speed: 2
     m_Value: 66.80591
 >>>>>>> parent of 24afe964... Neutral stage finished
+=======
+    m_Value: 10
+>>>>>>> parent of 4a7f8626... Mini-game upload
   m_Ortho:
     m_Target: 0
     speed: 2
