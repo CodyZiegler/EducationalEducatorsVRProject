@@ -17,9 +17,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 43
     width: 2560
     height: 1397
+=======
+    y: 42
+    width: 1500
+    height: 958
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     y: 42
     width: 1500
@@ -65,6 +71,7 @@ MonoBehaviour:
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 125
 =======
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
@@ -85,6 +92,9 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+  controlID: 38
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
   controlID: 38
 >>>>>>> parent of 24afe964... Neutral stage finished
@@ -118,6 +128,7 @@ MonoBehaviour:
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 126
 =======
   - {fileID: 9}
@@ -133,6 +144,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 87
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+  controlID: 39
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
   controlID: 39
 >>>>>>> parent of 24afe964... Neutral stage finished
@@ -204,8 +218,13 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 512
     height: 749
+=======
+    width: 307
+    height: 613
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     width: 307
     height: 613
@@ -338,7 +357,11 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 2560
+=======
+    width: 1500
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     width: 1500
 >>>>>>> parent of 24afe964... Neutral stage finished
@@ -376,8 +399,13 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 1377
     width: 2560
+=======
+    y: 938
+    width: 1500
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     y: 938
     width: 1500
@@ -423,6 +451,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 127
 =======
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
@@ -443,6 +472,9 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+  controlID: 40
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
   controlID: 40
 >>>>>>> parent of 24afe964... Neutral stage finished
@@ -474,6 +506,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 2000
     height: 749
   m_MinSize: {x: 403, y: 221}
@@ -491,6 +524,14 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+    width: 1197
+    height: 613
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 41
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     width: 1197
     height: 613
@@ -520,6 +561,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 512
     y: 0
     width: 1488
@@ -529,6 +571,10 @@ MonoBehaviour:
 =======
     x: 307
     y: 0
+=======
+    x: 307
+    y: 0
+>>>>>>> parent of 24afe964... Neutral stage finished
     width: 890
     height: 613
   m_MinSize: {x: 202, y: 221}
@@ -694,6 +740,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 822
     width: 1999
     height: 577
@@ -703,6 +750,11 @@ MonoBehaviour:
     width: 370
     height: 364
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+    y: 685
+    width: 1196
+    height: 274
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     y: 685
     width: 1196
@@ -722,6 +774,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     - Assets/Prefabs
@@ -763,10 +816,25 @@ MonoBehaviour:
     m_ExpandedIDs: 0000000008db00000adb00000cdb00000edb000010db000012db000014db000016db000018db00001adb0000b4e00000b8e00000bce00000
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
 =======
+=======
+    - Assets/Add-Ons/Pavement textures pack/pavement 03
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Add-Ons/Pavement textures pack/pavement 03
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\abysm\Documents\GitHub\EducationalEducatorsVRProject
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+>>>>>>> parent of 24afe964... Neutral stage finished
     scrollPos: {x: 0, y: 399}
     m_SelectedIDs: ec120100
     m_LastClickedID: 70380
     m_ExpandedIDs: 0000000034100100361001003a1001003c1001004210010044100100461001004c100100ae100100e61201001e150100fc510100
+<<<<<<< HEAD
+>>>>>>> parent of 24afe964... Neutral stage finished
+=======
 >>>>>>> parent of 24afe964... Neutral stage finished
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -797,10 +865,14 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000e2cd0000e4cd0000e6cd0000e8cd0000
 =======
     m_ExpandedIDs: 0000000008db00000adb00000cdb00000edb000010db000012db000014db000016db000018db00001adb0000
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+    m_ExpandedIDs: 000000003410010036100100381001003a1001003c1001003e10010040100100421001004410010046100100
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     m_ExpandedIDs: 000000003410010036100100381001003a1001003c1001003e10010040100100421001004410010046100100
 >>>>>>> parent of 24afe964... Neutral stage finished
@@ -833,10 +905,14 @@ MonoBehaviour:
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c623000034a30100
 =======
     m_ExpandedInstanceIDs: 
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     m_ExpandedInstanceIDs: c6230000
 >>>>>>> parent of 24afe964... Neutral stage finished
@@ -857,10 +933,14 @@ MonoBehaviour:
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 4}
 =======
       m_ClientGUIView: {fileID: 2}
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+      m_ClientGUIView: {fileID: 12}
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
       m_ClientGUIView: {fileID: 12}
 >>>>>>> parent of 24afe964... Neutral stage finished
@@ -950,9 +1030,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 73
     width: 511
     height: 728
+=======
+    y: 72
+    width: 306
+    height: 592
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     y: 72
     width: 306
@@ -965,7 +1051,11 @@ MonoBehaviour:
       m_SelectedIDs: def00000
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 4e64fdffa095fdff3e97fdff0099fdffc0f20000b4f40000
+=======
+      m_ExpandedIDs: be12fcff469dfcff849ffcff7429fdff162afdffbafdfdff6e00feff588afeff848ffeff4090feff021bffff384fffff484fffff6cfbffff26750000f83f0100964901001c4b0100
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
       m_ExpandedIDs: be12fcff469dfcff849ffcff7429fdff162afdffbafdfdff6e00feff588afeff848ffeff4090feff021bffff384fffff484fffff6cfbffff26750000f83f0100964901001c4b0100
 >>>>>>> parent of 24afe964... Neutral stage finished
@@ -1088,15 +1178,21 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 512
     y: 73
     width: 1486
     height: 728
 =======
+=======
+>>>>>>> parent of 24afe964... Neutral stage finished
     x: 307
     y: 72
     width: 888
     height: 592
+<<<<<<< HEAD
+>>>>>>> parent of 24afe964... Neutral stage finished
+=======
 >>>>>>> parent of 24afe964... Neutral stage finished
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -1120,6 +1216,7 @@ MonoBehaviour:
   m_Position:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 40.842808, y: 3.7552185, z: 19.803465}
     speed: 2
     m_Value: {x: 40.842808, y: 3.7552185, z: 19.803465}
@@ -1128,6 +1225,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 1.7697765, y: -1.8205785, z: 45.19957}
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+    m_Target: {x: 51.057228, y: 8.188461, z: 40.071056}
+    speed: 2
+    m_Value: {x: 51.057228, y: 8.188461, z: 40.071056}
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     m_Target: {x: 51.057228, y: 8.188461, z: 40.071056}
     speed: 2
@@ -1185,6 +1287,7 @@ MonoBehaviour:
   m_Rotation:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.2353583, y: 0.45523265, z: -0.12614115, w: 0.8493881}
     speed: 2
     m_Value: {x: 0.23790516, y: 0.45485172, z: -0.12750615, w: 0.8486774}
@@ -1201,6 +1304,15 @@ MonoBehaviour:
     speed: 2
     m_Value: 52.841106
 >>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
+=======
+    m_Target: {x: -0.6509915, y: -0.003864585, z: 0.0033184905, w: -0.7590713}
+    speed: 2
+    m_Value: {x: -0.6475618, y: -0.0050224517, z: 0.004272405, w: -0.7619845}
+  m_Size:
+    m_Target: 60.793377
+    speed: 2
+    m_Value: 66.80591
+>>>>>>> parent of 24afe964... Neutral stage finished
 =======
     m_Target: {x: -0.6509915, y: -0.003864585, z: 0.0033184905, w: -0.7590713}
     speed: 2
