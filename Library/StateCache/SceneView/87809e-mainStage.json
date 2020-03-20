@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":40.84280776977539,"y":3.755218505859375,"z":19.803464889526368},"rotation":{"x":0.23535829782485963,"y":0.4552326500415802,"z":-0.12614114582538606,"w":0.8493881225585938},"size":67.6754150390625,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":51.057228088378909,"y":8.188461303710938,"z":40.0710563659668},"rotation":{"x":-0.6509914994239807,"y":-0.00386458495631814,"z":0.0033184904605150224,"w":-0.7590712904930115},"size":60.79337692260742,"orthographic":false}
+>>>>>>> parent of 24afe964... Neutral stage finished
