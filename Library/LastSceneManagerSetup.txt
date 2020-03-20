@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Negative.unity
+=======
+- path: Assets/Scenes/Mini-game.unity
+>>>>>>> parent of ee5fe90f... Merge branch 'master' of https://github.com/CodyZiegler/EducationalEducatorsVRProject
   isLoaded: 1
   isActive: 1
   isSubScene: 0
