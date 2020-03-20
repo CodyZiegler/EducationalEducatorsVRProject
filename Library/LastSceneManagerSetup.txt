@@ -1,6 +1,7 @@
 sceneSetups:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/Negative.unity
 =======
 - path: Assets/Scenes/Mini-game.unity
@@ -8,6 +9,9 @@ sceneSetups:
 =======
 - path: Assets/Scenes/Negative.unity
 >>>>>>> parent of 4a7f8626... Mini-game upload
+=======
+- path: Assets/Scenes/HappyAmusmentPrk.unity
+>>>>>>> parent of 3209bc89... Kick off for neutral
   isLoaded: 1
   isActive: 1
   isSubScene: 0

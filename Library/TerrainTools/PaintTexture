@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: UnityEditor:UnityEditor.Experimental.TerrainAPI:PaintTextureTool
+<<<<<<< HEAD
   m_SelectedTerrainLayer: {fileID: 8574412962073106934, guid: 07547fffe9f87734582e1acde6a40cb8,
+=======
+  m_SelectedTerrainLayer: {fileID: 8574412962073106934, guid: 61c2de26244a24e499f9c3831cad0a72,
+>>>>>>> parent of 3209bc89... Kick off for neutral
     type: 2}
