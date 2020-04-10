@@ -6,7 +6,6 @@ using BNG;
 public class BlockHandler : MonoBehaviour
 {
     public List<GameObject> block = new List<GameObject>();
-    public List<GameObject> tempBlock;
     public GameObject placement;
     public int numOfBlocks, timer;
 
@@ -19,7 +18,6 @@ public class BlockHandler : MonoBehaviour
         GenerateBlocks();
         vecs = new List<Vector3> {new Vector3(.5f, 1f, 0f), new Vector3(.5f, 1f, .2f), new Vector3(.5f, 1f, -.2f), new Vector3(-.5f, 1f, 0f),
                                    new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.2f, 1f, -.5f), new Vector3(-.2f, 1f, -.5f)};
-        populateTempBlock();
     }
 
     void Update()
@@ -37,13 +35,13 @@ public class BlockHandler : MonoBehaviour
         float x = -xInc * .2f;
         for (int i = 0; i < numOfBlocks; i++)
         {
-            int rand = Random.Range(0, tempBlock.Count);
+            int rand = Random.Range(0, block.Count);
             Instantiate(placement, new Vector3(x, 1f, 0), placement.transform.rotation);
-            Instantiate(tempBlock[rand], new Vector3(x, 1f, 0.5f), Quaternion.identity);
-            tempBlock.RemoveAt(rand);
+            Instantiate(block[rand], new Vector3(x, 1f, 0.5f), Quaternion.identity);
+            block.RemoveAt(rand);
             x += .2f;
         }
-        tempBlock.Clear();
+
         Invoke("BlockFall", timer);
     }
 
@@ -58,15 +56,7 @@ public class BlockHandler : MonoBehaviour
         }
     }
 
-    void populateTempBlock() {
-        foreach (GameObject b in block)
-        {
-            tempBlock.Add(b);
-        }
-    }
-
     void CorrectPlacement() {
-        populateTempBlock();
         ClearBlocks();
         numOfBlocks++;
         GenerateBlocks();
