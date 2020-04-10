@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BNG;
 
 public class BlockHandler : MonoBehaviour
 {
@@ -8,13 +9,22 @@ public class BlockHandler : MonoBehaviour
     public GameObject placement;
     public int numOfBlocks, timer;
 
+    private InputBridge input;
     private List<Vector3> vecs;
 
     void Start()
     {
+        input = GetComponent<InputBridge>();
         GenerateBlocks();
         vecs = new List<Vector3> {new Vector3(.5f, 1f, 0f), new Vector3(.5f, 1f, .2f), new Vector3(.5f, 1f, -.2f), new Vector3(-.5f, 1f, 0f),
                                    new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.2f, 1f, -.5f), new Vector3(-.2f, 1f, -.5f)};
+    }
+
+    private void Update()
+    {
+        if (input.RightThumbstickDown) {
+            checkBlocks();
+        }
     }
 
 
@@ -46,11 +56,40 @@ public class BlockHandler : MonoBehaviour
     }
 
     void CorrectPlacement() {
+        ClearBlocks();
         numOfBlocks++;
         GenerateBlocks();
     }
 
-    void WrongBlocks() {
+    void WrongPlacements() {
         // This will need to output to a file both the time and amount of levels correct.
+    }
+
+    void ClearBlocks() {
+        GameObject[] allBlocks = GameObject.FindGameObjectsWithTag("Block");
+        GameObject[] allPlacements = GameObject.FindGameObjectsWithTag("Placement");
+        foreach (GameObject b in allBlocks) {
+            Destroy(b);
+        }
+        foreach (GameObject p in allPlacements) {
+            Destroy(p);
+        }
+    }
+
+    void checkBlocks() {
+        GameObject[] foundBlocks = GameObject.FindGameObjectsWithTag("Block");
+        bool blocksOK = true;
+        foreach (GameObject fb in foundBlocks) {
+            if (!fb.GetComponent<BlockPosition>().checkPosition()) {
+                blocksOK = false;
+            }
+        }
+        if (blocksOK)
+        {
+            CorrectPlacement();
+        }
+        else {
+            WrongPlacements();
+        }
     }
 }

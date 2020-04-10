@@ -9,6 +9,7 @@ TagManager:
   - Environment/Sign
   - Block
   - BlockTrigger
+  - Placement
   layers:
   - Default
   - TransparentFX

@@ -513,6 +513,7 @@
     <Compile Include="Assets\Add-Ons\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Add-Ons\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\Mini-game\BlockHandler.cs" />
+    <Compile Include="Assets\Scripts\Mini-game\BlockPosition.cs" />
     <Compile Include="Assets\Scripts\Scripts\AnimalHandler.cs" />
     <Compile Include="Assets\Scripts\Scripts\BreakController.cs" />
     <Compile Include="Assets\Scripts\Scripts\CameraRaycaster.cs" />

@@ -229,7 +229,7 @@ MonoBehaviour:
   placement: {fileID: 6740568316631146092, guid: be6ec6d9d535e004a93de1d6dc14d3c3,
     type: 3}
   numOfBlocks: 3
-  timer: 5
+  timer: 3
 --- !u!1 &559243225
 GameObject:
   m_ObjectHideFlags: 0
