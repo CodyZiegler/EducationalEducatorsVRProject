@@ -20,9 +20,10 @@ public class BlockHandler : MonoBehaviour
                                    new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.2f, 1f, -.5f), new Vector3(-.2f, 1f, -.5f)};
     }
 
-    private void Update()
+    void Update()
     {
-        if (input.RightThumbstickDown) {
+        if (input.RightThumbstickDown) 
+        {
             checkBlocks();
         }
     }

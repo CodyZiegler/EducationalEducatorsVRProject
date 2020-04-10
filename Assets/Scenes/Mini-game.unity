@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 115883005}
   - component: {fileID: 115883004}
   - component: {fileID: 115883007}
+  - component: {fileID: 115883008}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -230,6 +231,46 @@ MonoBehaviour:
     type: 3}
   numOfBlocks: 3
   timer: 3
+--- !u!114 &115883008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115883003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49877b2c8de1d6e4ebc9ca5d8ea02d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftGrip: 0
+  LeftGripDown: 0
+  RightGrip: 0
+  RightGripDown: 0
+  LeftTrigger: 0
+  LeftTriggerNear: 0
+  LeftTriggerDown: 0
+  RightTrigger: 0
+  RightTriggerDown: 0
+  RightTriggerNear: 0
+  LeftThumbNear: 0
+  RightThumbNear: 0
+  LeftThumbstickDown: 0
+  RightThumbstickDown: 0
+  AButton: 0
+  AButtonDown: 0
+  BButton: 0
+  BButtonDown: 0
+  XButton: 0
+  XButtonDown: 0
+  YButton: 0
+  YButtonDown: 0
+  StartButton: 0
+  StartButtonDown: 0
+  BackButton: 0
+  BackButtonDown: 0
+  LeftThumbstickAxis: {x: 0, y: 0}
+  RightThumbstickAxis: {x: 0, y: 0}
 --- !u!1 &559243225
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,65 +370,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 784175436468591726, guid: 5473e17f2443cd74c824a7b89f0585f1,
+    - target: {fileID: 2855280173185938736, guid: 5473e17f2443cd74c824a7b89f0585f1,
         type: 3}
-      propertyPath: m_BoundingSphereOverride.x
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 784175436468591726, guid: 5473e17f2443cd74c824a7b89f0585f1,
+    - target: {fileID: 2855280174128053887, guid: 5473e17f2443cd74c824a7b89f0585f1,
         type: 3}
-      propertyPath: m_BoundingSphereOverride.y
+      propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 784175436468591726, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 784175436468591726, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2855280173486080451, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: renderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2855280173486080451, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: extraRenderTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2855280173786875994, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: ItemsHolder
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2855280174561584250, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126316350767954442, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126316350767954442, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126316350767954442, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: NaN
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126316350767954442, guid: 5473e17f2443cd74c824a7b89f0585f1,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: 1.01e-43
       objectReference: {fileID: 0}
     - target: {fileID: 8202325032701421788, guid: 5473e17f2443cd74c824a7b89f0585f1,
         type: 3}
@@ -448,6 +439,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404313865222130002, guid: 5473e17f2443cd74c824a7b89f0585f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404313865273836503, guid: 5473e17f2443cd74c824a7b89f0585f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5473e17f2443cd74c824a7b89f0585f1, type: 3}

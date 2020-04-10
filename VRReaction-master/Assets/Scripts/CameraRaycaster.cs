@@ -11,7 +11,6 @@ public class CameraRaycaster : MonoBehaviour
         int layer = 1 << 8;
         Debug.DrawRay(r.origin, r.direction, Color.blue);
 
-
         layer = ~layer;
         if (Physics.Raycast(r, out hit, 10, layer))
         {
