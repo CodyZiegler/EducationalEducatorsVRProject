@@ -27,6 +27,7 @@ namespace BNG {
 
         CanvasScaler ringCanvas;
         Text ringText;
+        Image ringImage;
         GrabbablesInTrigger nearbyGrabbables;
 
         bool validSnap = false;
@@ -36,20 +37,29 @@ namespace BNG {
         void Start() {
             ringCanvas = GetComponent<CanvasScaler>();
             ringText = GetComponent<Text>();
+            ringImage = GetComponent<Image>();
             nearbyGrabbables = Snap.GetComponent<GrabbablesInTrigger>();
         }
 
         // Update is called once per frame
-        void Update() {
+        void Update()
+        {
 
             validSnap = checkIsValidSnap();
 
             // Scale
             float lerpTo = validSnap ? ValidSnapScale : RestingScale;
             ringCanvas.dynamicPixelsPerUnit = Mathf.Lerp(ringCanvas.dynamicPixelsPerUnit, lerpTo, Time.deltaTime * ScaleSpeed);
-
             // Color
-            ringText.color = validSnap ? ValidSnapColor : RestingColor;
+            if (ringText != null)
+            {
+                ringText.color = validSnap ? ValidSnapColor : RestingColor;
+            }
+            else
+            {
+                // Color
+                ringImage.color = validSnap ? ValidSnapColor : RestingColor;
+            }
         }
 
         bool checkIsValidSnap() {

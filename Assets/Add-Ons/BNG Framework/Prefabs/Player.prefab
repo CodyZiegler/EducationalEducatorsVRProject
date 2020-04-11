@@ -46129,6 +46129,7 @@ GameObject:
   - component: {fileID: 8202325032666577082}
   - component: {fileID: 8202325032660623370}
   - component: {fileID: 8202325032672103464}
+  - component: {fileID: 3431934539403500718}
   - component: {fileID: 2855280173486080451}
   m_Layer: 0
   m_Name: CenterEyeAnchor
@@ -46222,6 +46223,18 @@ MonoBehaviour:
   fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
   fadeOnStart: 1
   renderQueue: 5000
+--- !u!114 &3431934539403500718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8202325032661722806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c5a4000aac2b748802795471f20d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2855280173486080451
 MonoBehaviour:
   m_ObjectHideFlags: 0

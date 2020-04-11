@@ -8,8 +8,8 @@ TagManager:
   - FxTemporaire
   - Environment/Sign
   - Block
-  - BlockTrigger
   - Placement
+  - BlockTrigger
   layers:
   - Default
   - TransparentFX

@@ -227,10 +227,11 @@ MonoBehaviour:
   - {fileID: 2261050674885024651, guid: c9d77f376ca2d384d86ce198495abae4, type: 3}
   - {fileID: 2261050674885024651, guid: 949ed86702e66ea4985ee2163960fa3f, type: 3}
   - {fileID: 2261050674885024651, guid: 4639dc351bc80a14d8710c86ac3bba2a, type: 3}
-  placement: {fileID: 6740568316631146092, guid: be6ec6d9d535e004a93de1d6dc14d3c3,
+  tempBlock: []
+  placement: {fileID: 5870780831534881804, guid: c706fa7915ff74f42ab69698e9ac99be,
     type: 3}
   numOfBlocks: 3
-  timer: 3
+  timer: 5
 --- !u!114 &115883008
 MonoBehaviour:
   m_ObjectHideFlags: 0
