@@ -572,7 +572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 436784, guid: bfa558d8d36af0744961ad8e76ed04d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 57.031136
+      value: 34.261528
       objectReference: {fileID: 0}
     - target: {fileID: 436784, guid: bfa558d8d36af0744961ad8e76ed04d5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -580,7 +580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 436784, guid: bfa558d8d36af0744961ad8e76ed04d5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.019833
+      value: 60.937428
       objectReference: {fileID: 0}
     - target: {fileID: 436784, guid: bfa558d8d36af0744961ad8e76ed04d5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -726,25 +726,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: SignPost (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0389
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.638
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.203
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.687
+      objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 89
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 18
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 18
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -754,8 +779,8 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_text
-      value: "Every now and then I feel so tired and gloomy that I\u2019d rather
-        just sit than do anything. "
+      value: "I\u2019m getting tired out. I can feel my body getting exhausted and
+        heavy."
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -765,7 +790,7 @@ PrefabInstance:
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.333
+      value: 47.6
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -780,22 +805,22 @@ PrefabInstance:
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17658651
+      value: 0.15761001
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.49927992
+      value: -0.62720793
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.104739726
+      value: 0.13157651
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.84176385
+      value: 0.75130355
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -810,7 +835,7 @@ PrefabInstance:
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -61.347004
+      value: -79.712006
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -2917,20 +2942,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: SignPost (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.154
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.4987
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.687
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265146, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.05700001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265146, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.012000084
+      objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 69
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 14
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 14
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -2945,12 +2995,33 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_text
-      value: 'It often seems that no matter how hard I try, things still go wrong. '
+      value: "Every now and then I feel so tired and gloomy that I\u2019d rather
+        just sit than do anything. "
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_fontSize
-      value: 0.2
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 0.0077308826
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -0.011367959
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 0.06847282
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_margin.y
+      value: -0.060138498
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -4457,22 +4528,22 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 129
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 21
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 22
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -4482,13 +4553,12 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_text
-      value: Too often I have found myself staring listlessly into the distance,
-        my mind a blank, when I definitely should have been studying.
+      value: 'I feel rather sluggish now. '
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_fontSize
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -8258,7 +8328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457550, guid: aa2e3f9bd352f0641b99a8a71c39d73e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.99
+      value: 45.257
       objectReference: {fileID: 0}
     - target: {fileID: 457550, guid: aa2e3f9bd352f0641b99a8a71c39d73e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8824,25 +8894,55 @@ PrefabInstance:
       propertyPath: m_Name
       value: SignPost (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0682
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.638
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.818
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.216
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.809
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265146, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00004506111
+      objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 28
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 5
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -8852,12 +8952,13 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_text
-      value: 'I feel rather sluggish now. '
+      value: "I feel tired and depressed; I don\u2019t feel like working on the things
+        I know must get done"
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_fontSize
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -8965,7 +9066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656369806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.76, y: -0.1, z: 43}
+  m_LocalPosition: {x: 37.76, y: -0.2, z: 43}
   m_LocalScale: {x: 20, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 1972895718}
@@ -9460,7 +9561,7 @@ PrefabInstance:
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.96061
+      value: 34.191
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -9470,7 +9571,7 @@ PrefabInstance:
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.067577
+      value: 59.985172
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -10199,7 +10300,7 @@ PrefabInstance:
       objectReference: {fileID: 107811332}
     - target: {fileID: 11437536, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
       propertyPath: RainIntensity
-      value: 0.36
+      value: 0.315
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 3}
@@ -11989,10 +12090,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: SignPost (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.311
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.799
+      objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 71
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -12017,13 +12143,12 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_text
-      value: "My life is so tiresome \u2013 the same old thing day after day depresses
-        me."
+      value: 'It often seems that no matter how hard I try, things still go wrong. '
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_fontSize
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -15150,7 +15275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df52e5a85f96c5f4db49352bf0c8815c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.589607
+      value: 33.82
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df52e5a85f96c5f4db49352bf0c8815c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15158,7 +15283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df52e5a85f96c5f4db49352bf0c8815c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.162407
+      value: 61.08
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: df52e5a85f96c5f4db49352bf0c8815c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -15401,25 +15526,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: SignPost (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0266
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.423
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.368
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.667
+      objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 70
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -15429,13 +15579,13 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_text
-      value: "I\u2019m getting tired out. I can feel my body getting exhausted and
-        heavy."
+      value: "My life is so tiresome \u2013 the same old thing day after day depresses
+        me."
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_fontSize
-      value: 0.15
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -18908,25 +19058,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: SignPost (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2.905
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.687
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.594
+      objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 88
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 18
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -18936,8 +19111,8 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_text
-      value: "I feel tired and depressed; I don\u2019t feel like working on the things
-        I know must get done"
+      value: "I do feel somewhat discouraged and drowsy \u2013 maybe I\u2019ll need
+        a nap when I get home."
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -23340,25 +23515,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: SignPost (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.302
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.504
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889733492995, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.687
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265146, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265146, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 82
+      value: 129
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 16
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 16
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
@@ -23368,13 +23568,23 @@ PrefabInstance:
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_text
-      value: "I do feel somewhat discouraged and drowsy \u2013 maybe I\u2019ll need
-        a nap when I get home."
+      value: Too often I have found myself staring listlessly into the distance,
+        my mind a blank, when I definitely should have been studying.
       objectReference: {fileID: 0}
     - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
       propertyPath: m_fontSize
-      value: 0.15
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -0.018452164
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477358889983265147, guid: 8ba1e898d6134964395172ac63a43ac6,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -0.0029498525
       objectReference: {fileID: 0}
     - target: {fileID: 8895077505012125710, guid: 8ba1e898d6134964395172ac63a43ac6,
         type: 3}
