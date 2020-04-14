@@ -10,7 +10,7 @@ public class DataRecorder : MonoBehaviour
 
     void Awake()
     {
-        PATH = Application.dataPath + "/VRReaction";
+        PATH = Application.dataPath + "/DataRecords";
     }
 
     public void StartRecording()

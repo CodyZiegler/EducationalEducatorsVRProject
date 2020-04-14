@@ -536,7 +536,7 @@
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Add-Ons\MTree\shaders\VS_indirect.cginc" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\ButtonGlow.shader" />
-    <None Include="Assets\DataRecords\VRReaction\Negative_11.27.2019_11.31.58_AM.txt" />
+    <None Include="Assets\DataRecords\Negative_11.27.2019_11.31.58_AM.txt" />
     <None Include="Assets\Add-Ons\MTree\shaders\BranchEditorBark.shader" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
@@ -565,7 +565,7 @@
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\Video\Resources\Multiview Stereo.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Samples\SocialStarter\README.txt" />
-    <None Include="Assets\DataRecords\VRReaction\Excercise_11.27.2019_11.32.46_AM.txt" />
+    <None Include="Assets\DataRecords\Excercise_11.27.2019_11.32.46_AM.txt" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_01.shader" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\AvatarPBRV2Simple.shader" />
@@ -576,14 +576,14 @@
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Add-Ons\MTree\shaders\BranchEditorLeafs.shader" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
-    <None Include="Assets\DataRecords\VRReaction\Neutral_11.19.2019_12.31.34_AM.txt" />
+    <None Include="Assets\DataRecords\Neutral_11.19.2019_12.31.34_AM.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Add-Ons\MTree\shaders\Bark.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
-    <None Include="Assets\DataRecords\VRReaction\Excercise_11.27.2019_10.39.19_AM.txt" />
+    <None Include="Assets\DataRecords\Excercise_11.27.2019_10.39.19_AM.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Add-Ons\RainMaker\Prefab\RainShader.shader" />
-    <None Include="Assets\DataRecords\VRReaction\Neutral_11.29.2019_3.34.12_PM.txt" />
+    <None Include="Assets\DataRecords\Neutral_11.29.2019_3.34.12_PM.txt" />
     <None Include="Assets\Add-Ons\MTree\shaders\Leafs.shader" />
     <None Include="Assets\Add-Ons\BNG Framework\Sounds\license.txt" />
     <None Include="Assets\Add-Ons\BNG Framework\Resources\OutlineEffect\Resources\OutlineShader.shader" />
@@ -591,7 +591,7 @@
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainSmokeShader.shader" />
     <None Include="Assets\Add-Ons\BNG Framework\Materials\MobileColorShader.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\NOTICE.txt" />
-    <None Include="Assets\DataRecords\VRReaction\Neutral_11.29.2019_12.27.29_PM.txt" />
+    <None Include="Assets\DataRecords\Neutral_11.29.2019_12.27.29_PM.txt" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
     <None Include="Assets\Add-Ons\SkySerie Freebie\Hdri setup.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
@@ -622,8 +622,17 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
@@ -652,6 +661,9 @@
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
@@ -663,18 +675,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder">
-      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity/UnityVersions/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
