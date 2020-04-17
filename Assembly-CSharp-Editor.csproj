@@ -113,9 +113,12 @@
     </Reference>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Reference Include="Unity.ProBuilder">
       <HintPath>C:/Users/mmull/Documents/GitHub/EducationalEducatorsVRProject/EducationalEducatorsVRProject/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
+=======
+>>>>>>> parent of bf43645c... Put a datarecorder in each module
 =======
 >>>>>>> parent of bf43645c... Put a datarecorder in each module
 =======
@@ -125,12 +128,15 @@
     </Reference>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Reference Include="Unity.ProBuilder.Editor">
       <HintPath>C:/Users/mmull/Documents/GitHub/EducationalEducatorsVRProject/EducationalEducatorsVRProject/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
       <HintPath>C:/Users/mmull/Documents/GitHub/EducationalEducatorsVRProject/EducationalEducatorsVRProject/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
+=======
+>>>>>>> parent of bf43645c... Put a datarecorder in each module
 =======
 >>>>>>> parent of bf43645c... Put a datarecorder in each module
 =======
@@ -164,9 +170,12 @@
     </Reference>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>C:/Users/mmull/Documents/GitHub/EducationalEducatorsVRProject/EducationalEducatorsVRProject/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
+=======
+>>>>>>> parent of bf43645c... Put a datarecorder in each module
 =======
 >>>>>>> parent of bf43645c... Put a datarecorder in each module
 =======
@@ -182,6 +191,18 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/mmull/Documents/GitHub/EducationalEducatorsVRProject/EducationalEducatorsVRProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
