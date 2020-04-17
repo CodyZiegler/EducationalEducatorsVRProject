@@ -17,7 +17,7 @@ namespace BNG {
         /// <summary>
         /// Used to determine velocity of this collider
         /// </summary>
-        Rigidbody damageRigidbody;
+        public Rigidbody ColliderRigidbody;
 
         /// <summary>
         /// Minimum Amount of force necessary to do damage. Expressed as relativeVelocity.magnitude
@@ -32,8 +32,24 @@ namespace BNG {
         // How much impulse force was applied last onCollision enter
         public float LastDamageForce = 0;
 
+        /// <summary>
+        /// Should this take damage if this collider collides with something? For example, pushing a box off of a ledge and it hits the ground 
+        /// </summary>
+        public bool TakeCollisionDamage = false;
+
+        /// <summary>
+        /// How much damage to apply if colliding with something at speed
+        /// </summary>
+        public float CollisionDamage = 5;
+
+        Damageable thisDamageable;
+
         private void Start() {
-            damageRigidbody = GetComponent<Rigidbody>();
+            if(ColliderRigidbody == null) {
+                ColliderRigidbody = GetComponent<Rigidbody>();
+            }
+
+            thisDamageable = GetComponent<Damageable>();
         }        
 
         private void OnCollisionEnter(Collision collision) {
@@ -42,12 +58,17 @@ namespace BNG {
             LastRelativeVelocity = collision.relativeVelocity.magnitude;
 
             if (LastDamageForce >= MinForce) {
+
+                // Can we damage what we hit?
                 Damageable d = collision.gameObject.GetComponent<Damageable>();
                 if (d) {
                     d.DealDamage(Damage);
+                }
+                // Otherwise, can we take damage ourselves from this collision?
+                else if(TakeCollisionDamage && thisDamageable != null) {
+                    thisDamageable.DealDamage(CollisionDamage);
                 }
             }
         }
     }
 }
-

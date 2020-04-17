@@ -15,6 +15,7 @@ namespace BNG {
         /// Optional output Debug text to a UI element
         /// </summary>
         public Text DebugText;
+        public Text PinchTypeText;
 
         public bool DrawMode = false;
 
@@ -36,6 +37,7 @@ namespace BNG {
             }
 
             updateDebugText();
+            updatePinchButtonText();
         }
 
         void doDrawMode() {
@@ -114,6 +116,8 @@ namespace BNG {
         public void TogglePinchMode () {
             DrawMode = !DrawMode;
             HandTrackingController.DoPinchToGrab = !DrawMode;
+            
+            updatePinchButtonText();
         }
 
         public void ClearDrawing() {
@@ -124,7 +128,7 @@ namespace BNG {
         }
 
         void updateDebugText() {
-            if (DebugText != null) {
+            if (DebugText != null && HandTrackingController != null) {
                 DebugText.text = "Tracking Hands : " + HandTrackingController.IsHandTracking;
                 DebugText.text += "\nPinch Action : " + (DrawMode ? "Draw" : "Grab");
                 DebugText.text += "\nLeft Pinch Strength : " + HandTrackingController.LeftIndexPinchStrength;
@@ -134,6 +138,14 @@ namespace BNG {
                 DebugText.text += "\nConnected Controller Type : " + OVRInput.GetActiveController();
             }
         }
+
+        void updatePinchButtonText() {
+            if(DrawMode) {
+                PinchTypeText.text = "Pinch Draw";
+            }
+            else {
+                PinchTypeText.text = "Pinch Grab";
+            }
+        }
     }
 }
-

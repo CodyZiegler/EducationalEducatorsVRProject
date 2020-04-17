@@ -50,9 +50,9 @@ namespace BNG {
             // Scale
             float lerpTo = validSnap ? ValidSnapScale : RestingScale;
             ringCanvas.dynamicPixelsPerUnit = Mathf.Lerp(ringCanvas.dynamicPixelsPerUnit, lerpTo, Time.deltaTime * ScaleSpeed);
-            // Color
             if (ringText != null)
             {
+                // Color
                 ringText.color = validSnap ? ValidSnapColor : RestingColor;
             }
             else

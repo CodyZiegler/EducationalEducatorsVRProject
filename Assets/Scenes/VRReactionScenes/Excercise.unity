@@ -470,24 +470,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.2, y: 67}
   m_SizeDelta: {x: 289.4, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &560691625 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7153901789890023645, guid: 2651be2179700714abf690d8d49863f4,
-    type: 3}
-  m_PrefabInstance: {fileID: 8158238582540848405}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &560691627 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7936181646468969929, guid: 2651be2179700714abf690d8d49863f4,
-    type: 3}
-  m_PrefabInstance: {fileID: 8158238582540848405}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560691625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eae29de8215d60438fafd22ca830a44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &805779139
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a28ef221653a2443928f2ce8166f95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpingJackHandler: {fileID: 560691627}
+  jumpingJackHandler: {fileID: 8158238582540848406}
 --- !u!4 &854580421
 Transform:
   m_ObjectHideFlags: 0
@@ -1323,7 +1305,7 @@ PrefabInstance:
         type: 3}
       propertyPath: jumpingJackObject
       value: 
-      objectReference: {fileID: 560691625}
+      objectReference: {fileID: 0}
     - target: {fileID: 592354024741981113, guid: 2651be2179700714abf690d8d49863f4,
         type: 3}
       propertyPath: ViveCamera
@@ -1334,6 +1316,26 @@ PrefabInstance:
       propertyPath: OculusCamera
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5409726852981647449, guid: 2651be2179700714abf690d8d49863f4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409726853920815024, guid: 2651be2179700714abf690d8d49863f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409726853920815030, guid: 2651be2179700714abf690d8d49863f4,
+        type: 3}
+      propertyPath: modelAnimator
+      value: 
+      objectReference: {fileID: 124128174}
+    - target: {fileID: 5409726853920815030, guid: 2651be2179700714abf690d8d49863f4,
+        type: 3}
+      propertyPath: header
+      value: 
+      objectReference: {fileID: 1198767655}
     - target: {fileID: 7936181646468969929, guid: 2651be2179700714abf690d8d49863f4,
         type: 3}
       propertyPath: modelAnimator
@@ -1346,3 +1348,15 @@ PrefabInstance:
       objectReference: {fileID: 1198767655}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2651be2179700714abf690d8d49863f4, type: 3}
+--- !u!114 &8158238582540848406 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5409726853920815030, guid: 2651be2179700714abf690d8d49863f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 8158238582540848405}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eae29de8215d60438fafd22ca830a44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

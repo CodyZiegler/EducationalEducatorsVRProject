@@ -61,6 +61,8 @@ namespace BNG {
         // Closest Grabbable in our trigger
         public Grabbable ClosestGrabbable;
 
+        SnapZoneOffset offset;
+
         // Start is called before the first frame update
         void Start() {
             gZone = GetComponent<GrabbablesInTrigger>();
@@ -103,8 +105,16 @@ namespace BNG {
                         disableGrabbable(HeldItem);
                     }
 
-                    HeldItem.transform.localPosition = Vector3.zero;
-                    HeldItem.transform.localEulerAngles = Vector3.zero;
+                    // Lock into place
+                    if(offset) {
+                        HeldItem.transform.localPosition = offset.LocalPositionOffset;
+                        HeldItem.transform.localEulerAngles = offset.LocalRotationOffset;
+                    }
+                    else {
+                        HeldItem.transform.localPosition = Vector3.zero;
+                        HeldItem.transform.localEulerAngles = Vector3.zero;
+                    }
+                    
                 }
             }
 
@@ -121,7 +131,17 @@ namespace BNG {
             Grabbable closest = null;
             float lastDistance = 9999f;
 
+            if (gZone == null || gZone.NearbyGrabbables == null) {
+                return null;
+            }
+
             foreach(var g in gZone.NearbyGrabbables) {
+
+                // Collider may have been disabled
+                if(g.Key == null) {
+                    continue;
+                }
+
                 float dist = Vector3.Distance(transform.position, g.Value.transform.position);
                 if(dist < lastDistance) {
 
@@ -135,8 +155,13 @@ namespace BNG {
                         continue;
                     }
 
+                    // Don't allow InvalidSnapObjects to snap
+                    if (g.Value.CanBeSnappedToSnapZone == false) {
+                        continue;
+                    }
+
                     // Must contain transform name
-                    if(OnlyAllowNames != null && OnlyAllowNames.Count > 0) {
+                    if (OnlyAllowNames != null && OnlyAllowNames.Count > 0) {
                         string transformName = g.Value.transform.name;
                         bool matchFound = false;
                         foreach(var name in OnlyAllowNames) {
@@ -185,6 +210,17 @@ namespace BNG {
             }
 
             HeldItem = grab;
+
+            // Is there an offset to apply?
+            SnapZoneOffset off = grab.GetComponent<SnapZoneOffset>();
+            if(off) {
+                offset = off;
+            }
+            else {
+                offset = grab.gameObject.AddComponent<SnapZoneOffset>();
+                offset.LocalPositionOffset = Vector3.zero;
+                offset.LocalRotationOffset = Vector3.zero;
+            }
 
             // Disable the grabbable. This is picked up through a Grab Action
             disableGrabbable(grab);
@@ -269,7 +305,7 @@ namespace BNG {
 
                 // Call event
                 if (OnDetachEvent != null) {
-                        OnDetachEvent.Invoke(HeldItem);
+                    OnDetachEvent.Invoke(HeldItem);
                 }
             }
 

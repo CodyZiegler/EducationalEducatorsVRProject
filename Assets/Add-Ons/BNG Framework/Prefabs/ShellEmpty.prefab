@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 7726821736858696349}
   - component: {fileID: 7238479056556176755}
   - component: {fileID: 3094168207181259397}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ShellEmpty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,11 +266,13 @@ MonoBehaviour:
   HideHandGraphics: 0
   ParentToHands: 1
   ParentHandModel: 0
+  CustomHandPose: 0
   SecondaryGrabBehavior: 0
   OtherGrabbableMustBeGrabbed: {fileID: 0}
   CollisionSpring: 3000
   CollisionSlerp: 500
   CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
   LastDropTime: 0
   GrabPositionOffset: {x: 0, y: 0, z: 0}
   GrabRotationOffset: {x: 0, y: 0, z: 0}
@@ -288,6 +290,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionAudio: {fileID: 8300000, guid: ce1bc772676325b46bc66b857a196e50, type: 3}
+  MinimumVolume: 0.25
+  MaximumVolume: 1
+  RecentlyPlayedSound: 0
+  LastRelativeVelocity: 0
 --- !u!1 &1957835913222243361
 GameObject:
   m_ObjectHideFlags: 0

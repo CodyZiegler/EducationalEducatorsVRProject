@@ -47,7 +47,6 @@ namespace BNG {
         /// </summary>
         public FloatEvent onLeverChange;
 
-
         Grabbable grab;
         HingeJoint hinge;
         AudioSource audioSource;

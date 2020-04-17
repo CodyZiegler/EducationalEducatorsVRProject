@@ -22,19 +22,21 @@ namespace BNG {
         public float LocalZMax = 1f;
 
         void Update() {
+            doConstrain();
+        }
 
+        void doConstrain() {
             // Save a lookup
-            if(!ConstrainLocalX && !ConstrainLocalY && !ConstrainLocalZ) {
+            if (!ConstrainLocalX && !ConstrainLocalY && !ConstrainLocalZ) {
                 return;
             }
 
             Vector3 currentPos = transform.localPosition;
             float newX = ConstrainLocalX ? Mathf.Clamp(currentPos.x, LocalXMin, LocalXMax) : currentPos.x;
-            float newY = ConstrainLocalX ? Mathf.Clamp(currentPos.x, LocalXMin, LocalXMax) : currentPos.x;
-            float newZ = ConstrainLocalX ? Mathf.Clamp(currentPos.x, LocalXMin, LocalXMax) : currentPos.x;
+            float newY = ConstrainLocalY ? Mathf.Clamp(currentPos.y, LocalYMin, LocalYMax) : currentPos.y;
+            float newZ = ConstrainLocalZ ? Mathf.Clamp(currentPos.z, LocalZMin, LocalZMax) : currentPos.z;
 
             transform.localPosition = new Vector3(newX, newY, newZ);
         }
     }
 }
-

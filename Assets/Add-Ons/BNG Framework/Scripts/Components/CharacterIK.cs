@@ -80,8 +80,6 @@ namespace BNG {
 
         void Update() {
 
-
-
             // Hide Headbone
             if (headBone != null) {
                 headBone.localScale = HideHead ? Vector3.zero : Vector3.one;
@@ -110,14 +108,11 @@ namespace BNG {
                 HipsJoint.localScale = HideLegs ? Vector3.zero : Vector3.one;
             }
 
-            Transform hipJoint = animator.GetBoneTransform(HumanBodyBones.RightShoulder);
-            
+            Transform hipJoint = animator.GetBoneTransform(HumanBodyBones.RightShoulder);            
         }
                
         void OnAnimatorIK() {
-            if (animator) {
-
-                
+            if (animator) {                
 
                 //if the IK is active, set the position and rotation directly to the goal. 
                 if (IKActive) {
@@ -185,4 +180,3 @@ namespace BNG {
         }
     }
 }
-

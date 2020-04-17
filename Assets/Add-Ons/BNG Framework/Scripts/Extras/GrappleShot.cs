@@ -39,6 +39,7 @@ namespace BNG {
         
         bool isDynamic = false; // Can we reel the object in
         Rigidbody grappleTargetRigid; // Object we're grappling
+        Collider grappleTargetCollider; // Collider we're grappling
         Transform grappleTargetParent; // Store original parent
         bool requireRelease = false; // Require release to be pressed before continuing
         bool climbing = false; // Have we transitioned to climbing?
@@ -160,7 +161,7 @@ namespace BNG {
                 if (Physics.Raycast(MuzzleTransform.position, MuzzleTransform.forward, out hit, MaxRange, GrappleLayers, QueryTriggerInteraction.Ignore)) {
 
                     // Ignore other grapple shots
-                    if (hit.transform.name.Contains("GrappleGun")) {
+                    if (hit.transform.name.StartsWith("Grapple")) {
                         hideGrappleHelper();
                         validTargetFound = false;
                         isDynamic = false;
@@ -170,6 +171,7 @@ namespace BNG {
                     showGrappleHelper(hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
 
                     grappleTargetRigid = hit.collider.GetComponent<Rigidbody>();
+                    grappleTargetCollider = hit.collider;
                     isDynamic = grappleTargetRigid != null && !grappleTargetRigid.isKinematic && grappleTargetRigid.useGravity;
 
                     // Parent the helper to the object we hit so it will be moved with it
@@ -242,6 +244,12 @@ namespace BNG {
 
         void reelInGrapple(float triggerValue) {
 
+            // Has the collider been destroyed or disabled?
+            if(validTargetFound && grappleTargetCollider != null && !grappleTargetCollider.enabled) {
+                dropGrapple();
+                return;
+            }
+
             if(validTargetFound && currentGrappleDistance > MinReelDistance) {
                 
                 // Move object towards our hand
@@ -281,7 +289,6 @@ namespace BNG {
             }
         }
 
-
         // Shoot the valid out if valid target
         void shootGrapple() {
            
@@ -300,6 +307,13 @@ namespace BNG {
             }
         }
 
+        void dropGrapple() {
+            grappling = false;
+            validTargetFound = false;
+            isDynamic = false;
+            wasGrappling = false;
+        }
+
         void changeGravity(bool gravityOn) {
             gravityEnabled = gravityOn;
             pControl.GravityModifier = gravityEnabled ? initialGravityModifier : 0;
@@ -307,4 +321,3 @@ namespace BNG {
         }
     }
 }
-

@@ -115,8 +115,8 @@ namespace BNG {
         {
             if (Instance != null)
             {
-                Destroy(this);
-                throw new System.Exception("you can only have one outline camera in the scene");
+                DestroyImmediate(this);
+                //throw new System.Exception("you can only have one outline camera in the scene");
             }
 
             Instance = this;
@@ -129,10 +129,10 @@ namespace BNG {
 
             if (sourceCamera == null)
             {
-                sourceCamera = GetComponent<Camera>();
+                //sourceCamera = GetComponent<Camera>();
 
-                if (sourceCamera == null)
-                    sourceCamera = Camera.main;
+                //if (sourceCamera == null)
+                sourceCamera = Camera.main;
             }
 
             if (outlineCamera == null)

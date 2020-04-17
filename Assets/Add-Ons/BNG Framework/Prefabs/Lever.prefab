@@ -93,11 +93,15 @@ MonoBehaviour:
   HideHandGraphics: 0
   ParentToHands: 0
   ParentHandModel: 0
+  CustomHandPose: 0
   SecondaryGrabBehavior: 0
   OtherGrabbableMustBeGrabbed: {fileID: 0}
   CollisionSpring: 3000
   CollisionSlerp: 500
+  CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
   LastDropTime: 0
+  collisions: []
   GrabPositionOffset: {x: 0, y: 0, z: 0}
   GrabRotationOffset: {x: 0, y: 0, z: 0}
   MirrorOffsetForOtherHand: 1
@@ -280,6 +284,9 @@ MonoBehaviour:
   onLeverChange:
     m_PersistentCalls:
       m_Calls: []
+  lookDirection: {x: 0, y: 0, z: 0}
+  LookOffset: {x: 90, y: 0, z: 0}
+  DebugVal: 0
 --- !u!1 &4943343650210195980
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +342,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -371,8 +377,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.79111207, y: 1, z: 1}
+  m_Center: {x: 0.10444397, y: -0.00000013265546, z: 0.000000021389383}
 --- !u!1 &4943343650293140117
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +435,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -509,7 +514,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -545,8 +549,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.8733719, y: 1, z: 1}
+  m_Center: {x: 0.063314125, y: -0.00000008041598, z: 0.000000013297148}
 --- !u!1 &4943343650622534183
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,11 +643,15 @@ MonoBehaviour:
   HideHandGraphics: 0
   ParentToHands: 1
   ParentHandModel: 0
+  CustomHandPose: 0
   SecondaryGrabBehavior: 0
   OtherGrabbableMustBeGrabbed: {fileID: 0}
   CollisionSpring: 3000
   CollisionSlerp: 500
+  CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
   LastDropTime: 0
+  collisions: []
   GrabPositionOffset: {x: 0, y: 0, z: 0}
   GrabRotationOffset: {x: 0, y: 0, z: 0}
   MirrorOffsetForOtherHand: 1
@@ -811,7 +819,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

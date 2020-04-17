@@ -6,7 +6,8 @@ using UnityEngine.Events;
 namespace BNG {
 
     /// <summary>
-    /// Call a user-defined event on Grab
+    /// This will call a specified event, and then DROP this object. It is meant to be used as a proxy. If you want to call an event on Grab, use GrabbableEvents instead.
+    /// For example, if you grab a trigger with a GrabAction, you can spawn a different item in the users hand (such as a weapon clip, arrow, etc.).
     /// </summary>
     public class GrabAction : GrabbableEvents {
 
@@ -42,4 +43,3 @@ namespace BNG {
         }
     }
 }
-

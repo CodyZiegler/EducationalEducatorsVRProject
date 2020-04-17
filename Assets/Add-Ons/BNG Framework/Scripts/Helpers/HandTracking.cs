@@ -45,29 +45,50 @@ namespace BNG {
         OVRBone leftIndexBone;
         OVRBone rightIndexBone;
 
-        void Start() {
+        /// <summary>
+        /// Disable Hand Tracking when using Oculus Link. Enabling may cause Unity crash
+        /// </summary>
+        public bool DisableHandTrackingInEditor = true;
+
+        void Awake() {
             leftSkele = LeftHand.GetComponent<OVRSkeleton>();
             rightSkele = RightHand.GetComponent<OVRSkeleton>();
+
+            // This fixes a Unity crash to desktop in Oculus 1.32 when using hand tracking on start in editor mode
+            if (DisableHandTrackingInEditor && Application.isEditor && leftSkele != null) {
+                leftSkele.enabled = false;
+                rightSkele.enabled = false;
+
+                // See https://forum.unity.com/threads/released-vr-interaction-framework-for-oculus-quest.817614/reply?quote=5468730
+                Debug.Log("Disabling Hand Tracking in Editor due to CTD bug in Oculus SDK");
+            }
         }
 
         void Update() {
 
-            updateHandTracking(IsHandTracking);
+            updateHandTracking();
 
             if(IsHandTracking) {
                 LeftHandConfidence = LeftHand.GetFingerConfidence(HandFinger.Index);
                 RightHandConfidence = RightHand.GetFingerConfidence(HandFinger.Index);
 
-                leftIndexBone = leftSkele.Bones.FirstOrDefault(x => x.Id == OVRSkeleton.BoneId.Hand_IndexTip);
-                if(leftIndexBone != null) {
-                    LeftIndexPosition = leftIndexBone.Transform.position;
+                if(leftSkele != null && leftSkele.Bones != null) {
+                    leftIndexBone = leftSkele.Bones.FirstOrDefault(x => x.Id == OVRSkeleton.BoneId.Hand_IndexTip);
+                    if (leftIndexBone != null) {
+                        LeftIndexPosition = leftIndexBone.Transform.position;
+                    }
                 }
                 
                 IsLeftIndexPinching = LeftHand.GetFingerIsPinching(HandFinger.Index) && LeftHandConfidence == TrackingConfidence.High;
                 LeftIndexPinchStrength = LeftHand.GetFingerPinchStrength(HandFinger.Index);
 
-                rightIndexBone = rightSkele.Bones.FirstOrDefault(x => x.Id == OVRSkeleton.BoneId.Hand_IndexTip);
-                RightIndexPosition = rightIndexBone.Transform.position;
+                if(rightSkele && rightSkele.Bones != null) {
+                    rightIndexBone = rightSkele.Bones.FirstOrDefault(x => x.Id == OVRSkeleton.BoneId.Hand_IndexTip);
+                    if (rightIndexBone != null) {
+                        RightIndexPosition = rightIndexBone.Transform.position;
+                    }
+                }
+
                 IsRightIndexPinching = RightHand.GetFingerIsPinching(HandFinger.Index) && RightHandConfidence == TrackingConfidence.High;
                 RightIndexPinchStrength = RightHand.GetFingerPinchStrength(HandFinger.Index);
             }
@@ -75,7 +96,7 @@ namespace BNG {
             updateGrabbers();
         }
 
-        void updateHandTracking(bool handTrackingEnabled) {
+        void updateHandTracking() {
             
             IsHandTracking = OVRInput.GetActiveController() == OVRInput.Controller.Hands;
 
@@ -103,8 +124,6 @@ namespace BNG {
                     LeftGrabber.ForceGrab = DoPinchToGrab && IsLeftIndexPinching;
                     LeftGrabber.ForceRelease = DoPinchToGrab && IsLeftIndexPinching == false;
                 }
-
-                LeftGrabber.ForceGrab = IsLeftIndexPinching;
             }
 
             if (RightGrabber) {

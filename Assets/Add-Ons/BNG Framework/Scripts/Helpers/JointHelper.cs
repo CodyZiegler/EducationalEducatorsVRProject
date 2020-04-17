@@ -24,29 +24,40 @@ namespace BNG {
         Vector3 initialPosition;
         Vector3 initialRotation;
         Vector3 initialScale;
+
+        Vector3 currentPosition;
+        Vector3 currentScale;
+        Vector3 currentRotation;
+
         void Start() {
-
             initialPosition = transform.localPosition;
-
             initialRotation = transform.localEulerAngles;
             initialScale = transform.localScale;
         }
 
-        void Update() {
+        void lockPosition() {
             if (LockXPosition || LockYPosition || LockZPosition) {
-                Vector3 currentPosition = transform.localPosition;
+                currentPosition = transform.localPosition;
                 transform.localPosition = new Vector3(LockXPosition ? initialPosition.x : currentPosition.x, LockYPosition ? initialPosition.y : currentPosition.y, LockZPosition ? initialPosition.z : currentPosition.z);
             }
 
             if (LockXScale || LockYScale || LockZScale) {
-                Vector3 currentScale = transform.localScale;
+                currentScale = transform.localScale;
                 transform.localScale = new Vector3(LockXScale ? initialScale.x : currentScale.x, LockYScale ? initialScale.y : currentScale.y, LockZScale ? initialScale.z : currentScale.z);
             }
 
             if (LockXRotation || LockYRotation || LockZRotation) {
-                Vector3 currentRotation = transform.localEulerAngles;
+                currentRotation = transform.localEulerAngles;
                 transform.localEulerAngles = new Vector3(LockXRotation ? initialRotation.x : currentRotation.x, LockYRotation ? initialRotation.y : currentRotation.y, LockZRotation ? initialRotation.z : currentRotation.z);
             }
+        }
+
+        void LateUpdate() {
+            lockPosition();
+        }
+
+        void FixedUpdate() {
+            lockPosition();
         }
     }
 }

@@ -37,12 +37,18 @@ namespace BNG {
         /// </summary>
         public AudioClip LockedBackSound;
 
+        /// <summary>
+        /// When true, the slide will be set to 0 mass when not being held. This fixes jitter caused by the slide having a configurable joint attached to the weapon
+        /// </summary>
+        public bool ZeroMassWhenNotHeld = true;
+
         RaycastWeapon parentWeapon;
         Grabbable parentGrabbable;
         Vector3 initialLocalPos;
         Grabbable thisGrabbable;
         AudioSource audioSource;
         Rigidbody rigid;
+        float initialMass;
 
         void Start() {
             initialLocalPos = transform.localPosition;
@@ -51,6 +57,7 @@ namespace BNG {
             parentGrabbable = transform.parent.GetComponent<Grabbable>();
             thisGrabbable = GetComponent<Grabbable>();
             rigid = GetComponent<Rigidbody>();
+            initialMass = rigid.mass;
 
             if (parentWeapon != null) {
                 Physics.IgnoreCollision(GetComponent<Collider>(), parentWeapon.GetComponent<Collider>());
@@ -89,19 +96,18 @@ namespace BNG {
                 }
             }
 
-            //// Enable / Disable rigid if being held
-            //if (parentGrabbable.BeingHeld) {
-            //    // Add Rigid
-            //    if(rigid == null) {
-            //        rigid = gameObject.AddComponent<Rigidbody>();
-            //    }
-            //}
-            //else {
-            //    // Remove Rigid
-            //    if (rigid != null) {
-            //        Destroy(rigid);
-            //    }
-            //}
+            
+        }
+
+        void FixedUpdate() {
+            // Change mass of slider rigidbody. This prevents stuttering when the object is not held and the slide is back
+            if (ZeroMassWhenNotHeld && parentGrabbable.BeingHeld && rigid) {
+                rigid.mass = initialMass;
+            }
+            else if(ZeroMassWhenNotHeld && rigid) {
+                // Set mass to very low to prevent stuttering when not held
+                rigid.mass = 0.0001f;
+            }
         }
 
         public void LockBack() {

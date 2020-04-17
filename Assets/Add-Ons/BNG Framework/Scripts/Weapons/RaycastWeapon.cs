@@ -22,6 +22,7 @@ namespace BNG {
         /// <summary>
         /// Semi requires user to press trigger repeatedly, Auto to hold down
         /// </summary>
+        [Tooltip("Semi requires user to press trigger repeatedly, Auto to hold down")]
         public FiringType FiringMethod = FiringType.Semi;
 
         /// <summary>
@@ -32,27 +33,32 @@ namespace BNG {
         /// <summary>
         /// Ex : 0.2 = 5 Shots per second
         /// </summary>
+        [Tooltip("Ex : 0.2 = 5 Shots per second")]
         public float FiringRate = 0.2f;
         float lastShotTime;
 
         /// <summary>
         /// Maximum amount of internal ammo this weapon can hold. Does not account for attached clips.  For example, a shotgun has internal ammo
         /// </summary>
+        [Tooltip("Maximum amount of internal ammo this weapon can hold. Does not account for attached clips.  For example, a shotgun has internal ammo")]
         public float MaxInternalAmmo = 10;
 
         /// <summary>
         /// Set true to automatically chamber a new round on fire. False to require charging. Example : Bolt-Action Rifle does not auto chamber.  
         /// </summary>
+        [Tooltip("Set true to automatically chamber a new round on fire. False to require charging. Example : Bolt-Action Rifle does not auto chamber. ")]
         public bool AutoChamberRounds = true;
 
         /// <summary>
         /// Does it matter if rounds are chambered or not. Does the user have to charge weapon as soon as ammo is inserted
         /// </summary>
+        [Tooltip("Does it matter if rounds are chambered or not. Does the user have to charge weapon as soon as ammo is inserted")]
         public bool MustChamberRounds = false;
 
         /// <summary>
         /// How much force to apply to the tip of the barrel
         /// </summary>
+        [Tooltip("How much force to apply to the tip of the barrel (Not Fully Implemented)")]
         public Vector3 RecoilForce = Vector3.zero;
         Rigidbody weaponRigid;
 
@@ -61,82 +67,107 @@ namespace BNG {
         /// <summary>
         /// Transform of trigger to animate rotation of
         /// </summary>
+        [Tooltip("Transform of trigger to animate rotation of")]
         public Transform TriggerTransform;
 
         /// <summary>
         /// Move this back on fire
         /// </summary>
+        [Tooltip("Animate this back on fire")]
         public Transform SlideTransform;
 
         /// <summary>
         /// Where our raycast or projectile will spawn from
         /// </summary>
+        [Tooltip("Where our raycast or projectile will start from.")]
         public Transform MuzzlePointTransform;
 
         /// <summary>
         /// Where to eject a bullet casing (optional)
         /// </summary>
+        [Tooltip("Where to eject a bullet casing (optional)")]
         public Transform EjectPointTransform;
 
         /// <summary>
         /// Transform of Chambered Bullet. Hide this when no bullet is chambered
         /// </summary>
+        [Tooltip("Transform of Chambered Bullet inside the weapon. Hide this when no bullet is chambered. (Optional)")]
         public Transform ChamberedBullet;
 
         /// <summary>
         /// Make this active on fire. Randomize scale / rotation
         /// </summary>
+        [Tooltip("Make this active on fire. Randomize scale / rotation")]
         public GameObject MuzzleFlashObject;
 
         /// <summary>
         /// Eject this at EjectPointTransform (optional)
         /// </summary>
+        [Tooltip("Eject this at EjectPointTransform (optional)")]
         public GameObject BulletCasingPrefab;
 
         /// <summary>
         /// If time is slowed this object will be instantiated instead of using a raycast
         /// </summary>
+        [Tooltip("If time is slowed this object will be instantiated at muzzle point instead of using a raycast")]
         public GameObject ProjectilePrefab;
 
         /// <summary>
         /// Hit Effects spawned at point of impact
         /// </summary>
+        [Tooltip("Hit Effects spawned at point of impact")]
         public GameObject HitFXPrefab;
 
         /// <summary>
         /// Play this sound on shoot
         /// </summary>
+        [Tooltip("Play this sound on shoot")]
         public AudioClip GunShotSound;
 
         /// <summary>
         /// Play this sound if no ammo and user presses trigger
         /// </summary>
+        [Tooltip("Play this sound if no ammo and user presses trigger")]
         public AudioClip EmptySound;
 
         /// <summary>
         /// How far back to move the slide on fire
         /// </summary>
+        [Tooltip("How far back to move the slide on fire")]
         public float SlideDistance = -0.028f;
 
         /// <summary>
         /// Is there currently a bullet chambered and ready to be fired
         /// </summary>
+        [Tooltip("Is there currently a bullet chambered and ready to be fired")]
         public bool BulletInChamber = false;
 
         /// <summary>
         /// Is there currently a bullet chambered and that must be ejected
         /// </summary>
+        [Tooltip("Is there currently a bullet chambered and that must be ejected")]
         public bool EmptyBulletInChamber = false;
 
         /// <summary>
         /// Should the slide be forced back if we shoot the last bullet
         /// </summary>
+        [Tooltip("Should the slide be forced back if we shoot the last bullet")]
         public bool ForceSlideBackOnLastShot = true;
 
         /// <summary>
         /// (Optional) Look at this grabbable if being held with secondary hand
         /// </summary>
+        [Tooltip("(Optional) Look at this grabbable if being held with secondary hand")]
         public Grabbable SecondHandGrabbable;
+
+        /// <summary>
+        /// How fast to look at the other grabbable when being held with two hands. A lower number will make the weapon feel heavier, but make the aiming hand lag behind the real hand.
+        /// </summary>
+        [Tooltip("How fast to look at the other grabbable when being held with two hands. A lower number will make the weapon feel heavier, but make the aiming hand lag behind the real hand.")]
+        public float SecondHandLookSpeed = 40f;
+
+        Rigidbody secondHandRigid;
+        //bool secondHandKinematicOnGrip = false;
 
         /// <summary>
         /// Is the slide / receiver forced back due to last shot
@@ -145,31 +176,33 @@ namespace BNG {
 
         WeaponSlide ws;
 
-        private float originalTriggerX;
         private bool readyToShoot = true;
 
         void Start() {
             weaponRigid = GetComponent<Rigidbody>();
 
-            if(TriggerTransform) {
-                originalTriggerX = TriggerTransform.localEulerAngles.x;
+            if(SecondHandGrabbable) {
+                secondHandRigid = SecondHandGrabbable.GetComponent<Rigidbody>();
             }
 
             if (MuzzleFlashObject) {
                 MuzzleFlashObject.SetActive(false);
             }
 
-            ws = GetComponentInChildren<WeaponSlide>();
+            ws = GetComponentInChildren<WeaponSlide>();            
 
             updateChamberedBullet();
         }
 
         public override void OnTrigger(float triggerValue) {
 
+
+            // Sanitize for angles 
+            triggerValue = Mathf.Clamp01(triggerValue);
+
             // Update trigger graphics
-            if(TriggerTransform) {
-                float maxTriggerValue = originalTriggerX + 20f; // -10, 10
-                TriggerTransform.localEulerAngles = new Vector3(originalTriggerX + (triggerValue * maxTriggerValue), 0, 0);
+            if (TriggerTransform) {
+                TriggerTransform.localEulerAngles = new Vector3(triggerValue * 15, 0, 0);
             }
 
             if (triggerValue <= 0.5) {
@@ -186,50 +219,11 @@ namespace BNG {
 
             updateChamberedBullet();
 
-            checkSecondaryWeaponLook();
-
             base.OnTrigger(triggerValue);
         }
 
-        void LateUpdate() {
-            checkSecondaryWeaponLook();
-        }
 
-        Vector3 initialSecondaryOffset;
-        float yOffset = 0;
-        void checkSecondaryWeaponLook() {
-            if(SecondHandGrabbable != null && SecondHandGrabbable.BeingHeld) {
-
-                if(thisGrabber != null) {
-                    Vector3 angle = thisGrabber.transform.localEulerAngles;
-                    var secondGrabber = SecondHandGrabbable.GetPrimaryGrabber();
-
-                    if (initialSecondaryOffset == Vector3.zero) {
-                        float yOffset = SecondHandGrabbable.transform.position.y - secondGrabber.transform.position.y;
-                        initialSecondaryOffset = SecondHandGrabbable.transform.position - secondGrabber.transform.position;
-                        Debug.Log(yOffset);
-                    }
-                    
-                    //Vector3 trans = new Vector3(0, yOffset, 0);
-                    //thisGrabber.transform.LookAt(secondGrabber.transform.position + secondGrabber.transform.TransformVector(trans), thisGrabber.transform.forward);
-
-                    Quaternion rot = Quaternion.LookRotation(secondGrabber.transform.position - thisGrabber.transform.position);
-
-                    thisGrabber.transform.rotation = Quaternion.Slerp(thisGrabber.transform.rotation, rot, Time.deltaTime * 35);
-
-                    // Only use these coords
-                    thisGrabber.transform.localEulerAngles = new Vector3(thisGrabber.transform.localEulerAngles.x, thisGrabber.transform.localEulerAngles.y, angle.z);
-                }
-            }
-            else if(SecondHandGrabbable != null) {
-                // Reset Vector
-                if (thisGrabber != null) {
-                    thisGrabber.transform.localRotation = Quaternion.Slerp(thisGrabber.transform.localRotation, Quaternion.identity, Time.deltaTime * 20);
-                }
-
-                initialSecondaryOffset = Vector3.zero;
-            }
-        }
+        public bool ResetGrabber = false;
 
         // Snap slide back in to place Button 2 (A / X)
         public override void OnButton1Down() {
@@ -251,9 +245,14 @@ namespace BNG {
 
             base.OnButton2Down();
         }
+        public override void OnRelease() {
+            if(SecondHandGrabbable != null && SecondHandGrabbable.GrabPhysics != GrabPhysics.Kinematic && secondHandRigid != null && secondHandRigid.isKinematic) {
+                secondHandRigid.isKinematic = false;
+            }
+        }
 
         public float ShotForce = 10f;
-        public void Shoot() {
+        public virtual void Shoot() {
 
             // Has enough time passed between shots
             float shotInterval = Time.timeScale < 1 ? 0.3f : FiringRate;
@@ -355,8 +354,8 @@ namespace BNG {
 
             // Stop previous routine
             if (shotRoutine != null) {
+                MuzzleFlashObject.SetActive(false);
                 StopCoroutine(shotRoutine);
-
             }
 
             if (AutoChamberRounds) {
@@ -367,7 +366,6 @@ namespace BNG {
                 shotRoutine = doMuzzleFlash();
                 StartCoroutine(shotRoutine);
             }
-            
         }
 
         /// <summary>
@@ -433,8 +431,6 @@ namespace BNG {
             else {
                 BulletInChamber = false;
             }
-
-            
         }
 
         IEnumerator shotRoutine;
@@ -478,10 +474,10 @@ namespace BNG {
 
         IEnumerator doMuzzleFlash() {
             MuzzleFlashObject.SetActive(true);
-            yield return new WaitForEndOfFrame();
+            yield return new  WaitForSeconds(0.05f);
 
             randomizeMuzzleFlashScaleRotation();
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.05f);
 
             MuzzleFlashObject.SetActive(false);
         }
@@ -534,9 +530,10 @@ namespace BNG {
             if(SlideTransform) {
                 SlideTransform.localPosition = slideDestination;
             }
-            
 
             yield return new WaitForEndOfFrame();
+            MuzzleFlashObject.SetActive(false);
+
 
             // Eject Shell
             ejectCasing();

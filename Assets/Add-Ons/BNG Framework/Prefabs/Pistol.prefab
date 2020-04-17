@@ -1729,6 +1729,7 @@ Transform:
   - {fileID: 3696856878637576491}
   - {fileID: 3696856879243870241}
   - {fileID: 8569038907691427828}
+  - {fileID: 6920090509047662477}
   - {fileID: 5676588141798607238}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1783,13 +1784,18 @@ MonoBehaviour:
   HideHandGraphics: 0
   ParentToHands: 1
   ParentHandModel: 1
+  CustomHandPose: 0
   SecondaryGrabBehavior: 0
   OtherGrabbableMustBeGrabbed: {fileID: 0}
   CollisionSpring: 3000
   CollisionSlerp: 500
+  CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
+  LastGrabTime: 0
   LastDropTime: 0
-  GrabPositionOffset: {x: 0, y: -0.0378, z: -0.0363}
-  GrabRotationOffset: {x: 3.7, y: 0, z: 0}
+  GrabOffset: {fileID: 6920090509047662477}
+  GrabPoints:
+  - {fileID: 6920090509047662477}
   MirrorOffsetForOtherHand: 1
 --- !u!82 &3696856878597835988
 AudioSource:
@@ -1904,6 +1910,7 @@ MonoBehaviour:
   FiringMethod: 0
   ReloadMethod: 1
   FiringRate: 0.05
+  MaxInternalAmmo: 10
   AutoChamberRounds: 1
   MustChamberRounds: 1
   RecoilForce: {x: 0, y: 0, z: 0}
@@ -1926,7 +1933,11 @@ MonoBehaviour:
   EmptySound: {fileID: 8300000, guid: 3ceadf14726b0864fb39bb646c0f9ba0, type: 3}
   SlideDistance: -0.028
   BulletInChamber: 0
-  SlideForcedBack: 0
+  EmptyBulletInChamber: 0
+  ForceSlideBackOnLastShot: 1
+  SecondHandGrabbable: {fileID: 0}
+  SecondHandLookSpeed: 40
+  SecondHandYGripOffset: 0
   ShotForce: 20
   slideSpeed: 1
   minSlideDistance: 0.001
@@ -2317,6 +2328,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionAudio: {fileID: 8300000, guid: ba9840947c7ac514bb44b20a444375b6, type: 3}
+  MinimumVolume: 0.25
+  MaximumVolume: 1
+  RecentlyPlayedSound: 0
+  LastRelativeVelocity: 0
 --- !u!1 &3696856878656688223
 GameObject:
   m_ObjectHideFlags: 0
@@ -5876,13 +5891,17 @@ MonoBehaviour:
   HideHandGraphics: 0
   ParentToHands: 0
   ParentHandModel: 1
+  CustomHandPose: 0
   SecondaryGrabBehavior: 0
   OtherGrabbableMustBeGrabbed: {fileID: 3696856878597835989}
   CollisionSpring: 3000
   CollisionSlerp: 500
+  CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
+  LastGrabTime: 0
   LastDropTime: 0
-  GrabPositionOffset: {x: 0, y: 0.03, z: 0.03}
-  GrabRotationOffset: {x: 0, y: 0, z: 0}
+  GrabOffset: {fileID: 0}
+  GrabPoints: []
   MirrorOffsetForOtherHand: 1
 --- !u!114 &5676588142427295836
 MonoBehaviour:
@@ -6856,6 +6875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc39384ecbf0a1f41881736893e14af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AcceptableMagazineName: PistolClip
   AttachedWeapon: {fileID: 3696856878597835989}
   ClipSnapDistance: 0.025
   ClipUnsnapDistance: 0.1
@@ -6896,7 +6916,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3696856878597835992}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 27.441002, y: 0, z: 0}
 --- !u!65 &5676588141798607256
 BoxCollider:
@@ -9554,6 +9574,36 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &8025444312043311233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6920090509047662477}
+  m_Layer: 10
+  m_Name: GrabHandle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6920090509047662477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025444312043311233}
+  m_LocalRotation: {x: 0.23718297, y: -0, z: -0, w: 0.97146505}
+  m_LocalPosition: {x: 0, y: -0.0387, z: -0.0492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3696856878597835992}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8391636856335410947
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,11 +17,11 @@ namespace BNG {
 
             // Make sure we don't try tp keep this in our hand
             GrabPhysics = GrabPhysics.None;
+
+            CanBeSnappedToSnapZone = false;
         }
 
         public override void GrabItem(Grabber grabbedBy) {
-
-            Debug.Log("Grabbed by " + grabbedBy.HandSide);
 
             // Add the climber so we can track it's position for Character movement
             if (bngController == null) {
@@ -42,4 +42,3 @@ namespace BNG {
         }
     }
 }
-

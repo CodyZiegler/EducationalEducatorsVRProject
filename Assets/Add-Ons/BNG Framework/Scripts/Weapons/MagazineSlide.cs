@@ -89,14 +89,14 @@ namespace BNG {
                 moveMagazine(new Vector3(0, localY, 0));
 
                 MagazineDistance = Vector3.Distance(transform.position, HeldMagazine.transform.position);
-
-                float lastTimeEjectSeconds = Time.time - lastEjectTime;
+               
+                bool clipRecentlyGrabbed = Time.time - HeldMagazine.LastGrabTime < 1f;
 
                 // Snap Magazine In Place
                 if (MagazineDistance < ClipSnapDistance) {
 
                     // Snap in place
-                    if(!magazineInPlace && lastTimeEjectSeconds > 0.75f) {
+                    if(!magazineInPlace && !recentlyEjected() && !clipRecentlyGrabbed) {
                         attachMagazine();
                     }
 
@@ -106,11 +106,14 @@ namespace BNG {
                     }
                 }
                 // Stop aligning clip with slide if we exceed this distance
-                else if(MagazineDistance >= ClipUnsnapDistance) {
-                    Debug.Log("Exceeded Distance " + MagazineDistance);
+                else if(MagazineDistance >= ClipUnsnapDistance && !recentlyEjected()) {
                     detachMagazine();
                 }
             }
+        }
+
+        bool recentlyEjected() {
+            return Time.time - lastEjectTime < 0.1f;
         }
 
         void moveMagazine(Vector3 localPosition) {
@@ -230,6 +233,7 @@ namespace BNG {
 
         public void EjectMagazine() {
             Grabbable ejectedMag = detachMagazine();
+            lastEjectTime = Time.time;
 
             StartCoroutine(EjectMagRoutine(ejectedMag));
         }
@@ -241,20 +245,22 @@ namespace BNG {
                 Rigidbody ejectRigid = ejectedMag.GetComponent<Rigidbody>();
 
                 // Wait before ejecting
-                yield return new WaitForFixedUpdate();
 
                 // Move clip down before we eject it
                 ejectedMag.transform.parent = transform;
 
                 if(ejectedMag.transform.localPosition.y > -ClipSnapDistance) {
-                    ejectedMag.transform.localPosition = new Vector3(0, -0.2f, 0);
+                    ejectedMag.transform.localPosition = new Vector3(0, -0.1f, 0);
                 }
 
                 // Eject with physics force
                 ejectedMag.transform.parent = null;
                 ejectRigid.AddForce(-ejectedMag.transform.up * EjectForce, ForceMode.VelocityChange);
-            }
 
+                yield return new WaitForFixedUpdate();
+                ejectedMag.transform.parent = null;
+
+            }
 
             yield return null;
         }
@@ -262,8 +268,6 @@ namespace BNG {
         // Pull out magazine from clip area
         public void OnGrabClipArea(Grabber grabbedBy)
         {
-            Debug.Log("OnGrabClipArea");
-
             if (HeldMagazine != null)
             {
                 // Store reference so we can eject the clip first

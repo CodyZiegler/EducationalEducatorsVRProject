@@ -18,47 +18,59 @@ namespace BNG {
         /// <summary>
         /// Destroy this object on Death? False if need to respawn.
         /// </summary>
+        [Tooltip("Destroy this object on Death? False if need to respawn.")]
         public bool DestroyOnDeath = true;
 
         /// <summary>
         /// How long to wait before destroying this objects
         /// </summary>
+        [Tooltip("How long to wait before destroying this objects")]
         public float DestroyDelay = 0f;
 
         /// <summary>
         /// If true the object will be reactivated according to RespawnTime
         /// </summary>
+        [Tooltip("If true the object will be reactivated according to RespawnTime")]
         public bool Respawn = false;
 
         /// <summary>
         /// If Respawn true, this gameObject will reactivate after RespawnTime. In seconds.
         /// </summary>
+        [Tooltip("If Respawn true, this gameObject will reactivate after RespawnTime. In seconds.")]
         public float RespawnTime = 10f;
 
         /// <summary>
         /// Remove any decals that were parented to this object on death. Useful for clearing unused decals.
         /// </summary>
+        [Tooltip("Remove any decals that were parented to this object on death. Useful for clearing unused decals.")]
         public bool RemoveBulletHolesOnDeath = true;
 
         bool destroyed = false;
 
+        Rigidbody rigid;
+        bool initialWasKinematic;
+
         private void Start() {
             _startingHealth = Health;
+            rigid = GetComponent<Rigidbody>();
+            if(rigid) {
+                initialWasKinematic = rigid.isKinematic;
+            }            
         }
 
-        public void DealDamage(float damageAmount) {
+        public virtual void DealDamage(float damageAmount) {
 
             if (destroyed) {
                 return;
             }
 
             Health -= damageAmount;
-            if (Health < 0) {
+            if (Health <= 0) {
                 DestroyThis();
             }
         }
 
-        public void DestroyThis() {
+        public virtual void DestroyThis() {
             Health = 0;
             destroyed = true;
 
@@ -73,6 +85,11 @@ namespace BNG {
             }
             foreach (var col in DeactivateCollidersOnDeath) {
                 col.enabled = false;
+            }
+
+            // Force to kinematic if rigid present
+            if(rigid) {
+                rigid.isKinematic = true;
             }
 
             if (DestroyOnDeath) {
@@ -114,7 +131,11 @@ namespace BNG {
             foreach (var col in DeactivateCollidersOnDeath) {
                 col.enabled = true;
             }
+
+            // Reset kinematic property if applicable
+            if(rigid) {
+                rigid.isKinematic = initialWasKinematic;
+            }
         }
     }
 }
-

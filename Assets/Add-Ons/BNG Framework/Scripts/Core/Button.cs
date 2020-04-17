@@ -43,7 +43,15 @@ namespace BNG {
 
             Vector3 buttonDownPosition = new Vector3(transform.localPosition.x, MinLocalY, transform.localPosition.z);
             Vector3 buttonUpPosition = new Vector3(transform.localPosition.x, MaxLocalY, transform.localPosition.z);
-            bool grabberInButton = grabbers.Count > 0;
+            bool grabberInButton = false;
+
+            // Find a valid grabber to push down
+            foreach(var g in grabbers) {
+                if(!g.HoldingItem) {
+                    grabberInButton = true;
+                    break;
+                }
+            }
 
             if (grabberInButton) {
                 float speed = ButtonSpeed; //;framesInGrabber < 3 ? 5f : ButtonSpeed;

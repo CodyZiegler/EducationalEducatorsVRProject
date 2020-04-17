@@ -21,6 +21,8 @@ namespace BNG {
 
         public bool BladeEnabled = false;
 
+        bool SaberSwitchOn = false;
+
         public float LaserLength = 1f;
         public float LaserActivateSpeed = 10f;
 
@@ -38,13 +40,13 @@ namespace BNG {
 
         void Update() {
 
-            //// Toggle Saber
-            //if (grabbable.BeingHeld && input.BButtonDown) {
-            //    BladeEnabled = !BladeEnabled;
-            //}
+            // Toggle Saber
+            if (grabbable.BeingHeld && input.BButtonDown) {
+                SaberSwitchOn = !SaberSwitchOn;
+            }
 
             // Sheath / Unsheath
-            if (BladeEnabled) {
+            if (BladeEnabled || SaberSwitchOn) {
                 BladeTransform.localScale = Vector3.Lerp(BladeTransform.localScale, Vector3.one, Time.deltaTime * LaserActivateSpeed);
             }
             else {
@@ -75,7 +77,7 @@ namespace BNG {
 
             Colliding = false;
 
-            if (BladeEnabled == false) {
+            if (BladeEnabled == false && !SaberSwitchOn) {
                 CollisionParticle.Pause();
                 return;
             }

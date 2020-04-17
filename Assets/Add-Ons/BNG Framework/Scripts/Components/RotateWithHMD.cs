@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace BNG {
-    public class RotateWithHMD : MonoBehaviour {
 
-        /// <summary>
-        /// The Eye / HMD to maintain rotation with
-        /// </summary>
-        public Transform HMDTransform;
+    // This will rotate a transform along with a users headset. Useful for keeping an object aligned with the camera, independent of the player capsule collider.
+    public class RotateWithHMD : MonoBehaviour {
 
         /// <summary>
         /// The Character Capsule to  rotate along with
@@ -20,22 +17,33 @@ namespace BNG {
         /// </summary>
         public Vector3 Offset = new Vector3(0, -0.25f, 0);
 
+        public float RotateSpeed = 5f;
+        public float MoveSpeed = 5f;
 
-        // Update is called once per frame
-        void Update() {
+        Transform camTransform;
+
+        void LateUpdate() {
             updateBodyPosition();
         }
 
-        public Vector3 DebugVector;
-
         void updateBodyPosition() {
-            if (HMDTransform != null) {
-                transform.position = HMDTransform.position;
+
+            if (camTransform == null) {
+                camTransform = Camera.main.transform;
+            }
+
+            if (camTransform != null) {
+
+                transform.position = camTransform.position;
 
                 // Move position relative to Character Controller
                 if (Character != null) {
-                    transform.rotation = Quaternion.Lerp(transform.rotation, Character.transform.rotation, Time.deltaTime * 5f);
+                    //transform.rotation = Quaternion.Lerp(transform.rotation, Character.transform.rotation, Time.deltaTime * RotateSpeed);
                     transform.localPosition -= Character.transform.TransformVector(Offset);
+                }
+
+                if (camTransform != null) {
+                    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0.0f, Camera.main.transform.rotation.eulerAngles.y, 0.0f), Time.deltaTime * RotateSpeed);
                 }
             }
         }

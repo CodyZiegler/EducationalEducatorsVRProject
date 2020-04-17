@@ -16,6 +16,7 @@ namespace BNG {
 
         OVRPlayerController pControl;
         CharacterController characterController;
+        BNGPlayerController bngController;
         AudioSource audioSource;
 
         bool GravityEnabled = true;
@@ -26,6 +27,7 @@ namespace BNG {
         void Start() {
             pControl = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<OVRPlayerController>();
             characterController = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<CharacterController>();
+            bngController = GameObject.FindGameObjectWithTag("Player").GetComponent<BNGPlayerController>();
             _initialGravityModifier = pControl.GravityModifier;
             audioSource = GetComponent<AudioSource>();
         }
@@ -42,11 +44,6 @@ namespace BNG {
             base.OnTrigger(triggerValue);
         }
 
-        // Toggle on B / X Press
-        public override void OnButton2() {
-            ChangeGravity(!GravityEnabled);
-        }
-
         public override void OnGrab(Grabber grabber) {
             // enforce gravity
             ChangeGravity(false);
@@ -54,7 +51,7 @@ namespace BNG {
 
         public void ChangeGravity(bool gravityOn) {
             GravityEnabled = gravityOn;
-            pControl.GravityModifier = GravityEnabled ? _initialGravityModifier : 0;
+            bngController.GravityEnabled = gravityOn;
         }
 
         public override void OnRelease() {

@@ -35,6 +35,11 @@ namespace BNG {
         /// </summary>
         public GameObject ShotgunShell;
 
+        /// <summary>
+        /// Instantiate this if shotgun equipped
+        /// </summary>
+        public GameObject RifleClip;
+
         // Update is called once per frame
         void Update() {
             bool weaponEquipped = false;
@@ -51,8 +56,13 @@ namespace BNG {
 
         bool grabberHasWeapon(Grabber g) {
 
-            // Holding shotgun or pistol
-            if(g != null && g.HeldGrabbable != null && (g.HeldGrabbable.transform.name.Contains("Shotgun") || g.HeldGrabbable.transform.name.Contains("Pistol"))) {
+            if(g == null || g.HeldGrabbable == null) {
+                return false;
+            }
+
+            // Holding shotgun, pistol, or rifle
+            string grabName = g.HeldGrabbable.transform.name;
+            if (grabName.Contains("Shotgun") || grabName.Contains("Pistol") || grabName.Contains("Rifle")) {
                 return true;
             }
 
@@ -61,11 +71,23 @@ namespace BNG {
 
         GameObject getAmmo() {
 
-            if (LeftGrabber != null && LeftGrabber.HeldGrabbable != null && LeftGrabber.HeldGrabbable.transform.name.Contains("Shotgun")) {
+            bool leftGrabberValid = LeftGrabber != null && LeftGrabber.HeldGrabbable != null;
+            bool rightGrabberValid = RightGrabber != null && RightGrabber.HeldGrabbable != null;
+
+            // Shotgun
+            if (leftGrabberValid && LeftGrabber.HeldGrabbable.transform.name.Contains("Shotgun")) {
                 return ShotgunShell;
             }
-            else if (RightGrabber != null && RightGrabber.HeldGrabbable != null && RightGrabber.HeldGrabbable.transform.name.Contains("Shotgun")) {
+            else if (rightGrabberValid && RightGrabber.HeldGrabbable.transform.name.Contains("Shotgun")) {
                 return ShotgunShell;
+            }
+
+            // Rifle
+            if (leftGrabberValid && LeftGrabber.HeldGrabbable.transform.name.Contains("Rifle")) {
+                return RifleClip;
+            }
+            else if (rightGrabberValid && RightGrabber.HeldGrabbable.transform.name.Contains("Rifle")) {
+                return RifleClip;
             }
 
             // Default to Pistol

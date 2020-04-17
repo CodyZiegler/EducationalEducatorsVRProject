@@ -56,6 +56,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -90,8 +91,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4293907302815737053}
   - component: {fileID: 4293907302815737026}
-  - component: {fileID: 4293907302815737052}
   - component: {fileID: -7005224980300027057}
+  - component: {fileID: 4293907302815737052}
   - component: {fileID: -4909564451582988597}
   - component: {fileID: -3487504748541494705}
   - component: {fileID: -699971369936066834}
@@ -126,20 +127,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4293907302815737054}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!136 &4293907302815737052
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4293907302815737054}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.005
-  m_Height: 0.025
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.012, z: 0}
 --- !u!54 &-7005224980300027057
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -156,6 +143,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &4293907302815737052
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4293907302815737054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.005
+  m_Height: 0.025
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.012, z: 0}
 --- !u!82 &-4909564451582988597
 AudioSource:
   m_ObjectHideFlags: 0
@@ -265,6 +266,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionAudio: {fileID: 8300000, guid: ba9840947c7ac514bb44b20a444375b6, type: 3}
+  MinimumVolume: 0.25
+  MaximumVolume: 1
+  RecentlyPlayedSound: 0
+  LastRelativeVelocity: 0
 --- !u!114 &-699971369936066834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,11 +296,17 @@ MonoBehaviour:
   HideHandGraphics: 0
   ParentToHands: 1
   ParentHandModel: 0
+  CustomHandPose: 0
+  SecondaryGrabBehavior: 0
   OtherGrabbableMustBeGrabbed: {fileID: 0}
   CollisionSpring: 3000
   CollisionSlerp: 500
-  GrabPositionOffset: {x: 0, y: 0, z: 0}
-  GrabRotationOffset: {x: 0, y: 0, z: 0}
+  CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
+  LastGrabTime: 0
+  LastDropTime: 0
+  GrabOffset: {fileID: 0}
+  GrabPoints: []
   MirrorOffsetForOtherHand: 1
 --- !u!114 &-475379909349637119
 MonoBehaviour:
@@ -366,6 +377,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

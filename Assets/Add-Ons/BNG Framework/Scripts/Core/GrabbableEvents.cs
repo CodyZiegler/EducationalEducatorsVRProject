@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace BNG {
 
@@ -34,7 +35,7 @@ namespace BNG {
         /// Has been dropped from the Grabber
         /// </summary>
         public virtual void OnRelease() {
-
+           
         }
 
         /// <summary>
@@ -42,7 +43,7 @@ namespace BNG {
         /// </summary>
         /// <param name="touchingHand"></param>
         public virtual void OnBecomesClosestGrabbable(ControllerHand touchingHand) {
-           
+            
         }
 
         /// <summary>
@@ -74,7 +75,7 @@ namespace BNG {
         /// </summary>
         /// <param name="gripValue">0 - 1 Open / Closed</param>
         public virtual void OnGrip(float gripValue) {
-
+            
         }
 
         /// <summary>
@@ -82,30 +83,29 @@ namespace BNG {
         /// </summary>
         /// <param name="triggerValue">0 - 1 Open / Closed</param>
         public virtual void OnTrigger(float triggerValue) {
-
+            
         }
 
         /// <summary>
         /// Fires if trigger was pressed down on this controller this frame. Only fired if object is being held.
         /// </summary>
         public virtual void OnTriggerDown() {
-
+            
         }
 
         /// <summary>
         /// Fires if trigger was released on this controller this frame. Only fired if object is being held.
         /// </summary>
         public virtual void OnTriggerUp() {
-
+           
         }
-
 
         /// <summary>
         /// Button 1 is being held down this frame but not last
         /// Oculus : Button 1 = "A" if held in Right controller."X" if held in Left Controller
         /// </summary>
         public virtual void OnButton1() {
-
+            
         }
 
         /// <summary>
@@ -121,7 +121,7 @@ namespace BNG {
         /// Oculus : Button 1 = "A" if held in Right controller."X" if held in Left Controller
         /// </summary>
         public virtual void OnButton1Up() {
-
+            
         }
 
 
@@ -130,7 +130,7 @@ namespace BNG {
         /// Oculus : Button 2 = "B" if held in Right controller."Y" if held in Left Controller
         /// </summary>
         public virtual void OnButton2() {
-
+            
         }
 
         /// <summary>
@@ -138,7 +138,7 @@ namespace BNG {
         /// Oculus : Button 2 = "B" if held in Right controller."Y" if held in Left Controller
         /// </summary>
         public virtual void OnButton2Down() {
-
+           
         }
 
         /// <summary>
@@ -150,4 +150,3 @@ namespace BNG {
         }
     }
 }
-

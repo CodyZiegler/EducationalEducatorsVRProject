@@ -43,6 +43,10 @@ namespace BNG {
         /// </summary>
         public bool EnableCollisionDuringGrab = false;
 
+        public float PointAmount;
+        public float GripAmount;
+        public bool MakingFist;
+
         // Colliders to keep track of
         List<Collider> handColliders;
 
@@ -67,14 +71,24 @@ namespace BNG {
 
             bool grabbing = HandGrabber != null && HandGrabber.HoldingItem;
            
-            bool makingFist = HandControl.GripAmount > 0.9f && HandControl.PointAmount == 0;
-            
-            bool pointing = HandControl.PointAmount > 0.9f && HandControl.GripAmount > 0.9f;
+            bool makingFist = HandControl != null && HandControl.GripAmount > 0.9f && (HandControl.PointAmount < 0.1 || HandControl.PointAmount > 1);
+            MakingFist = makingFist;
+            PointAmount = HandControl.PointAmount;
+            GripAmount = HandControl.GripAmount;
+
+            bool pointing = HandControl != null && HandControl.PointAmount > 0.9f && HandControl.GripAmount > 0.9f;
 
             foreach (var col in handColliders) {
 
                 // Immediately disable collider if no collision on grab
                 if (EnableCollisionDuringGrab == false && grabbing) {
+                    col.enabled = false;
+                    continue;
+                }
+
+                // Immediately disable collider if we just released an item. 
+                // This is so we don't enable the collider right when we are trying to drop something
+                if(HandGrabber != null && (Time.time - HandGrabber.LastDropTime < 0.1f )) {
                     col.enabled = false;
                     continue;
                 }
@@ -99,4 +113,3 @@ namespace BNG {
         }
     }
 }
-

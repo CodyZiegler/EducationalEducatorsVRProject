@@ -54,6 +54,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -132,6 +133,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -190,6 +192,36 @@ Transform:
   m_Father: {fileID: 9048278835047995887}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5233726775264148974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6930231067799870458}
+  m_Layer: 0
+  m_Name: GrabTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6930231067799870458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5233726775264148974}
+  m_LocalRotation: {x: 0.16350126, y: 0.0005464768, z: 0.04066836, w: 0.98570436}
+  m_LocalPosition: {x: 0.0015, y: -0.0555, z: -0.0082}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9048278835047995887}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 18.801, y: 0.87000006, z: 4.8690004}
 --- !u!1 &7224818926312131355
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +276,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -322,6 +355,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -358,7 +392,7 @@ GameObject:
   - component: {fileID: 9048278835047995886}
   - component: {fileID: 1516907861}
   - component: {fileID: 1516907860}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,6 +411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4589825395226069492}
+  - {fileID: 6930231067799870458}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -435,13 +470,16 @@ MonoBehaviour:
   BreakDistance: 1
   HideHandGraphics: 0
   ParentToHands: 1
-  ParentHandModel: 0
+  ParentHandModel: 1
+  CustomHandPose: 0
   SecondaryGrabBehavior: 0
   OtherGrabbableMustBeGrabbed: {fileID: 0}
   CollisionSpring: 3000
   CollisionSlerp: 500
   CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
+  LastGrabTime: 0
   LastDropTime: 0
-  GrabPositionOffset: {x: 0, y: -0.05, z: 0}
-  GrabRotationOffset: {x: 0, y: 0, z: 0}
+  GrabPoints:
+  - {fileID: 6930231067799870458}
   MirrorOffsetForOtherHand: 1

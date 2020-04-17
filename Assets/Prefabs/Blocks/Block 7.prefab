@@ -4828,6 +4828,7 @@ GameObject:
   - component: {fileID: 1796433113}
   - component: {fileID: 1796433112}
   - component: {fileID: -3277827337843351083}
+  - component: {fileID: 8682746003796995015}
   m_Layer: 0
   m_Name: Block 7
   m_TagString: Block
@@ -4923,28 +4924,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeingHeld: 0
-  RemoteGrabbable: 0
-  RemoteGrabDistance: 2
   GrabButton: 0
   Grabtype: 0
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 7.5
+  RemoteGrabbable: 0
+  RemoteGrabDistance: 2
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 1
   HideHandGraphics: 0
   ParentToHands: 1
   ParentHandModel: 0
+  CustomHandPose: 0
   SecondaryGrabBehavior: 0
   OtherGrabbableMustBeGrabbed: {fileID: 0}
   CollisionSpring: 3000
   CollisionSlerp: 500
   CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
+  LastGrabTime: 0
   LastDropTime: 0
-  GrabPositionOffset: {x: 0, y: 0, z: 0}
-  GrabRotationOffset: {x: 0, y: 0, z: 0}
+  AddControllerVelocityOnDrop: 1
+  SecondaryGrabbable: {fileID: 0}
+  SecondHandLookSpeed: 40
+  SecondaryLookOffset: {x: 0, y: 0, z: 0}
+  SecondaryLookAtTransform: {fileID: 0}
+  LocalOffsetTransform: {fileID: 0}
   MirrorOffsetForOtherHand: 1
+  GrabPoints: []
 --- !u!114 &1796433113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4990,3 +4999,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf6fa0e254ec2cf4c863de26c786314f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &8682746003796995015
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261050674885024651}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

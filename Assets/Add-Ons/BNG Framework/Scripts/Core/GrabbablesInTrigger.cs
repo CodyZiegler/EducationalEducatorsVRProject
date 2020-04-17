@@ -85,6 +85,11 @@ namespace BNG {
         public Grabbable GetClosestGrabbable(Dictionary<Collider, Grabbable> grabbables, bool remoteOnly = false) {
             _closest = null;
             _lastDistance = 9999f;
+
+            if(grabbables == null) {
+                return null;
+            }
+
             foreach (var kvp in grabbables) {                
 
                 if (kvp.Value == null || !kvp.Value.IsValidGrabbable()) {
@@ -93,9 +98,14 @@ namespace BNG {
 
                 // Use Collider transform as position
                 _thisDistance = Vector3.Distance(kvp.Value.transform.position, transform.position);
-                if (_thisDistance < _lastDistance && kvp.Value.isActiveAndEnabled && _thisDistance < kvp.Value.RemoteGrabDistance) {
+                if (_thisDistance < _lastDistance && kvp.Value.isActiveAndEnabled) {
                     // Not a valid option
                     if (remoteOnly && !kvp.Value.RemoteGrabbable) {
+                        continue;
+                    }
+
+                    // Not within remote grab range
+                    if (remoteOnly && _thisDistance > kvp.Value.RemoteGrabDistance) {
                         continue;
                     }
 
@@ -142,7 +152,7 @@ namespace BNG {
             // Position was manually set outside of break distance
             // No longer possible for it to be the closestGrabbable
             else if (grab == ClosestGrabbable) {
-                if (Vector3.Distance(grab.transform.position, transform.position) > grab.BreakDistance) {
+                if (grab.BreakDistance > 0 && Vector3.Distance(grab.transform.position, transform.position) > grab.BreakDistance) {
                     return false;
                 }
             }
@@ -161,7 +171,7 @@ namespace BNG {
                 if (g.Key != null && g.Key.enabled && g.Value.isActiveAndEnabled) {
 
                     // If outside of distance then this collider may have been disabled / re-enabled. Scrub from Nearby
-                    if (Vector3.Distance(g.Key.transform.position, transform.position) > g.Value.BreakDistance) {
+                    if (g.Value.BreakDistance > 0 && Vector3.Distance(g.Key.transform.position, transform.position) > g.Value.BreakDistance) {
                         continue;
                     }
 
@@ -198,8 +208,16 @@ namespace BNG {
         }
 
         public void AddValidRemoteGrabbable(Collider col, Grabbable grabObject) {
-            if (grabObject != null && grabObject.RemoteGrabbable && !ValidRemoteGrabbables.ContainsKey(col)) {
-                ValidRemoteGrabbables.Add(col, grabObject);
+            try {
+                if (grabObject != null && grabObject.RemoteGrabbable && col != null && !ValidRemoteGrabbables.ContainsKey(col)) {
+                    if (ValidRemoteGrabbables == null) {
+                        ValidRemoteGrabbables = new Dictionary<Collider, Grabbable>();
+                    }
+                    ValidRemoteGrabbables.Add(col, grabObject);
+                }
+            }
+            catch(System.Exception e) {
+                Debug.Log("Could not add Collider " + col.transform.name + " " + e.Message);
             }
         }
 
@@ -224,4 +242,3 @@ namespace BNG {
         }
     }
 }
-

@@ -9,27 +9,32 @@ namespace BNG {
     /// <summary>
     /// A trigger collider that handles grabbing grabbables.
     /// </summary>
+    [RequireComponent(typeof(GrabbablesInTrigger))]
     public class Grabber : MonoBehaviour {
 
         /// <summary>
         /// Which controller side. None if not attached to a controller.
         /// </summary>
+        [Tooltip("Which controller side. None if not attached to a controller.")]
         public ControllerHand HandSide = ControllerHand.Left;
 
         /// <summary>
         /// 0-1 determine how much to consider a grip.
         /// Example : 0.75 is holding the grip down 3/4 of the way
         /// </summary>
+        [Tooltip("0-1 determine how much to consider a grip. Example : 0.75 is holding the grip down 3/4 of the way")]
         public float GripAmount = 0.9f;
 
         /// <summary>
-        /// How much grip considered to release an object (0-1)
+        /// How much grip considered to release an ob ect (0-1)
         /// </summary>
+        [Tooltip("How much grip considered to release an ob ect (0-1)")]
         public float ReleaseGripAmount = 0.1f;
 
         /// <summary>
         /// The Grabbable we are currently holding. Null if not holding anything.
         /// </summary>
+        [Tooltip("The Grabbable we are currently holding. Null if not holding anything.")]
         public Grabbable HeldGrabbable;
 
         Grabbable previousClosest;
@@ -42,6 +47,9 @@ namespace BNG {
         {
             get { return HeldGrabbable != null; }
         }
+
+        // Time.time when we last dropped a Grabbable
+        public float LastDropTime;
 
         /// <summary>
         /// Are we currently pulling a remote grabbable towards us?
@@ -71,16 +79,19 @@ namespace BNG {
         /// <summary>
         /// Assign a Grabbable here if you want to auto equip it on Start
         /// </summary>
+        [Tooltip("Assign a Grabbable here if you want to auto equip it on Start")]
         public Grabbable EquipGrabbableOnStart;
 
         /// <summary>
-        /// Force Grab of Grip. Should not have same value as ForceRelease
+        /// Same as holding down grip if set to true. Should not have same value as ForceRelease.
         /// </summary>
+        [Tooltip("Same as holding down grip if set to true. Should not have same value as ForceRelease.")]
         public bool ForceGrab = false;
 
         /// <summary>
         /// Force the release of grip
         /// </summary>
+        [Tooltip("Force the release of grip.")]
         public bool ForceRelease = false;
 
         public Vector3 PreviousPosition;
@@ -97,14 +108,40 @@ namespace BNG {
 
         Rigidbody rb;
         InputBridge input;
+        ConfigurableJoint joint;
 
         // Is this a fresh grab / has the control been depressed
-        bool freshGrab = true;
+        [HideInInspector]
+        public bool FreshGrip = true;
+        /// <summary>
+        /// How many seconds to check for grab input while Grip is held down. After grip is held down for this long, grip will need to be repressed in order to pick up an object.
+        /// </summary>
+        [Tooltip("How many seconds to check for grab input while Grip is held down. After grip is held down for this long, grip will need to be repressed in order to pick up an object.")]
+        public float GrabCheckSeconds = 2f;
+        float currentGrabTime;
+
+        // Used for tracking playspace rotation
+        GameObject playSpace;
 
         void Start() {
-
             rb = GetComponent<Rigidbody>();
             grabsInTrigger = GetComponent<GrabbablesInTrigger>();
+            joint = GetComponent<ConfigurableJoint>();
+            // Setup defaults
+            if(joint == null) {
+                joint = gameObject.AddComponent<ConfigurableJoint>();
+                joint.rotationDriveMode = RotationDriveMode.Slerp;
+
+                JointDrive slerpDrive = joint.slerpDrive;
+                slerpDrive.positionSpring = 600;
+
+                JointDrive xDrive = joint.xDrive;
+                xDrive.positionSpring = 2500;
+                JointDrive yDrive = joint.yDrive;
+                yDrive.positionSpring = 2500;
+                JointDrive zDrive = joint.zDrive;
+                zDrive.positionSpring = 2500;
+            }
 
             // Look for input from Player
             if (GameObject.FindGameObjectWithTag("Player")) {
@@ -117,6 +154,7 @@ namespace BNG {
                 handsGraphicsRotation = HandsGraphics.transform.localRotation;
             }
 
+            playSpace = GameObject.Find("TrackingSpace");
             previousVelocities = new List<Vector3>();
             previousAngularVelocities = new List<Vector3>();
 
@@ -144,24 +182,46 @@ namespace BNG {
                 }
             }
 
+            // Make sure grab is valid
+            updateFreshGrabStatus();
+
             // Fire off updates
             checkGrabbableEvents();
 
+            // Check for input to grab or release item
+            if ((inputCheckGrab() && !HoldingItem) || ForceGrab) {
+                TryGrab();               
+            }
+            else if((HoldingItem && inputCheckRelease()) || ForceRelease) {                
+                TryRelease();
+            }
+        }
+
+        void updateFreshGrabStatus() {
             // Update Fresh Grab status
             if (getGrabInput(GrabButton.Grip) <= ReleaseGripAmount) {
                 // We release grab, so this is considered fresh
-                freshGrab = true;
+                FreshGrip = true;
+                currentGrabTime = 0;
             }
 
-            if ((inputCheckGrab() && !HoldingItem) || ForceGrab) {
-                tryGrab();               
+            // Increment fresh grab time
+            if (getGrabInput(GrabButton.Grip) > GripAmount) {
+                currentGrabTime += Time.deltaTime;
             }
-            else if((HoldingItem && inputCheckRelease()) || ForceRelease) {                
-                tryRelease();
+
+            // Not considered a valid grab if holding down for too long
+            if (currentGrabTime > GrabCheckSeconds) {
+                FreshGrip = false;
             }
         }
 
         void checkGrabbableEvents() {
+
+            // Bail if nothing in our trigger area
+            if(grabsInTrigger == null) {
+                return;
+            }
 
             // If last closest was this one let event know and remove validator  
             if (previousClosest != grabsInTrigger.ClosestGrabbable) {
@@ -265,7 +325,11 @@ namespace BNG {
             if (closest.Grabtype == HoldType.HoldDown) {
                 bool grabInput = getGrabInput(closest.GrabButton) >= GripAmount;
 
-                return grabInput && freshGrab;
+                if(closest.GrabButton == GrabButton.Grip && !FreshGrip) {
+                    return false;
+                }
+
+                return grabInput;
             }
             // Check for toggle controls
             else if (closest.Grabtype == HoldType.Toggle) {
@@ -374,7 +438,7 @@ namespace BNG {
             return false;
         }               
 
-        bool tryGrab() {
+        public bool TryGrab() {
             // Already holding something
             if (HeldGrabbable != null) {
                 return false;
@@ -407,24 +471,18 @@ namespace BNG {
             resetFlyingGrabbable();
 
             // Drop whatever we were holding
-            if (HeldGrabbable != null) {
-                tryRelease();
+            if (HeldGrabbable != null && HeldGrabbable) {
+                TryRelease();
             }
 
             // Assign new grabbable
             HeldGrabbable = item;
 
             // Just grabbed something, no longer fresh.
-            freshGrab = false;
+            FreshGrip = false;
 
             // Let item know it's been grabbed
             item.GrabItem(this);
-        }
-
-        public void HideHandGraphics() {
-            if (HandsGraphics != null) {
-                HandsGraphics.gameObject.SetActive(false);
-            }
         }
 
         // Dropped whatever was in hand
@@ -433,9 +491,17 @@ namespace BNG {
 
             transform.localEulerAngles = Vector3.zero;
 
+            LastDropTime = Time.time;
+
             resetFlyingGrabbable();
 
             ResetHandGraphics();
+        }
+
+        public void HideHandGraphics() {
+            if (HandsGraphics != null) {
+                HandsGraphics.gameObject.SetActive(false);
+            }
         }
 
         public void ResetHandGraphics() {
@@ -450,7 +516,7 @@ namespace BNG {
             }
         }
 
-        void tryRelease() {
+        void TryRelease() {
             if (HeldGrabbable != null && HeldGrabbable.CanBeDropped) {
                 HeldGrabbable.DropItem(this);
             }
@@ -482,11 +548,22 @@ namespace BNG {
         }
 
         public Vector3 GetGrabberAveragedVelocity() {
-            return GetAveragedVector(previousVelocities);
+            if (playSpace) {
+                return playSpace.transform.rotation * GetAveragedVector(previousVelocities);
+            }
+            else {
+                return GetAveragedVector(previousVelocities);
+            }
         }
 
         public Vector3 GetGrabberAveragedAngularVelocity() {
-            return GetAveragedVector(previousAngularVelocities);
+
+            if (playSpace) {
+                return playSpace.transform.rotation * GetAveragedVector(previousAngularVelocities);
+            }
+            else {
+                return GetAveragedVector(previousAngularVelocities);
+            }
         }
 
         Vector3 GetAveragedVector(List<Vector3> vectors) {
@@ -498,7 +575,8 @@ namespace BNG {
                 float y = 0; 
                 float z = 0;
 
-                foreach (var v in vectors) {
+                for (int i = 0; i < count; i++) {
+                    Vector3 v = vectors[i];
                     x += v.x;
                     y += v.y;
                     z += v.z;
@@ -511,6 +589,7 @@ namespace BNG {
         }
 
         public Vector3 GetGrabberAngularVelocity() {
+            
             // Left controller angular velocity
             if (HandSide == ControllerHand.Left) {
                 return OVRInput.GetLocalControllerAngularVelocity(OVRInput.Controller.LTouch);

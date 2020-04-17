@@ -20,40 +20,35 @@ namespace BNG {
         Transform rightHandDummy;
         Transform lookatDummy;
 
+        Vector3 localPos;
+        Quaternion localRot;
+
+        Transform cam;
+
         // Start is called before the first frame update
         void Start() {
+            cam = Camera.main.transform;
             animator = GetComponent<Animator>();
             headBone = animator.GetBoneTransform(HumanBodyBones.Head);
 
             leftHandDummy = new GameObject().transform;
             rightHandDummy = new GameObject().transform;
             lookatDummy = new GameObject().transform;
+
+           
         }
 
         // Update is called once per frame
-        void Update() {
-            transform.LookAt(Camera.main.transform);
+        void LateUpdate() {
+            transform.LookAt(cam);
             transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
-        }
 
-        void OnAnimatorIK() {
-
-            Vector3 localPos;
-            Quaternion localRot;
-
-
-            // Change Head Position
-            animator.SetLookAtWeight(1);
             lookatDummy.position = HeadFollow.position;
             lookatDummy.parent = PlayerTransform;
             localPos = lookatDummy.localPosition;
 
             lookatDummy.parent = transform;
             lookatDummy.localPosition = localPos;
-            animator.SetLookAtPosition(Camera.main.transform.position);
-            animator.SetLookAtPosition(lookatDummy.position);
-
-
 
             // Left Hand
             leftHandDummy.position = LeftHandFollow.position;
@@ -67,11 +62,6 @@ namespace BNG {
             leftHandDummy.localRotation = localRot;
             leftHandDummy.localEulerAngles += HandRotationOffset;
 
-            animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1);
-            animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1);
-            animator.SetIKPosition(AvatarIKGoal.LeftHand, leftHandDummy.position);
-            animator.SetIKRotation(AvatarIKGoal.LeftHand, leftHandDummy.rotation);
-
             // Right Hand
             rightHandDummy.position = RightHandFollow.position;
             rightHandDummy.rotation = RightHandFollow.rotation;
@@ -83,9 +73,22 @@ namespace BNG {
             rightHandDummy.localPosition = localPos;
             rightHandDummy.localRotation = localRot;
             rightHandDummy.localEulerAngles -= HandRotationOffset;
+        }
 
+        void OnAnimatorIK() {
+            // Set weights for all IK goals
+            animator.SetLookAtWeight(1);
+            animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1);
+            animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1);
             animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
             animator.SetIKRotationWeight(AvatarIKGoal.RightHand, 1);
+
+            animator.SetLookAtPosition(cam.position);
+            animator.SetLookAtPosition(lookatDummy.position);
+
+            animator.SetIKPosition(AvatarIKGoal.LeftHand, leftHandDummy.position);
+            animator.SetIKRotation(AvatarIKGoal.LeftHand, leftHandDummy.rotation);
+
             animator.SetIKPosition(AvatarIKGoal.RightHand, rightHandDummy.position);
             animator.SetIKRotation(AvatarIKGoal.RightHand, rightHandDummy.rotation);
         }

@@ -107,6 +107,9 @@ namespace BNG {
                 // Use trigger when grabbing from knock
                 Grabbable g = arrow.GetComponent<Grabbable>();
                 g.GrabButton = GrabButton.Trigger;
+                
+                // We will apply our own velocity on drop
+                g.AddControllerVelocityOnDrop = false;
 
                 GrabArrow(arrow.GetComponent<Arrow>());
             }
@@ -235,6 +238,10 @@ namespace BNG {
                 return;
             }            
 
+            if(drawDefs == null) {
+                return;
+            }
+
             DrawDefinition d = drawDefs.FirstOrDefault(x => x.DrawPercentage <= DrawPercent && x.DrawPercentage != _lastDrawHaptic);
             if(d != null && arrowGrabber != null) {
                 input.VibrateController(d.HapticFrequency, d.HapticAmplitude, 0.1f, arrowGrabber.HandSide);
@@ -266,9 +273,12 @@ namespace BNG {
             GrabbedArrow.ShaftCollider.enabled = false;
 
             arrowGrabbable = arrow.GetComponent<Grabbable>();
+
             if (arrowGrabbable) {
                 arrowGrabbable.GrabItem(arrowGrabber);
+                arrowGrabber.HeldGrabbable = arrowGrabbable;
             }
+
 
             Collider playerCollder = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Collider>();
             if(playerCollder) {
@@ -289,11 +299,17 @@ namespace BNG {
                 arrowGrabbable.GrabButton = GrabButton.Grip;
 
                 arrowGrabbable.DropItem(false, true);
+
+                // We can apply velocity now
+                arrowGrabbable.AddControllerVelocityOnDrop = true;
             }
 
             // Calculate shot force
             float shotForce = BowForce * StringDistance;
             GrabbedArrow.ShootArrow(GrabbedArrow.transform.forward * shotForce);
+
+            // Make sure hands are showing if we hid them
+            arrowGrabber.ResetHandGraphics();
 
             resetArrowValues();
         }
