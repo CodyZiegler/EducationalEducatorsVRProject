@@ -22,8 +22,13 @@ MonoBehaviour:
   m_Title: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
+=======
+  m_RootView: {fileID: 8}
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 542}
@@ -103,6 +108,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 284
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
@@ -211,6 +219,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 554
     height: 1331
   m_MinSize: {x: 276, y: 71}
@@ -218,11 +227,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
     width: 384
     height: 731
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
@@ -261,6 +275,9 @@ MonoBehaviour:
     height: 781
   m_MinSize: {x: 875, y: 542}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
@@ -376,6 +393,7 @@ MonoBehaviour:
     m_Folders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Add-Ons
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -389,17 +407,23 @@ MonoBehaviour:
   - Assets/Prefabs/Blocks
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
+=======
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
     - Assets/Prefabs/Blocks
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Prefabs/Blocks
+<<<<<<< HEAD
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\mmull\Documents\GitHub\EducationalEducatorsVRProject\EducationalEducatorsVRProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 51}
@@ -409,11 +433,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
     scrollPos: {x: 0, y: 120}
     m_SelectedIDs: 92ba0100
     m_LastClickedID: 113298
     m_ExpandedIDs: 000000009eb50100a0b50100a4b50100a6b50100a8b50100acb50100aeb50100b0b50100b2b5010000ca9a3b
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
@@ -446,7 +475,11 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000bcfd0000befd0000c0fd0000c2fd0000c4fd0000c6fd0000c8fd0000cafd0000ccfd0000cefd0000d0fd0000
+=======
+    m_ExpandedIDs: 000000009eb50100a0b50100a2b50100a4b50100a6b50100a8b50100aab50100acb50100aeb50100b0b50100b2b50100
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
     m_ExpandedIDs: 000000009eb50100a0b50100a2b50100a4b50100a6b50100a8b50100aab50100acb50100aeb50100b0b50100b2b50100
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
@@ -579,7 +612,11 @@ MonoBehaviour:
       m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 52fbffff
+=======
+      m_ExpandedIDs: 2c31fcff9031fcffd03ffcff2c40fcff8840fcffe440fcff4041fcff9441fcfff047fcffc265fcffba9efcff
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
       m_ExpandedIDs: 2c31fcff9031fcffd03ffcff2c40fcff8840fcffe440fcff4041fcff9441fcfff047fcffc265fcffba9efcff
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
@@ -647,9 +684,15 @@ MonoBehaviour:
   m_Position:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 9.375551, y: -9.394225, z: 21.806797}
     speed: 2
     m_Value: {x: 9.375551, y: -9.394225, z: 21.806797}
+=======
+    m_Target: {x: 0.2170608, y: 0.80606896, z: -0.0019317651}
+    speed: 2
+    m_Value: {x: 0.2170608, y: 0.80606896, z: -0.0019317651}
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
     m_Target: {x: 0.2170608, y: 0.80606896, z: -0.0019317651}
     speed: 2
@@ -707,6 +750,7 @@ MonoBehaviour:
   m_Rotation:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.28403324, y: 0.106155, z: -0.031616535, w: -0.9524699}
     speed: 2
     m_Value: {x: -0.28403324, y: 0.10615501, z: -0.031616535, w: -0.95246994}
@@ -717,6 +761,8 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
     m_Target: {x: 0.06810138, y: 0.70285654, z: -0.0678973, w: 0.70490974}
     speed: 2
     m_Value: {x: 0.068096176, y: 0.70280284, z: -0.06789211, w: 0.70485586}
@@ -725,6 +771,9 @@ MonoBehaviour:
     speed: 2
     m_Value: 8.493255
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
 =======
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
