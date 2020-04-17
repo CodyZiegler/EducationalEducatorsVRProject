@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":9.375551223754883,"y":-9.394225120544434,"z":21.80679702758789},"rotation":{"x":-0.28403323888778689,"y":0.10615500062704086,"z":-0.031616535037755969,"w":-0.9524698853492737},"size":27.439287185668947,"orthographic":false}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.21706080436706544,"y":0.8060689568519592,"z":-0.001931765116751194},"rotation":{"x":0.06810137629508972,"y":0.7028565406799316,"z":-0.06789729744195938,"w":0.7049097418785095},"size":8.493254661560059,"orthographic":false}
@@ -11,3 +12,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.21706080436706544,"y":0.8060689568519592,"z":-0.001931765116751194},"rotation":{"x":0.06810137629508972,"y":0.7028565406799316,"z":-0.06789729744195938,"w":0.7049097418785095},"size":8.493254661560059,"orthographic":false}
 >>>>>>> parent of 7add52d2... Particles and sounds implemented for right & wrong attempts
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":22.756099700927736,"y":4.335153102874756,"z":-0.4754199981689453},"rotation":{"x":-0.010366314090788365,"y":-0.9655680656433106,"z":-0.03882485255599022,"w":0.25729402899742129},"size":16.953243255615236,"orthographic":false}
+>>>>>>> parent of bf43645c... Put a datarecorder in each module

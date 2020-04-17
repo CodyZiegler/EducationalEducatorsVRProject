@@ -46563,6 +46563,7 @@ GameObject:
   - component: {fileID: 8202325032701421789}
   - component: {fileID: 2855280173786875993}
   - component: {fileID: 5061345644568655212}
+  - component: {fileID: 2855280173786875988}
   - component: {fileID: 2855280173786875995}
   - component: {fileID: 2855280173786875989}
   - component: {fileID: 7443350870406903087}
@@ -46712,6 +46713,24 @@ MonoBehaviour:
   IKBody: {fileID: 197224093738040244}
   AmmoObject: {fileID: 0}
   ItemsHolder: {fileID: 0}
+--- !u!114 &2855280173786875988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8202325032701421790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494e659c238ebc5428bdb4e8d43de9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlowTimeScale: 0.25
+  YKeySlowsTime: 1
+  SlowTimeClip: {fileID: 8300000, guid: 3264b135b94635f42a09d672b19cae85, type: 3}
+  SpeedupTimeClip: {fileID: 8300000, guid: 8a4a5bd0b5270024ca91ab9d88bce279, type: 3}
+  SetFixedDelta: 0
+  ForceTimeScale: 0
 --- !u!82 &2855280173786875995
 AudioSource:
   m_ObjectHideFlags: 0
