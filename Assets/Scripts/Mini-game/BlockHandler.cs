@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BNG;
 
+[RequireComponent(typeof(AudioSource))]
 public class BlockHandler : MonoBehaviour
 {
     public List<GameObject> block = new List<GameObject>();
@@ -14,6 +15,9 @@ public class BlockHandler : MonoBehaviour
     private List<Vector3> vecs;
     private List<Vector3> tempVecs = new List<Vector3>();
 
+    private AudioSource audioPlayer;
+    public AudioClip rightSound, wrongSound;
+
     void Start()
     {
         input = GetComponent<InputBridge>();
@@ -21,7 +25,8 @@ public class BlockHandler : MonoBehaviour
                                    new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.2f, 1f, -.5f), new Vector3(-.2f, 1f, -.5f)};
         populateTempBlock();
         GenerateBlocks();
-        
+
+        audioPlayer = gameObject.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -71,7 +76,21 @@ public class BlockHandler : MonoBehaviour
         }
     }
 
-    void CorrectPlacement() {
+    IEnumerator CorrectPlacement() {
+        GameObject[] allBlocks = GameObject.FindGameObjectsWithTag("Block");
+        ParticleSystem p;
+        foreach (GameObject b in allBlocks)
+        {
+            if (b.TryGetComponent<ParticleSystem>(out p))
+            {
+                p.Play();
+            }
+        }
+        audioPlayer.clip = rightSound;
+        audioPlayer.Play();
+
+        yield return new WaitForSeconds(2.0f);
+
         populateTempBlock();
         ClearBlocks();
         numOfBlocks++;
@@ -79,6 +98,9 @@ public class BlockHandler : MonoBehaviour
     }
 
     void WrongPlacements() {
+        audioPlayer.clip = wrongSound;
+        audioPlayer.Play();
+
         // This will need to output to a file both the time and amount of levels correct.
     }
 
@@ -103,7 +125,7 @@ public class BlockHandler : MonoBehaviour
         }
         if (blocksOK)
         {
-            CorrectPlacement();
+            StartCoroutine(CorrectPlacement());
         }
         else {
             WrongPlacements();
