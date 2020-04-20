@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class CameraRaycaster : MonoBehaviour
 {
+    private bool AllowFog = false;
+    private bool FogOff;
     void Update()
     {
         RaycastHit hit;
@@ -20,6 +24,32 @@ public class CameraRaycaster : MonoBehaviour
             {
                 s.LookingAt();
             }
+        }
+    }
+    private void OnPreRender()
+    {
+        if (SceneManager.GetActiveScene().name == "Negative")
+        {
+            FogOff = RenderSettings.fog;
+            RenderSettings.fog = true;
+            RenderSettings.fogDensity = .01f;
+        }
+        else
+        {
+            FogOff = RenderSettings.fog;
+            RenderSettings.fog = AllowFog;
+        }
+    }
+    private void OnPostRender()
+    {
+        if (SceneManager.GetActiveScene().name == "Negative")
+        {
+            RenderSettings.fog = true;
+            RenderSettings.fogDensity = .0001f;
+        }
+        else
+        {
+            RenderSettings.fog = FogOff;
         }
     }
 }
