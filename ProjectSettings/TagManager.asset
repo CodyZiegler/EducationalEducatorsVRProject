@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Environment/Sign
+  - Objects/topLeft
+  - Objects/topRight
+  - Objects/bottomLeft
+  - Objects/bottomRight
+  - Block
+  - Placement
+  - BlockTrigger
+  - Objects/LeftHand
+  - Objects/RightHand
   layers:
   - Default
   - TransparentFX

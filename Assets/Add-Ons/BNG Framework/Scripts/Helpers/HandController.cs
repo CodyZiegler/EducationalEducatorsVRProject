@@ -13,7 +13,7 @@ namespace BNG {
         // Control will follow this around
         public Transform HandAnchor;
         public Animator HandAnimator;
-
+        public BoxCollider hand;
         Grabber grabber; // Child Grabber
 
         /// <summary>

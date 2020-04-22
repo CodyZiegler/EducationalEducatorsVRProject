@@ -24,6 +24,7 @@ public class BlockHandler : MonoBehaviour
     private float startTime;
 
     private bool done = true;
+    private PlayerPackage player;
 
     void Start()
     {
@@ -32,17 +33,18 @@ public class BlockHandler : MonoBehaviour
                                    new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.2f, 1f, -.5f), new Vector3(-.2f, 1f, -.5f)};
         populateTempBlock();
         GenerateBlocks();
-
+        startTime = Time.time;
         audioPlayer = gameObject.GetComponent<AudioSource>();
         //timerText = GetComponent<TMP_Text>();
     }
 
     private void Update()
     {
-        if (input.RightThumbstickDown) {
+        if (input.RightThumbstickDown)
+        {
             checkBlocks();
             isdone();
-            
+
         }
         if (!done)
         {
@@ -62,7 +64,7 @@ public class BlockHandler : MonoBehaviour
         for (int i = 0; i < numOfBlocks; i++)
         {
             int rand = Random.Range(0, tempBlock.Count);
-            Instantiate(placement, new Vector3((x*1.2f), 1f, 0), placement.transform.rotation);
+            Instantiate(placement, new Vector3((x * 1.2f), 1f, 0), placement.transform.rotation);
             Instantiate(tempBlock[rand], new Vector3(x, 1f, 0.5f), Quaternion.identity);
             tempBlock.RemoveAt(rand);
             x += .2f;
@@ -83,18 +85,20 @@ public class BlockHandler : MonoBehaviour
         tempVecs.Clear();
     }
 
-    void populateTempBlock() {
+    void populateTempBlock()
+    {
         foreach (GameObject b in block)
         {
             tempBlock.Add(b);
         }
-        foreach(Vector3 v in vecs)
+        foreach (Vector3 v in vecs)
         {
             tempVecs.Add(v);
         }
     }
 
-    IEnumerator CorrectPlacement() {
+    IEnumerator CorrectPlacement()
+    {
         GameObject[] allBlocks = GameObject.FindGameObjectsWithTag("Block");
         ParticleSystem p;
         foreach (GameObject b in allBlocks)
@@ -115,29 +119,36 @@ public class BlockHandler : MonoBehaviour
         GenerateBlocks();
     }
 
-    void WrongPlacements() {
+    void WrongPlacements()
+    {
         audioPlayer.clip = wrongSound;
         audioPlayer.Play();
 
         // This will need to output to a file both the time and amount of levels correct.
     }
 
-    void ClearBlocks() {
+    void ClearBlocks()
+    {
         GameObject[] allBlocks = GameObject.FindGameObjectsWithTag("Block");
         GameObject[] allPlacements = GameObject.FindGameObjectsWithTag("Placement");
-        foreach (GameObject b in allBlocks) {
+        foreach (GameObject b in allBlocks)
+        {
             Destroy(b);
         }
-        foreach (GameObject p in allPlacements) {
+        foreach (GameObject p in allPlacements)
+        {
             Destroy(p);
         }
     }
 
-    void checkBlocks() {
+    void checkBlocks()
+    {
         GameObject[] foundBlocks = GameObject.FindGameObjectsWithTag("Block");
         bool blocksOK = true;
-        foreach (GameObject fb in foundBlocks) {
-            if (!fb.GetComponent<BlockPosition>().checkPosition()) {
+        foreach (GameObject fb in foundBlocks)
+        {
+            if (!fb.GetComponent<BlockPosition>().checkPosition())
+            {
                 blocksOK = false;
             }
         }
@@ -145,7 +156,8 @@ public class BlockHandler : MonoBehaviour
         {
             StartCoroutine(CorrectPlacement());
         }
-        else {
+        else
+        {
             WrongPlacements();
         }
     }
