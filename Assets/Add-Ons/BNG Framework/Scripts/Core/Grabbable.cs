@@ -34,7 +34,7 @@ namespace BNG {
     /// </summary>
     public class Grabbable : MonoBehaviour {
 
-        [HideInInspector]
+        //[HideInInspector]
         public bool BeingHeld = false;
         public bool IsGrabbable
         {

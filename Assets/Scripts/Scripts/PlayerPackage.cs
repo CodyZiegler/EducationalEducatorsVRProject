@@ -10,6 +10,7 @@ public enum SceneType
     Negative,
     Neutral,
     Break,
+    Puzzle,
 }
 
 public enum DeviceType
@@ -29,6 +30,7 @@ public class PlayerPackage : MonoBehaviour
     public static string NegativeSceneName = "Negative";
     public static string NeutralSceneName = "Neutral";
     public static string BreakSceneName = "Break";
+    public static string PuzzleSceneName = "Puzzle";
 
     public SceneType previousSceneType; //last scene; 
     public SceneType activeSceneType; //current scene  
@@ -168,6 +170,11 @@ public class PlayerPackage : MonoBehaviour
             case SceneType.Break:
                 {
                     UnityEngine.SceneManagement.SceneManager.LoadScene(BreakSceneName);
+                    break;
+                }
+            case SceneType.Puzzle:
+                {
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(PuzzleSceneName);
                     break;
                 }
         }

@@ -13040,14 +13040,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5409726852981647441}
-  - component: {fileID: 5409726852981647440}
   - component: {fileID: 5409726852981647443}
   - component: {fileID: 5409726852981647442}
   - component: {fileID: 5409726852981647453}
   - component: {fileID: 5409726852981647452}
   - component: {fileID: 5409726852981647455}
   - component: {fileID: 5409726852981647454}
-  - component: {fileID: 5409726852981647449}
+  - component: {fileID: 3374243780349649553}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -13075,51 +13074,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5409726852981647440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5409726852981647448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49877b2c8de1d6e4ebc9ca5d8ea02d78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InputSource: 1
-  LeftGrip: 0
-  LeftGripDown: 0
-  RightGrip: 0
-  RightGripDown: 0
-  LeftTrigger: 0
-  LeftTriggerNear: 0
-  LeftTriggerDown: 0
-  RightTrigger: 0
-  RightTriggerDown: 0
-  RightTriggerNear: 0
-  LeftThumbNear: 0
-  RightThumbNear: 0
-  LeftThumbstickDown: 0
-  RightThumbstickDown: 0
-  LeftThumbstick: 0
-  RightThumbstick: 0
-  AButton: 0
-  AButtonDown: 0
-  BButton: 0
-  BButtonDown: 0
-  XButton: 0
-  XButtonDown: 0
-  YButton: 0
-  YButtonDown: 0
-  StartButton: 0
-  StartButtonDown: 0
-  BackButton: 0
-  BackButtonDown: 0
-  LeftThumbstickAxis: {x: 0, y: 0}
-  RightThumbstickAxis: {x: 0, y: 0}
-  ThumbstickDeadzoneX: 0.001
-  ThumbstickDeadzoneY: 0.001
 --- !u!114 &5409726852981647443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13342,29 +13296,51 @@ MonoBehaviour:
   LeftIndexPosition: {x: 0, y: 0, z: 0}
   DoPinchToGrab: 1
   DisableHandTrackingInEditor: 1
---- !u!114 &5409726852981647449
+--- !u!114 &3374243780349649553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5409726852981647448}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5edfcbb93945e9b4393546980d44e40a, type: 3}
+  m_Script: {fileID: 11500000, guid: 49877b2c8de1d6e4ebc9ca5d8ea02d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  appSettings: {fileID: 11400000, guid: 4c202c9780655324fb703fe314db026f, type: 2}
-  previousSceneType: 0
-  activeSceneType: 1
-  nextSceneType: 5
-  jumpingJackObject: {fileID: 5409726853920815024}
-  signPosts: []
-  cameraOne: {fileID: 0}
-  cameraTwo: {fileID: 0}
-  targetToReach: {fileID: 0}
-  ViveCamera: {fileID: 0}
-  OculusCamera: {fileID: 0}
+  InputSource: 1
+  LeftGrip: 0
+  LeftGripDown: 0
+  RightGrip: 0
+  RightGripDown: 0
+  LeftTrigger: 0
+  LeftTriggerNear: 0
+  LeftTriggerDown: 0
+  RightTrigger: 0
+  RightTriggerDown: 0
+  RightTriggerNear: 0
+  LeftThumbNear: 0
+  RightThumbNear: 0
+  LeftThumbstickDown: 0
+  RightThumbstickDown: 0
+  LeftThumbstick: 0
+  RightThumbstick: 0
+  AButton: 0
+  AButtonDown: 0
+  BButton: 0
+  BButtonDown: 0
+  XButton: 0
+  XButtonDown: 0
+  YButton: 0
+  YButtonDown: 0
+  StartButton: 0
+  StartButtonDown: 0
+  BackButton: 0
+  BackButtonDown: 0
+  LeftThumbstickAxis: {x: 0, y: 0}
+  RightThumbstickAxis: {x: 0, y: 0}
+  ThumbstickDeadzoneX: 0.001
+  ThumbstickDeadzoneY: 0.001
 --- !u!1 &5409726852983005179
 GameObject:
   m_ObjectHideFlags: 0
@@ -22295,7 +22271,7 @@ GameObject:
   - component: {fileID: 5409726853521238391}
   - component: {fileID: 5409726853521238390}
   - component: {fileID: 5409726853521238385}
-  - component: {fileID: 5409726853521238384}
+  - component: {fileID: 1787831240}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -22388,7 +22364,7 @@ MonoBehaviour:
   fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
   fadeOnStart: 1
   renderQueue: 5000
---- !u!114 &5409726853521238384
+--- !u!114 &1787831240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24832,11 +24808,10 @@ GameObject:
   - component: {fileID: 5409726853677607189}
   - component: {fileID: 5409726853677607188}
   - component: {fileID: 5409726853677607191}
-  - component: {fileID: 5409726853677607190}
   - component: {fileID: 5409726853677607185}
   m_Layer: 9
   m_Name: OVRPlayerController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24873,7 +24848,7 @@ CharacterController:
   m_Radius: 0.1
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.001
+  m_SkinWidth: 0.01
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: -0.25, z: 0}
 --- !u!114 &5409726853677607189
@@ -24898,7 +24873,7 @@ MonoBehaviour:
   FixedSpeedSteps: 0
   HmdResetsY: 1
   HmdRotatesY: 1
-  GravityModifier: 0.34
+  GravityModifier: 1
   useProfileData: 1
   EnableLinearMovement: 1
   EnableRotation: 1
@@ -24931,19 +24906,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b71d1996d67004241a3b69960856ffcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &5409726853677607190
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5409726853677607187}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5409726853677607185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26064,7 +26026,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -37804,7 +37766,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: NaN, w: 1.01e-43}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

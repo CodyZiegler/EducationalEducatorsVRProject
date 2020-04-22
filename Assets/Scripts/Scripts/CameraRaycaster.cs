@@ -17,7 +17,7 @@ public class CameraRaycaster : MonoBehaviour
 
 
         layer = ~layer;
-        if (Physics.Raycast(r, out hit, 10, layer))
+        if (Physics.Raycast(r, out hit, 10000, layer))
         {
             Sign s = hit.transform.GetComponent<Sign>();
             if (s != null)
