@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using BNG;
+using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(AudioSource))]
 public class BlockHandler : MonoBehaviour
@@ -18,6 +20,11 @@ public class BlockHandler : MonoBehaviour
     private AudioSource audioPlayer;
     public AudioClip rightSound, wrongSound;
 
+    public TMP_Text timerText;
+    private float startTime;
+
+    private bool done = true;
+
     void Start()
     {
         input = GetComponent<InputBridge>();
@@ -27,13 +34,24 @@ public class BlockHandler : MonoBehaviour
         GenerateBlocks();
 
         audioPlayer = gameObject.GetComponent<AudioSource>();
+        //timerText = GetComponent<TMP_Text>();
     }
 
     private void Update()
     {
         if (input.RightThumbstickDown) {
             checkBlocks();
+            isdone();
+            
         }
+        if (!done)
+        {
+            return;
+        }
+        float t = Time.time - startTime;
+        string minutes = ((int)t / 60).ToString();
+        string seconds = (t % 60).ToString("00");
+        timerText.text = minutes + ":" + seconds;
     }
 
 
@@ -81,7 +99,7 @@ public class BlockHandler : MonoBehaviour
         ParticleSystem p;
         foreach (GameObject b in allBlocks)
         {
-            if (b.TryGetComponent<ParticleSystem>(out p))
+            if (b.transform.GetChild(0).TryGetComponent<ParticleSystem>(out p))
             {
                 p.Play();
             }
@@ -149,4 +167,9 @@ public class BlockHandler : MonoBehaviour
         //Check if it's the right pedestal
 
     }*/
+    public void isdone()
+    {
+        done = true;
+        timerText.color = Color.blue;
+    }
 }
