@@ -30,7 +30,8 @@ public class BlockHandler : MonoBehaviour
     {
         input = GetComponent<InputBridge>();
         vecs = new List<Vector3> {new Vector3(.5f, 1f, 0f), new Vector3(.5f, 1f, .2f), new Vector3(.5f, 1f, -.2f), new Vector3(-.5f, 1f, 0f),
-                                   new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.2f, 1f, -.5f), new Vector3(-.2f, 1f, -.5f)};
+                                   new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.2f, 1f, -.5f), new Vector3(-.2f, 1f, -.5f),
+                                    new Vector3(.5f, 1.2f, 0f), new Vector3(-.5f, 1.2f, 0f)};
         populateTempBlock();
         GenerateBlocks();
         startTime = Time.time;
@@ -59,7 +60,22 @@ public class BlockHandler : MonoBehaviour
 
     void GenerateBlocks() // This will create all the blocks
     {
-        int xInc = numOfBlocks / 2;
+        for (int i = 0; i < numOfBlocks; i++) {
+            switch (i) {
+                case 0: spawnBlock(0f, 0f); break;
+                case 1: spawnBlock(.2f, 0f); break;
+                case 2: spawnBlock(-.2f, 0f); break;
+                case 3: spawnBlock(.4f, 0f); break;
+                case 4: spawnBlock(-.4f, 0f); break;
+                case 5: spawnBlock(0f, .24f); break;
+                case 6: spawnBlock(.2f, .24f); break;
+                case 7: spawnBlock(-.2f, .24f); break;
+                case 8: spawnBlock(.4f, .24f); break;
+                case 9: spawnBlock(-.4f, .24f); break;
+            }
+        }
+
+        /*int xInc = numOfBlocks / 2;
         float x = -xInc * .2f;
         for (int i = 0; i < numOfBlocks; i++)
         {
@@ -68,7 +84,7 @@ public class BlockHandler : MonoBehaviour
             Instantiate(tempBlock[rand], new Vector3(x, 1f, 0.5f), Quaternion.identity);
             tempBlock.RemoveAt(rand);
             x += .2f;
-        }
+        }*/
         tempBlock.Clear();
         Invoke("BlockFall", timer);
     }
@@ -183,5 +199,12 @@ public class BlockHandler : MonoBehaviour
     {
         done = true;
         timerText.color = Color.blue;
+    }
+
+    private void spawnBlock(float x, float z) {
+        int rand = Random.Range(0, tempBlock.Count);
+        Instantiate(placement, new Vector3((x * 1.2f), 1f, z), placement.transform.rotation);
+        Instantiate(tempBlock[rand], new Vector3(x * 1.2f, 1f, z + .55f), Quaternion.identity);
+        tempBlock.RemoveAt(rand);
     }
 }

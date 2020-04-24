@@ -184,10 +184,12 @@ MonoBehaviour:
   - {fileID: 2261050674885024651, guid: c9d77f376ca2d384d86ce198495abae4, type: 3}
   - {fileID: 2261050674885024651, guid: 949ed86702e66ea4985ee2163960fa3f, type: 3}
   - {fileID: 2261050674885024651, guid: 4639dc351bc80a14d8710c86ac3bba2a, type: 3}
+  - {fileID: 2261050674885024651, guid: 7d6adbf65c74d954fb124c74bddd484e, type: 3}
+  - {fileID: 2261050674885024651, guid: 553250d3dd812174ab73351063989916, type: 3}
   tempBlock: []
   placement: {fileID: 5870780831534881804, guid: c706fa7915ff74f42ab69698e9ac99be,
     type: 3}
-  numOfBlocks: 3
+  numOfBlocks: 10
   timer: 5
   rightSound: {fileID: 8300000, guid: a231f11a3dcf79446856f93878d12dc2, type: 3}
   wrongSound: {fileID: 8300000, guid: 818ee7a75b2120f479bfdfb8b0c0f603, type: 3}
