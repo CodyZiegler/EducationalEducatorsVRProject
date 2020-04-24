@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/VRReactionScenes/Excercise.unity
+- path: Assets/Scenes/VRReactionScenes/Puzzle.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
