@@ -30,7 +30,7 @@ public class BlockHandler : MonoBehaviour
     {
         input = GetComponent<InputBridge>();
         vecs = new List<Vector3> {new Vector3(.5f, 1f, 0f), new Vector3(.5f, 1f, .2f), new Vector3(.5f, 1f, -.2f), new Vector3(-.5f, 1f, 0f),
-                                   new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.2f, 1f, -.5f), new Vector3(-.2f, 1f, -.5f),
+                                   new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.5f, 1.2f, .2f), new Vector3(-.5f, 1.2f, .2f),
                                     new Vector3(.5f, 1.2f, 0f), new Vector3(-.5f, 1.2f, 0f)};
         populateTempBlock();
         GenerateBlocks();
@@ -45,7 +45,6 @@ public class BlockHandler : MonoBehaviour
         {
             checkBlocks();
             isdone();
-
         }
         if (!done)
         {
@@ -74,17 +73,6 @@ public class BlockHandler : MonoBehaviour
                 case 9: spawnBlock(-.4f, .24f); break;
             }
         }
-
-        /*int xInc = numOfBlocks / 2;
-        float x = -xInc * .2f;
-        for (int i = 0; i < numOfBlocks; i++)
-        {
-            int rand = Random.Range(0, tempBlock.Count);
-            Instantiate(placement, new Vector3((x * 1.2f), 1f, 0), placement.transform.rotation);
-            Instantiate(tempBlock[rand], new Vector3(x, 1f, 0.5f), Quaternion.identity);
-            tempBlock.RemoveAt(rand);
-            x += .2f;
-        }*/
         tempBlock.Clear();
         Invoke("BlockFall", timer);
     }
@@ -115,6 +103,9 @@ public class BlockHandler : MonoBehaviour
 
     IEnumerator CorrectPlacement()
     {
+        if (numOfBlocks == 10) {
+            FinishPlacements();
+        }
         GameObject[] allBlocks = GameObject.FindGameObjectsWithTag("Block");
         ParticleSystem p;
         foreach (GameObject b in allBlocks)
@@ -135,7 +126,7 @@ public class BlockHandler : MonoBehaviour
         GenerateBlocks();
     }
 
-    void WrongPlacements()
+    void FinishPlacements()
     {
         audioPlayer.clip = wrongSound;
         audioPlayer.Play();
@@ -174,7 +165,7 @@ public class BlockHandler : MonoBehaviour
         }
         else
         {
-            WrongPlacements();
+            FinishPlacements();
         }
     }
     /*private void OnTriggerEnter(Collider other)
@@ -193,7 +184,6 @@ public class BlockHandler : MonoBehaviour
             return;
         }
         //Check if it's the right pedestal
-
     }*/
     public void isdone()
     {
