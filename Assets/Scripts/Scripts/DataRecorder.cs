@@ -33,7 +33,34 @@ public class DataRecorder : MonoBehaviour
     {
         int min = (int)time / 60;
         int sec = (int)time % 60;
-        string t = getTime(min) + " " + getTime(sec);
+        string t = "Time: " + getTime(min) + " " + getTime(sec);
+
+        try
+        {
+            if (!Directory.Exists(PATH))
+            {
+                Directory.CreateDirectory(PATH);
+            }
+
+            string date = System.DateTime.Now.ToString().Replace("/", ".");
+            date = date.Replace(" ", "_");
+            date = date.Replace(":", ".");
+
+            StreamWriter writer = new StreamWriter(PATH + "/" + fileName + "_" + date + ".txt", true);
+            writer.WriteLine(t);
+            writer.Close();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Error writing to file " + e);
+        }
+    }
+
+    public void StopRecording(string fileName, int numOfBlocks)
+    {
+        int min = (int)time / 60;
+        int sec = (int)time % 60;
+        string t = "Time: " + getTime(min) + " " + getTime(sec) + "\nNumber of Blocks: " + numOfBlocks;
 
         try
         {

@@ -130,7 +130,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 115883006}
-  - component: {fileID: 115883004}
   - component: {fileID: 115883007}
   - component: {fileID: 115883008}
   - component: {fileID: 115883009}
@@ -141,14 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &115883004
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115883003}
-  m_Enabled: 1
 --- !u!4 &115883006
 Transform:
   m_ObjectHideFlags: 0
@@ -189,7 +180,7 @@ MonoBehaviour:
   tempBlock: []
   placement: {fileID: 5870780831534881804, guid: c706fa7915ff74f42ab69698e9ac99be,
     type: 3}
-  numOfBlocks: 10
+  numOfBlocks: 2
   timer: 5
   rightSound: {fileID: 8300000, guid: a231f11a3dcf79446856f93878d12dc2, type: 3}
   wrongSound: {fileID: 8300000, guid: 818ee7a75b2120f479bfdfb8b0c0f603, type: 3}
