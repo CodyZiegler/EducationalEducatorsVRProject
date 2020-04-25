@@ -186,10 +186,9 @@ MonoBehaviour:
   - {fileID: 2261050674885024651, guid: 4639dc351bc80a14d8710c86ac3bba2a, type: 3}
   - {fileID: 2261050674885024651, guid: 7d6adbf65c74d954fb124c74bddd484e, type: 3}
   - {fileID: 2261050674885024651, guid: 553250d3dd812174ab73351063989916, type: 3}
-  tempBlock: []
   placement: {fileID: 5870780831534881804, guid: c706fa7915ff74f42ab69698e9ac99be,
     type: 3}
-  numOfBlocks: 10
+  numOfBlocks: 2
   timer: 5
   rightSound: {fileID: 8300000, guid: a231f11a3dcf79446856f93878d12dc2, type: 3}
   wrongSound: {fileID: 8300000, guid: 818ee7a75b2120f479bfdfb8b0c0f603, type: 3}
@@ -380,7 +379,7 @@ PrefabInstance:
     - target: {fileID: 226275004379766378, guid: cd80b82c3e5e65c4fa031fc32514c131,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 226275004379766378, guid: cd80b82c3e5e65c4fa031fc32514c131,
         type: 3}
@@ -427,6 +426,9 @@ GameObject:
   - component: {fileID: 430003266}
   - component: {fileID: 430003265}
   - component: {fileID: 430003269}
+  - component: {fileID: 430003272}
+  - component: {fileID: 430003270}
+  - component: {fileID: 430003271}
   m_Layer: 0
   m_Name: SubmitHandle
   m_TagString: Untagged
@@ -447,7 +449,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300110, guid: 82c78c81acde1ca4584b740f72426bdd, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 139d0416d0914364c82279c96d0dad03, type: 2}
 --- !u!23 &430003266
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -494,7 +496,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430003264}
-  m_Mesh: {fileID: 4300110, guid: 82c78c81acde1ca4584b740f72426bdd, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 139d0416d0914364c82279c96d0dad03, type: 2}
 --- !u!4 &430003268
 Transform:
   m_ObjectHideFlags: 0
@@ -503,10 +505,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430003264}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.105, y: 1, z: -0.008}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 1.559, z: 1}
+  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
   m_Children: []
-  m_Father: {fileID: 907811132}
+  m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!54 &430003269
@@ -521,10 +523,80 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &430003270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430003264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdea428d48e2bb488d33d5f75c39bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BeingHeld: 0
+  GrabButton: 0
+  Grabtype: 0
+  GrabPhysics: 0
+  GrabMechanic: 0
+  GrabSpeed: 7.5
+  RemoteGrabbable: 0
+  RemoteGrabDistance: 2
+  ThrowForceMultiplier: 2
+  ThrowForceMultiplierAngular: 1.5
+  BreakDistance: 1
+  HideHandGraphics: 0
+  ParentToHands: 1
+  ParentHandModel: 0
+  CustomHandPose: 0
+  SecondaryGrabBehavior: 0
+  OtherGrabbableMustBeGrabbed: {fileID: 0}
+  CollisionSpring: 3000
+  CollisionSlerp: 500
+  CanBeDropped: 1
+  CanBeSnappedToSnapZone: 1
+  LastGrabTime: 0
+  LastDropTime: 0
+  AddControllerVelocityOnDrop: 1
+  SecondaryGrabbable: {fileID: 0}
+  SecondHandLookSpeed: 40
+  SecondaryLookOffset: {x: 0, y: 0, z: 0}
+  SecondaryLookAtTransform: {fileID: 0}
+  LocalOffsetTransform: {fileID: 0}
+  MirrorOffsetForOtherHand: 1
+  GrabPoints: []
+--- !u!114 &430003271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430003264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5b1b54556836a49948cf0f09394c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RingOnValidPickup: 1
+  RingOnValidRemotePickup: 1
+  RingHelperScale: 0.2
+--- !u!114 &430003272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430003264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408dbc8e7907f9946a2a1794bb0051f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &433626137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -948,12 +1020,11 @@ Transform:
   m_Children:
   - {fileID: 559243227}
   - {fileID: 1138180181}
-  - {fileID: 430003268}
   - {fileID: 1912982267}
   - {fileID: 1438614598}
   - {fileID: 1669208574}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &985364664
 PrefabInstance:
@@ -1035,7 +1106,7 @@ PrefabInstance:
     - target: {fileID: 3886081925338922188, guid: 1bf80d35d12e07c469d4eaecd98bf79e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3886081925338922188, guid: 1bf80d35d12e07c469d4eaecd98bf79e,
         type: 3}
@@ -1322,5 +1393,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 907811132}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

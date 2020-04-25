@@ -7,7 +7,6 @@ public class PlaceholderTarget : MonoBehaviour
 {
     public Transform targetOne;
     public Transform targetTwo;
-    //private Grabbable grabbable;
     private PlayerPackage _playerPackage;
     private float _targetTwoDistance;
     private float _targetOneDistance;
@@ -18,24 +17,12 @@ public class PlaceholderTarget : MonoBehaviour
     void Start()
     {
         _playerPackage = FindObjectOfType<PlayerPackage>();
-        //grabbable = GetComponent<Grabbable>();
+        
     }
 
     void Update()
     {
-        /*if(grabbable.BeingHeld == true)
-        {
-            Debug.Log("Im grabbed");
-            timer -= Time.deltaTime;
-            if (timer <= 0)
-            {
-                _playerPackage.LoadNextScene();
-            }
-            else
-            {
-                return;
-            }
-        }*/
+        
         if (targetTwo == null) return;
             _targetTwoDistance = (transform.position - targetTwo.transform.position).magnitude;
             if (_targetTwoDistance < 3f && !_targetTwoHit)

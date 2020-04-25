@@ -9,7 +9,7 @@ using TMPro;
 public class BlockHandler : MonoBehaviour
 {
     public List<GameObject> block = new List<GameObject>();
-    public List<GameObject> tempBlock = new List<GameObject>();
+    private List<GameObject> tempBlock = new List<GameObject>();
     public GameObject placement;
     public int numOfBlocks, timer;
 
@@ -157,7 +157,7 @@ public class BlockHandler : MonoBehaviour
         }
     }
 
-    void checkBlocks()
+    public void checkBlocks()
     {
         GameObject[] foundBlocks = GameObject.FindGameObjectsWithTag("Block");
         bool blocksOK = true;
