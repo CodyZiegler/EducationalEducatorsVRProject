@@ -1613,7 +1613,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'How To Play:'
+  m_text: '<color=#"white><b><u>How To Play:</color></b></u>
+
+    <color=#E5D7D7><b>Memorize</b></color>
+    the order of the colored blocks.
+
+    After a few seconds, <color=#E5D7D7><b>they''ll
+    scatter.</b></color>
+
+    <color=#E5D7D7><b>Grab them</b></color> and put them
+    back on the pedestals <color=#E5D7D7><b>in the right order.</b></color>
+
+    Once
+    you think you''ve got it, <color=#E5D7D7><b>grab the bar</b></color> to submit
+    your answer.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1622,8 +1635,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282335080
-  m_fontColor: {r: 0.40784317, g: 0.24705884, b: 0.24705884, a: 1}
+    rgba: 4290230233
+  m_fontColor: {r: 0.8490566, g: 0.7168921, b: 0.7168921, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1641,11 +1654,11 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24
+  m_fontSize: 10.35
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 4
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 257
@@ -1653,7 +1666,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 12
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
@@ -1682,12 +1695,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1486184994}
-    characterCount: 12
+    characterCount: 223
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 41
+    wordCount: 42
     linkCount: 0
-    lineCount: 1
+    lineCount: 7
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
