@@ -197,7 +197,7 @@ MonoBehaviour:
   rightSound: {fileID: 8300000, guid: a231f11a3dcf79446856f93878d12dc2, type: 3}
   wrongSound: {fileID: 8300000, guid: 818ee7a75b2120f479bfdfb8b0c0f603, type: 3}
   timerText: {fileID: 853480728}
-  CountdownTime: 5
+  CountdownTime: 10
   countdownDisplay: {fileID: 839777428}
   HowToPlay: {fileID: 1486184994}
 --- !u!114 &115883008
@@ -475,7 +475,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 78974d2f85a59fc499d154e567c11d49, type: 2}
+  - {fileID: 2100000, guid: c99e99ab53520b24f933da34732440eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1622,7 +1622,7 @@ MonoBehaviour:
     scatter.</b></color>
 
     <color=#E5D7D7><b>Grab them</b></color> and put them
-    back on the pedestals <color=#E5D7D7><b>in the right order.</b></color>
+    back in the pedestals <color=#E5D7D7><b>in the right order.</b></color>
 
     Once
     you think you''ve got it, <color=#E5D7D7><b>grab the bar</b></color> to submit
