@@ -104,7 +104,7 @@ public class PlayerPackage : MonoBehaviour
     {
         if (_isLoadingNextScene) return;
 
-        if (_dataRecorder != null && activeSceneType != SceneType.Excercise && activeSceneType != SceneType.Break)
+        if (_dataRecorder != null && activeSceneType != SceneType.Excercise && activeSceneType != SceneType.Break && activeSceneType != SceneType.Puzzle)
         {
             List<float> signTimes = new List<float>();
             for (int i = 0; i < signPosts.Count; i++)

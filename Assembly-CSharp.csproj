@@ -383,8 +383,6 @@
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Add-Ons\MTree\shaders\VS_indirect.cginc" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\ButtonGlow.shader" />
-    <None Include="Assets\DataCollective\Positive_4.21.2020_11.09.03_PM.txt" />
-    <None Include="Assets\DataCollective\Positive_4.21.2020_10.54.52_PM.txt" />
     <None Include="Assets\Add-Ons\MTree\shaders\BranchEditorBark.shader" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
@@ -397,6 +395,7 @@
     <None Include="Assets\Add-Ons\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\Expressive\AvatarEyeLens.shader" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\Expressive\Avatar_PC_SingleComponentExpressive.shader" />
+    <None Include="Assets\DataCollective\Puzzle_4.24.2020_10.17.14_PM.txt" />
     <None Include="Assets\Add-Ons\BNG Framework\Fonts\license.txt" />
     <None Include="Assets\DataCollective\Negative_4.22.2020_4.13.57_PM.txt" />
     <None Include="Assets\Add-Ons\BNG Framework\Integrations\Emerald AI\Instructions.txt" />
@@ -410,7 +409,6 @@
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\Expressive\Avatar_Mobile_CombinedMeshExpressive.shader" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Add-Ons\RainMaker\Readme.txt" />
-    <None Include="Assets\DataCollective\Negative_4.22.2020_4.01.42_PM.txt" />
     <None Include="Assets\Add-Ons\BNG Framework\Resources\OutlineEffect\Resources\OutlineBufferShader.shader" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBSV2.shader" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_CombinedMesh.shader" />
@@ -425,10 +423,8 @@
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Add-Ons\MTree\shaders\BranchEditorLeafs.shader" />
-    <None Include="Assets\DataCollective\Excercise_4.22.2020_4.52.37_PM.txt" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\DataCollective\Negative_4.22.2020_4.09.23_PM.txt" />
     <None Include="Assets\Add-Ons\MTree\shaders\Bark.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -440,12 +436,12 @@
     <None Include="Assets\Add-Ons\BNG Framework\Resources\OutlineEffect\Resources\OutlineShader.shader" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainSmokeShader.shader" />
+    <None Include="Assets\DataCollective\Excercise_4.24.2020_10.19.22_PM.txt" />
     <None Include="Assets\Add-Ons\BNG Framework\Materials\MobileColorShader.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\NOTICE.txt" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
     <None Include="Assets\Add-Ons\SkySerie Freebie\Hdri setup.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\DataCollective\Negative_4.22.2020_4.12.11_PM.txt" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />

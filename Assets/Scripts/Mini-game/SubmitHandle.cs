@@ -7,11 +7,15 @@ public class SubmitHandle : MonoBehaviour
     private bool theyGotMe = true;
     private Grabbable grabbable;
     private BlockHandler bh;
+    private Vector3 originSpot;
+    private Quaternion originRot;
     // Start is called before the first frame update
     void Start()
     {
         grabbable = gameObject.GetComponent<Grabbable>();
         bh = GameObject.FindObjectOfType<BlockHandler>();
+        originSpot = this.gameObject.transform.position;
+        originRot = this.gameObject.transform.rotation;
     }
 
     // Update is called once per frame
@@ -25,6 +29,9 @@ public class SubmitHandle : MonoBehaviour
         }
         else if(grabbable.BeingHeld==false)
         {
+            this.gameObject.transform.position = originSpot;
+            this.gameObject.transform.rotation = originRot;
+
             theyGotMe = true;
         }
     }

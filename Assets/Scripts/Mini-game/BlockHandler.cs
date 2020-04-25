@@ -20,40 +20,55 @@ public class BlockHandler : MonoBehaviour
     private AudioSource audioPlayer;
     public AudioClip rightSound, wrongSound;
 
-    public TMP_Text timerText;
-    private float startTime;
+    
 
     private bool done = true;
     private PlayerPackage player;
 
+    //Kennedy Additions
+    public TMP_Text timerText;
+    private float startTime;
+    public int CountdownTime;
+    public TMP_Text countdownDisplay;
+    public TMP_Text HowToPlay;
+    //public static BlockHandler instance;
+    private DataRecorder _dataRecorder;
+
     void Start()
     {
         input = GetComponent<InputBridge>();
+        _dataRecorder = FindObjectOfType<DataRecorder>();
         vecs = new List<Vector3> {new Vector3(.5f, 1f, 0f), new Vector3(.5f, 1f, .2f), new Vector3(.5f, 1f, -.2f), new Vector3(-.5f, 1f, 0f),
                                    new Vector3(-.5f, 1f, .2f), new Vector3(-.5f, 1f, -.2f), new Vector3(.5f, 1.2f, .2f), new Vector3(-.5f, 1.2f, .2f),
                                     new Vector3(.5f, 1.2f, 0f), new Vector3(-.5f, 1.2f, 0f)};
-        populateTempBlock();
-        GenerateBlocks();
         startTime = Time.time;
         audioPlayer = gameObject.GetComponent<AudioSource>();
         //timerText = GetComponent<TMP_Text>();
+        StartCoroutine(CountdownToStart());
     }
+    /*private void Awake()
+    {
+        instance = this;
+    }*/
 
     private void Update()
     {
-        if (input.RightThumbstickDown)
-        {
-            checkBlocks();
-            isdone();
-        }
-        if (!done)
-        {
-            return;
-        }
         float t = Time.time - startTime;
         string minutes = ((int)t / 60).ToString();
         string seconds = (t % 60).ToString("00");
         timerText.text = minutes + ":" + seconds;
+    }
+    private void FixedUpdate()
+    {
+        if (input.RightThumbstickDown)
+        {
+            checkBlocks();
+            //isdone();
+        }
+        //if (!done)
+        //{
+        //    return;
+        //}
     }
 
 
@@ -82,7 +97,7 @@ public class BlockHandler : MonoBehaviour
         GameObject[] blocks = GameObject.FindGameObjectsWithTag("Block");
         for (int i = 0; i < numOfBlocks; i++)
         {
-            int rand = Random.Range(0, tempVecs.Count);
+            int rand = Random.Range(0, (tempVecs.Count-1));
             blocks[i].transform.position = tempVecs[rand];
             tempVecs.RemoveAt(rand);
         }
@@ -125,12 +140,29 @@ public class BlockHandler : MonoBehaviour
         numOfBlocks++;
         GenerateBlocks();
     }
-
+    IEnumerator CountdownToStart()
+    {
+        while (CountdownTime >= 0)
+        {
+            countdownDisplay.text = CountdownTime.ToString();
+            yield return new WaitForSeconds(1f);
+            CountdownTime--;
+        }
+        countdownDisplay.text = "START!";
+        //BlockHandler.instance.GenerateBlocks();
+        _dataRecorder.StartRecording();
+        populateTempBlock();
+        GenerateBlocks();
+        yield return new WaitForSeconds(1f);
+        countdownDisplay.enabled = false;
+        HowToPlay.enabled = false;
+    }
     void FinishPlacements()
     {
         audioPlayer.clip = wrongSound;
         audioPlayer.Play();
-
+        _dataRecorder.StopRecording("Puzzle", numOfBlocks);
+        GameObject.FindObjectOfType<PlayerPackage>().LoadNextScene();
         // This will need to output to a file both the time and amount of levels correct.
     }
 
@@ -159,7 +191,8 @@ public class BlockHandler : MonoBehaviour
                 blocksOK = false;
             }
         }
-        if (blocksOK)
+        if (foundBlocks.Length == 0) { return; }
+        else if (blocksOK)
         {
             StartCoroutine(CorrectPlacement());
         }
@@ -184,15 +217,15 @@ public class BlockHandler : MonoBehaviour
             return;
         }
         //Check if it's the right pedestal
-    }*/
+    }
     public void isdone()
     {
         done = true;
         timerText.color = Color.blue;
-    }
+    }*/
 
     private void spawnBlock(float x, float z) {
-        int rand = Random.Range(0, tempBlock.Count);
+        int rand = Random.Range(0, (tempBlock.Count-1));
         Instantiate(placement, new Vector3((x * 1.2f), 1f, z), placement.transform.rotation);
         Instantiate(tempBlock[rand], new Vector3(x * 1.2f, 1f, z + .55f), Quaternion.identity);
         tempBlock.RemoveAt(rand);

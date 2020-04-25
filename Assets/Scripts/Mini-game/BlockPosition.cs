@@ -12,10 +12,11 @@ public class BlockPosition : MonoBehaviour
         originalPos = this.transform.position;
     }
 
-    public bool checkPosition() {
+    public bool checkPosition()
+    {
         Vector3 currentPos = this.transform.position;
-        if ((currentPos.x >= originalPos.x - .2 && currentPos.x <= originalPos.x + .2) && (currentPos.y >= originalPos.y - .2 && currentPos.y <= originalPos.y + .2) &&
-            (currentPos.z >= originalPos.z - .2 && currentPos.z <= originalPos.z + .2))
+        if ((currentPos.x >= originalPos.x - .05 && currentPos.x <= originalPos.x + .05) && (currentPos.y >= (originalPos.y-.15) - .07 && currentPos.y <= (originalPos.y-.15) + .07) &&
+            (currentPos.z >= originalPos.z - .05 && currentPos.z <= originalPos.z + .05))
         {
             return true;
         }
