@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System;
 using UnityEngine;
 using BNG;
 using UnityEngine.UI;
@@ -19,11 +21,14 @@ public class BlockHandler : MonoBehaviour
 
     private AudioSource audioPlayer;
     public AudioClip rightSound, wrongSound;
-
     
-
     private bool done = true;
     private PlayerPackage player;
+    private DataRecorder _dataRecorder;
+    private string PATH = "";
+    private StreamReader sr;
+    private string configInfo;
+    private string[] cSplit; // Parsed contents of configInfo
 
     //Kennedy Additions
     public TMP_Text timerText;
@@ -32,10 +37,44 @@ public class BlockHandler : MonoBehaviour
     public TMP_Text countdownDisplay;
     public TMP_Text HowToPlay;
     //public static BlockHandler instance;
-    private DataRecorder _dataRecorder;
+
+    void Awake() {
+        PATH = Application.dataPath + "/DataCollective/Config.txt";
+        try
+        {
+            sr = new StreamReader(PATH);
+        }
+        catch (Exception e)
+        {
+            CreateConfigFile();
+        }
+    }
 
     void Start()
     {
+        try
+        {
+            sr = new StreamReader(PATH);
+            configInfo = sr.ReadLine();
+            cSplit = configInfo.Split(':');
+            if (int.TryParse(cSplit[1], out int newTime))
+            {
+                timer = newTime;
+            }
+            else {
+                CreateConfigFile();
+                timer = 5;
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log("File not found");
+            Debug.Log(e.Message);
+        }
+        finally {
+            sr.Close();
+        }
+
         input = GetComponent<InputBridge>();
         _dataRecorder = FindObjectOfType<DataRecorder>();
         vecs = new List<Vector3> {new Vector3(.5f, 1f, 0f), new Vector3(.5f, 1f, .2f), new Vector3(.5f, 1f, -.2f), new Vector3(-.5f, 1f, 0f),
@@ -97,7 +136,7 @@ public class BlockHandler : MonoBehaviour
         GameObject[] blocks = GameObject.FindGameObjectsWithTag("Block");
         for (int i = 0; i < numOfBlocks; i++)
         {
-            int rand = Random.Range(0, (tempVecs.Count-1));
+            int rand = UnityEngine.Random.Range(0, (tempVecs.Count-1));
             blocks[i].transform.position = tempVecs[rand];
             tempVecs.RemoveAt(rand);
         }
@@ -225,9 +264,15 @@ public class BlockHandler : MonoBehaviour
     }*/
 
     private void spawnBlock(float x, float z) {
-        int rand = Random.Range(0, (tempBlock.Count-1));
+        int rand = UnityEngine.Random.Range(0, (tempBlock.Count-1));
         Instantiate(placement, new Vector3((x * 1.2f), 1f, z), placement.transform.rotation);
         Instantiate(tempBlock[rand], new Vector3(x * 1.2f, 1f, z + .55f), Quaternion.identity);
         tempBlock.RemoveAt(rand);
+    }
+
+    private void CreateConfigFile() {
+        StreamWriter sw = new StreamWriter(PATH, false);
+        sw.Write("PuzzleTimer: 5");
+        sw.Close();
     }
 }
