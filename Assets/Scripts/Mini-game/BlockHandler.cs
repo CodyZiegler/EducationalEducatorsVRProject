@@ -21,7 +21,7 @@ public class BlockHandler : MonoBehaviour
 
     private AudioSource audioPlayer;
     public AudioClip rightSound, wrongSound;
-    
+
     private bool done = true;
     private PlayerPackage player;
     private DataRecorder _dataRecorder;
@@ -38,11 +38,17 @@ public class BlockHandler : MonoBehaviour
     public TMP_Text HowToPlay;
     //public static BlockHandler instance;
 
-    void Awake() {
-        PATH = Application.dataPath + "/DataCollective/Config.txt";
+    void Awake()
+    {
+        PATH = Application.dataPath + "/DataCollective";
         try
         {
-            sr = new StreamReader(PATH);
+            if (!Directory.Exists(PATH))
+            {
+                Directory.CreateDirectory(PATH);
+            }
+
+            sr = new StreamReader(PATH + "/Config.txt");
         }
         catch (Exception e)
         {
@@ -54,14 +60,15 @@ public class BlockHandler : MonoBehaviour
     {
         try
         {
-            sr = new StreamReader(PATH);
+            sr = new StreamReader(PATH + "/Config.txt");
             configInfo = sr.ReadLine();
             cSplit = configInfo.Split(':');
             if (int.TryParse(cSplit[1], out int newTime))
             {
                 timer = newTime;
             }
-            else {
+            else
+            {
                 CreateConfigFile();
                 timer = 5;
             }
@@ -71,7 +78,8 @@ public class BlockHandler : MonoBehaviour
             Debug.Log("File not found");
             Debug.Log(e.Message);
         }
-        finally {
+        finally
+        {
             sr.Close();
         }
 
@@ -113,8 +121,10 @@ public class BlockHandler : MonoBehaviour
 
     void GenerateBlocks() // This will create all the blocks
     {
-        for (int i = 0; i < numOfBlocks; i++) {
-            switch (i) {
+        for (int i = 0; i < numOfBlocks; i++)
+        {
+            switch (i)
+            {
                 case 0: spawnBlock(0f, 0f); break;
                 case 1: spawnBlock(.2f, 0f); break;
                 case 2: spawnBlock(-.2f, 0f); break;
@@ -136,7 +146,7 @@ public class BlockHandler : MonoBehaviour
         GameObject[] blocks = GameObject.FindGameObjectsWithTag("Block");
         for (int i = 0; i < numOfBlocks; i++)
         {
-            int rand = UnityEngine.Random.Range(0, (tempVecs.Count-1));
+            int rand = UnityEngine.Random.Range(0, (tempVecs.Count - 1));
             blocks[i].transform.position = tempVecs[rand];
             tempVecs.RemoveAt(rand);
         }
@@ -157,7 +167,8 @@ public class BlockHandler : MonoBehaviour
 
     IEnumerator CorrectPlacement()
     {
-        if (numOfBlocks == 10) {
+        if (numOfBlocks == 10)
+        {
             FinishPlacements();
         }
         GameObject[] allBlocks = GameObject.FindGameObjectsWithTag("Block");
@@ -263,15 +274,17 @@ public class BlockHandler : MonoBehaviour
         timerText.color = Color.blue;
     }*/
 
-    private void spawnBlock(float x, float z) {
-        int rand = UnityEngine.Random.Range(0, (tempBlock.Count-1));
+    private void spawnBlock(float x, float z)
+    {
+        int rand = UnityEngine.Random.Range(0, (tempBlock.Count - 1));
         Instantiate(placement, new Vector3((x * 1.2f), 1f, z), placement.transform.rotation);
         Instantiate(tempBlock[rand], new Vector3(x * 1.2f, 1f, z + .55f), Quaternion.identity);
         tempBlock.RemoveAt(rand);
     }
 
-    private void CreateConfigFile() {
-        StreamWriter sw = new StreamWriter(PATH, false);
+    private void CreateConfigFile()
+    {
+        StreamWriter sw = new StreamWriter(PATH + "/Config.txt", false);
         sw.Write("PuzzleTimer: 5");
         sw.Close();
     }

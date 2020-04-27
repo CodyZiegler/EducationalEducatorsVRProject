@@ -132,8 +132,8 @@ GameObject:
   - component: {fileID: 115883006}
   - component: {fileID: 115883007}
   - component: {fileID: 115883008}
-  - component: {fileID: 115883009}
   - component: {fileID: 115883004}
+  - component: {fileID: 115883009}
   m_Layer: 0
   m_Name: BlockManager
   m_TagString: Untagged

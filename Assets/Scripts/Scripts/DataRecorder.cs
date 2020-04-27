@@ -101,10 +101,12 @@ public class DataRecorder : MonoBehaviour
             {
                 writer.WriteLine("Sign Post: " + (i + 1) + " | Time:  " + f[i]);
             }
-
-            float[] info = getInfo(f);
-            writer.WriteLine("Total Looking Time: " + info[0]);
-            writer.WriteLine("Average Time: " + info[1]);
+            if (f.Count!=0) 
+            {
+                float[] info = getInfo(f);
+                writer.WriteLine("Total Looking Time: " + info[0]);
+                writer.WriteLine("Average Time: " + info[1]);
+            }
             writer.WriteLine("Time took to complete level: " + totalSessionTime);
             writer.Close();
         }

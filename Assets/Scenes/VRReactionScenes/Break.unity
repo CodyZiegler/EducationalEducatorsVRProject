@@ -534,7 +534,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18.25
+  m_fontSize: 19
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -730,8 +730,8 @@ MonoBehaviour:
   timeText: {fileID: 204582473}
   instructionText: {fileID: 535705896}
   canvas: {fileID: 280027421}
-  viveCameraEye: {fileID: 0}
-  oculusCameraEye: {fileID: 0}
+  viveCameraEye: {fileID: 1438226313}
+  oculusCameraEye: {fileID: 1310901110}
 --- !u!4 &961767571
 Transform:
   m_ObjectHideFlags: 0
@@ -970,6 +970,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1310901105}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1310901110 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5409726853521238390, guid: 2651be2179700714abf690d8d49863f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310901105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1438226309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1096,6 +1102,12 @@ MonoBehaviour:
   RightThumbstickAxis: {x: 0, y: 0}
   ThumbstickDeadzoneX: 0.001
   ThumbstickDeadzoneY: 0.001
+--- !u!20 &1438226313 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20000014031267948, guid: 4d293c8e162f3874b982baadd71153d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1438226309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1994046631
 GameObject:
   m_ObjectHideFlags: 0

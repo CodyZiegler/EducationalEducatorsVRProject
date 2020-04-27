@@ -6094,8 +6094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eedcabcfd25ef7e41831b16876d4a98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetOne: {fileID: 0}
-  targetTwo: {fileID: 0}
+  targetOne: {fileID: 2072111034}
+  targetTwo: {fileID: 2120846020}
 --- !u!4 &383687114
 Transform:
   m_ObjectHideFlags: 0
@@ -16913,7 +16913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   appSettings: {fileID: 11400000, guid: 4c202c9780655324fb703fe314db026f, type: 2}
   previousSceneType: 0
-  activeSceneType: 2
+  activeSceneType: 3
   nextSceneType: 6
   jumpingJackObject: {fileID: 2120846019}
   signPosts:
@@ -16940,7 +16940,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138044646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.2, y: 1, z: 0}
+  m_LocalPosition: {x: 19.852, y: 1, z: 3.596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2120846017}
@@ -31637,6 +31637,12 @@ GameObject:
 --- !u!1 &2120846019 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6643725929624086239, guid: 2651be2179700714abf690d8d49863f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2120846015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2120846020 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5409726853677607184, guid: 2651be2179700714abf690d8d49863f4,
     type: 3}
   m_PrefabInstance: {fileID: 2120846015}
   m_PrefabAsset: {fileID: 0}

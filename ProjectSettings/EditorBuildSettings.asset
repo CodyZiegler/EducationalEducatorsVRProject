@@ -5,24 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/VRReactionScenes/Tutorial.unity
+    guid: 3e71e09eb2791a74a82a2e4fe65284a6
+  - enabled: 1
     path: Assets/Scenes/VRReactionScenes/Neutral.unity
     guid: b6dfa6f8192bb964f8284c2c5e54687c
   - enabled: 0
-    path: Assets/Scenes/VRReactionScenes/Tutorial.unity
-    guid: 5594441e898253242a577c028d5fcd39
-  - enabled: 1
-    path: Assets/Scenes/VRReactionScenes/Puzzle.unity
-    guid: 0aa73e71275b2a644b2cb095685d9fc1
+    path: Assets/Scenes/VRReactionScenes/Positive.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
     path: Assets/Scenes/VRReactionScenes/Negative.unity
     guid: 20be663f6ed467847ba7e1f973025f80
   - enabled: 1
+    path: Assets/Scenes/VRReactionScenes/Puzzle.unity
+    guid: 0aa73e71275b2a644b2cb095685d9fc1
+  - enabled: 1
     path: Assets/Scenes/VRReactionScenes/Excercise.unity
     guid: 7293ce6daf4df5049b7178cd45d100be
-  - enabled: 1
-    path: Assets/Scenes/VRReactionScenes/Positive.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/VRReactionScenes/Break.unity
     guid: b0936cfa7a437ae4dba09172f01e1559

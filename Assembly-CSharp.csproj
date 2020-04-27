@@ -417,6 +417,7 @@
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_01.shader" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Add-Ons\Oculus\Avatar\Resources\Materials\AvatarPBRV2Simple.shader" />
+    <None Include="Assets\DataCollective\Config.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
@@ -427,6 +428,7 @@
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Add-Ons\MTree\shaders\Bark.shader" />
     <None Include="Assets\Add-Ons\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
+    <None Include="Assets\DataCollective\Neutral_4.27.2020_5.54.52_PM.txt" />
     <None Include="Assets\Add-Ons\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Add-Ons\RainMaker\Prefab\RainShader.shader" />
     <None Include="Assets\Add-Ons\BNG Framework\Integrations\FinalIK\Readme.txt" />
@@ -465,6 +467,9 @@
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
@@ -528,6 +533,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+      <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/EducationalGD/EducationalGDGit/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
